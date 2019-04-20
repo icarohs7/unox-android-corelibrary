@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="base.corelibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <receiver
+            android:name="base.corelibrary.domain.broadcastreceivers.LambdaBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="LambdaBroadcastReceiver"
+            android:permission="android.permission.INTERNET" />
+    </application>
+</manifest>
