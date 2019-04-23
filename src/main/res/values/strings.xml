@@ -112,6 +112,9 @@
     <string name="fazerLogin">Login</string>
     <string name="fechar_drawer">Fechar menu</string>
     <string name="feminino">Feminino</string>
+    <string name="registrada">Registrada</string>
+    <string name="aberta">Aberta</string>
+    <string name="fechada">Fechada</string>
     <string name="filtrar">Filtrar</string>
     <string name="filtro">Filtro</string>
     <string name="forma_de_pagamento_colon">Forma de Pagamento:</string>
