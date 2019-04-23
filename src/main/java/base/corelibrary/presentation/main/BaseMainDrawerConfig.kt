@@ -1,6 +1,7 @@
 package base.corelibrary.presentation.main
 
 import android.graphics.Color
+import androidx.core.graphics.ColorUtils
 import androidx.core.graphics.luminance
 import arrow.core.Try
 import arrow.core.Tuple2
@@ -38,7 +39,7 @@ open class BaseMainDrawerConfig(private val builder: DrawerBuilderKt.(BaseMainAc
             onlyMainProfileImageVisible = true
             background = R.drawable.bg_drawer_header
 
-            val luminance = color(R.color.colorPrimaryDark).luminance
+            val luminance = ColorUtils.calculateLuminance(color(R.color.colorPrimaryDark))
             textColor = when {
                 luminance < 0.5 -> Color.WHITE.toLong()
                 else -> Color.BLACK.toLong()

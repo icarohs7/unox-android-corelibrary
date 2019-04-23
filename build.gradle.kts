@@ -12,8 +12,8 @@ android {
 }
 
 dependencies {
-    api(Deps.arrowData)
-    api(Deps.arrowInstancesData)
+    api(Deps.arrowCoreExtensions)
+    api(Deps.arrowEffectsExtensions)
     api(Deps.arrowSyntax)
     api(Deps.arrowTypeclasses)
     api(Deps.gson)
@@ -31,6 +31,7 @@ dependencies {
     api(AndroidDeps.materialDrawerKt)
     api(AndroidDeps.materialDrawerMaterialTypeface)
     api(AndroidDeps.materialDrawerMaterialTypefaceOriginal)
+    api(AndroidDeps.materialEditText)
     api(AndroidDeps.navigationFragment)
     api(AndroidDeps.navigationUi)
     api(AndroidDeps.rxBinding)

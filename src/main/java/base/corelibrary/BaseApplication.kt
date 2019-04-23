@@ -71,7 +71,7 @@ abstract class BaseApplication : Application() {
 
     private fun setupUnoxAndroidArch(): Unit = UnoxAndroidArch.run {
         init()
-        animationType = UnoxAndroidArch.AnimationType.FADE
+        screenTransition = UnoxAndroidArch.AnimationType.FADE
     }
 
     private fun setupKotpref() {

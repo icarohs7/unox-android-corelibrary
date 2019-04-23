@@ -5,6 +5,7 @@
     <string name="abrir_drawer">Abrir menu</string>
     <string name="aceitar_pedido">Aceitar\nPedido</string>
     <string name="adicionar">Adicionar</string>
+    <string name="adicionar_ao_carrinho">Adicionar ao Carrinho</string>
     <string name="adicionar_desconto">Adicionar Desconto</string>
     <string name="adicionar_despesa">Adicionar Despesa</string>
     <string name="adicionar_entrada">Adicionar Entrada</string>
@@ -42,8 +43,11 @@
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
+    <string name="remover">Remover</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
     <string name="confirmar_remover_carteira">Remover Carteira</string>
+    <string name="produto_removido_sucesso">Produto Removido com Sucesso</string>
+    <string name="nao_e_possivel_adicionar_produto_sem_quantidade">Não é possível adicionar produto sem quantidade</string>
     <string name="confirmar_remover_carteira_mensagem">Deseja apagar %s?</string>
     <string name="confirmar_remover_conta">Remover Conta</string>
     <string name="confirmar_remover_conta_mensagem">Deseja apagar %s?</string>
@@ -67,6 +71,7 @@
     <string name="depesas_do_mes">Despesas do Mês</string>
     <string name="desconectar">Desconectar</string>
     <string name="desconto">Desconto</string>
+    <string name="desconto_colon">Desconto:</string>
     <string name="descricao">Descrição</string>
     <string name="deseja_remover_content_question">Deseja remover %s?</string>
     <string name="deseja_remover_transacao">Deseja remover essa transação?</string>
@@ -198,6 +203,7 @@
     <string name="selecionar_categoria">Selecionar Categoria</string>
     <string name="selecionar_conta">Selecionar Conta</string>
     <string name="sem_categoria">Sem Categoria</string>
+    <string name="sem_estoque">Sem Estoque</string>
     <string name="sem_pagamentos_na_venda">Sem pagamentos na venda</string>
     <string name="sem_pagamentos_na_venda_descricao">Adicione pagamentos através do botão na parte inferior da tela</string>
     <string name="sem_produto_suficiente_em_estoque">Sem produto suficiente em estoque</string>
