@@ -108,3 +108,12 @@ fun buildSpanned(vararg parts: CharSequence): Spanned {
         append(*parts)
     }
 }
+
+/**
+ * Log the given value using the logging
+ * tag LOGEXECUTION and return the parameter
+ */
+fun <T> logExecution(value: T): T {
+    Timber.tag("LOGEXECUTION").i("$value")
+    return value
+}
