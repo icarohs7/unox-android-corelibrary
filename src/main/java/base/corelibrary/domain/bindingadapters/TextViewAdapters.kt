@@ -8,32 +8,32 @@ import com.github.icarohs7.unoxandroidarch.extensions.asShortTime
 import com.github.icarohs7.unoxcore.extensions.asCurrency
 import java.util.Date
 
-@BindingAdapter("numberText")
+@BindingAdapter("app:numberText")
 fun TextView.setNumberText(value: Number) {
     text = "$value"
 }
 
-@BindingAdapter("currencyText")
+@BindingAdapter("app:currencyText")
 fun TextView.setCurrencyText(value: Double) {
     text = value.asCurrency()
 }
 
-@BindingAdapter("brDateText")
+@BindingAdapter("app:brDateText")
 fun TextView.setBrDate(value: Date) {
     text = value.asBrDate
 }
 
-@BindingAdapter("brStringDateText")
+@BindingAdapter("app:brStringDateText")
 fun TextView.setBrDate(value: String) {
     text = value.asDate().asBrDate
 }
 
-@BindingAdapter("shortTimeText")
+@BindingAdapter("app:shortTimeText")
 fun TextView.setShortTime(value: Date) {
     text = value.asShortTime
 }
 
-@BindingAdapter("shortStringTimeText")
+@BindingAdapter("app:shortStringTimeText")
 fun TextView.setShortTime(value: String) {
     text = value.asDate().asShortTime
 }
