@@ -14,6 +14,7 @@ android {
 dependencies {
     api(Deps.arrowCoreExtensions)
     api(Deps.arrowEffectsExtensions)
+    api(Deps.arrowEffectsIoExtensions)
     api(Deps.arrowSyntax)
     api(Deps.arrowTypeclasses)
     api(Deps.gson)

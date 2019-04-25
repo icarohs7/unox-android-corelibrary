@@ -15,12 +15,18 @@ import androidx.annotation.ColorRes
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import arrow.core.Try
+import arrow.effects.ForIO
+import arrow.effects.IO
+import arrow.effects.extensions.io.fx.fx
+import arrow.effects.typeclasses.ConcurrentCancellableContinuation
 import base.corelibrary.R
 import base.corelibrary.presentation.main.BaseMainActivity
 import com.andrognito.flashbar.Flashbar
 import com.github.icarohs7.unoxandroidarch.Injector
 import com.github.icarohs7.unoxandroidarch.Messages
 import com.github.icarohs7.unoxandroidarch.onActivity
+import com.github.icarohs7.unoxcore.UnoxCore
+import kotlinx.coroutines.Dispatchers
 import org.koin.core.get
 import splitties.init.appCtx
 import splitties.resources.appColor
@@ -178,4 +184,35 @@ fun <A : Closeable, B : Closeable, C : Closeable> useResources(
             }
         }
     }
+}
+
+/**
+ * Execute an [fx] on the [Dispatchers.Default]
+ */
+fun <A> bgFx(block: suspend ConcurrentCancellableContinuation<ForIO, *>.() -> A): IO<A> {
+    return fx {
+        continueOn(Dispatchers.Default)
+        block()
+    }
+}
+
+/**
+ * @see [fx]
+ */
+fun <A> uFx(block: suspend ConcurrentCancellableContinuation<ForIO, *>.() -> A): IO<A> {
+    return fx(block)
+}
+
+/**
+ * Syntax sugar to continue the execution on a background dispatcher
+ */
+suspend inline fun <A> ConcurrentCancellableContinuation<ForIO, A>.continueOnBackground() {
+    continueOn(UnoxCore.backgroundDispatcher)
+}
+
+/**
+ * Syntax sugar to continue the execution on a foreground dispatcher
+ */
+suspend inline fun <A> ConcurrentCancellableContinuation<ForIO, A>.continueOnForeground() {
+    continueOn(UnoxCore.foregroundDispatcher)
 }
