@@ -3,8 +3,11 @@
 package base.corelibrary.domain
 
 import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.content.res.Configuration
+import android.net.Uri
 import android.os.Bundle
 import android.text.Spanned
 import androidx.annotation.ColorInt
@@ -22,6 +25,7 @@ import org.koin.core.get
 import splitties.init.appCtx
 import splitties.resources.appColor
 import timber.log.Timber
+import java.io.Closeable
 
 /**
  * Short hand syntax to fetch an instance from
@@ -116,4 +120,62 @@ fun buildSpanned(vararg parts: CharSequence): Spanned {
 fun <T> logExecution(value: T): T {
     Timber.tag("LOGEXECUTION").i("$value")
     return value
+}
+
+/**
+ * @see [Intent]
+ */
+@Suppress("FunctionName")
+inline fun <reified T> Intent(packageContext: Context): Intent {
+    return Intent(packageContext, T::class.java)
+}
+
+/**
+ * @see [Intent]
+ */
+@Suppress("FunctionName")
+inline fun <reified T> Intent(action: String, uri: Uri, packageContext: Context): Intent {
+    return Intent(action, uri, packageContext, T::class.java)
+}
+
+/**
+ * Execute the given block using the resource
+ * parameterized, then close the resource after
+ * the execution is done
+ */
+fun <A : Closeable> useResources(res1: A, block: (A) -> Unit) {
+    res1.use(block)
+}
+
+/**
+ * Execute the given block using the resources
+ * parameterized, then close them after
+ * the execution is done
+ */
+fun <A : Closeable, B : Closeable> useResources(res1: A, res2: B, block: (A, B) -> Unit) {
+    res1.use { r1 ->
+        res2.use { r2 ->
+            block(r1, r2)
+        }
+    }
+}
+
+/**
+ * Execute the given block using the resources
+ * parameterized, then close them after
+ * the execution is done
+ */
+fun <A : Closeable, B : Closeable, C : Closeable> useResources(
+        res1: A,
+        res2: B,
+        res3: C,
+        block: (A, B, C) -> Unit
+) {
+    res1.use { r1 ->
+        res2.use { r2 ->
+            res3.use { r3 ->
+                block(r1, r2, r3)
+            }
+        }
+    }
 }

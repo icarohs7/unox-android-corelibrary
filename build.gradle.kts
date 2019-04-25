@@ -20,6 +20,7 @@ dependencies {
     api(Deps.jodaTime)
     api(Deps.kodaTime)
 
+    api(AndroidDeps.bluetoothKit)
     api(AndroidDeps.circularImageView)
     api(AndroidDeps.koinAndroidxViewmodel)
     api(AndroidDeps.kotprefGson)

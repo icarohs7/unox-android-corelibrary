@@ -69,6 +69,7 @@
     <string name="data_upper">DATA</string>
     <string name="defina_o_dominio">Informe o domínio de sua empresa no campo abaixo</string>
     <string name="finalizar">Finalizar</string>
+    <string name="finalizar_venda">Finalizar Venda</string>
     <string name="depesas_do_mes">Despesas do Mês</string>
     <string name="desconectar">Desconectar</string>
     <string name="desconto">Desconto</string>
@@ -203,6 +204,7 @@
     <string name="salvar_no_crediario">Salvar no crediário</string>
     <string name="salvar_venda">Salvar Venda</string>
     <string name="selecionar">Selecionar</string>
+    <string name="imprimir">Imprimir</string>
     <string name="selecionar_carteira">Selecionar Carteira</string>
     <string name="selecionar_categoria">Selecionar Categoria</string>
     <string name="selecionar_conta">Selecionar Conta</string>
