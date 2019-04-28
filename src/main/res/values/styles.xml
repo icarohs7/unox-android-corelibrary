@@ -7,6 +7,7 @@
         <item name="actionOverflowButtonStyle">@style/ActionOverflowWhite</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
     </style>
 
     <style name="ActionOverflowWhite" parent="@style/Widget.AppCompat.ActionButton.Overflow">
@@ -26,7 +27,7 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="FullscreenTheme.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="FullscreenTheme.Light" parent="AppTheme">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>

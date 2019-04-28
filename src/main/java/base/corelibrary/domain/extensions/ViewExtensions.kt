@@ -9,14 +9,6 @@ import com.github.florent37.viewanimator.ViewAnimator
 import com.github.icarohs7.unoxandroidarch.extensions.doOnEnd
 import splitties.systemservices.inputMethodManager
 
-fun View.showKeyboard() {
-    inputMethodManager.showSoftInput(this, InputMethodManager.SHOW_IMPLICIT)
-}
-
-fun View.hideKeyboard() {
-    inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
-}
-
 fun View.animatedShow(duration: Long = 200L) {
     isVisible = true
     animate().scaleX(1f).scaleY(1f).setDuration(duration).doOnEnd { isVisible = true }

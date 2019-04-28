@@ -45,9 +45,6 @@ dependencies {
     api(AndroidDeps.splittiesMainhandler)
     api(AndroidDeps.splittiesSnackbar)
     api(AndroidDeps.splittiesToast)
-    api(AndroidDeps.splittiesViewsDsl)
-    api(AndroidDeps.splittiesViewsDslAppcompat)
-    api(AndroidDeps.splittiesViewsDslMaterial)
     api(AndroidDeps.unoxAndroidArch)
     api(AndroidDeps.viewAnimator)
 
