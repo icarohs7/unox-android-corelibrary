@@ -57,12 +57,8 @@
             android:id="@+id/bottom_nav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/primary_dark"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:itemIconTint="@color/bottom_bar_item"
-            app:itemTextColor="@color/bottom_bar_text"
             app:menu="@menu/bottom_nav"
-            tools:background="@color/primary_dark"
             tools:layout_height="75dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

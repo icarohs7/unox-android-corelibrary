@@ -3,6 +3,15 @@
     <color name="colorSigeLightBlue">#0d74bd</color>
     <color name="colorSigeDarkBlue">#19308a</color>
 
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorError">#E3000F</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorSuccess">#2F8417</color>
+    <color name="colorOnSuccess">#FFFFFF</color>
+
     <color name="colorPrimary">@color/colorSigeLightBlue</color>
     <color name="colorPrimaryVariant">@color/colorPrimary</color>
     <color name="colorOnPrimary">@color/white</color>
@@ -15,9 +24,7 @@
     <color name="colorTextLight">#fff</color>
     <color name="colorGray">#646464</color>
     <color name="colorLightGray">#808080</color>
-    <color name="colorSuccess">#2F8417</color>
     <color name="colorSuccessLight">#AA2F8417</color>
-    <color name="colorError">#E3000F</color>
     <color name="colorErrorLight">#AAE3000F</color>
     <color name="mah_android_upd_title_bar_color">@color/colorPrimary</color>
 </resources>
