@@ -76,7 +76,7 @@ abstract class BaseMainActivity(
         showConfirmDialog("Confirmar", "Deseja se desconectar?") { dialog ->
             btnYesDialogyesno.text = getString(R.string.sim)
             btnNoDialogyesno.text = getString(R.string.nao)
-            txtTitleDialogyesno.backgroundColor = color(R.color.colorAccent)
+            txtTitleDialogyesno.backgroundColor = color(R.color.colorPrimary)
             setYesHandler {
                 launch { onConfirmLogout() }
                 dialog.dismiss()

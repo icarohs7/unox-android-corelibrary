@@ -9,8 +9,8 @@ import com.github.icarohs7.unoxcore.extensions.asCurrency
 import java.util.Date
 
 @BindingAdapter("app:numberText")
-fun TextView.setNumberText(value: Number) {
-    text = "$value"
+fun <T : Number> TextView.setNumberText(value: T?) {
+    text = value?.toString()
 }
 
 @BindingAdapter("app:currencyText")
@@ -19,21 +19,21 @@ fun TextView.setCurrencyText(value: Double) {
 }
 
 @BindingAdapter("app:brDateText")
-fun TextView.setBrDate(value: Date) {
-    text = value.asBrDate
+fun TextView.setBrDate(value: Date?) {
+    text = value?.asBrDate
 }
 
 @BindingAdapter("app:brStringDateText")
-fun TextView.setBrDate(value: String) {
-    text = value.asDate().asBrDate
+fun TextView.setBrDate(value: String?) {
+    text = value?.asDate()?.asBrDate
 }
 
 @BindingAdapter("app:shortTimeText")
-fun TextView.setShortTime(value: Date) {
-    text = value.asShortTime
+fun TextView.setShortTime(value: Date?) {
+    text = value?.asShortTime
 }
 
 @BindingAdapter("app:shortStringTimeText")
-fun TextView.setShortTime(value: String) {
-    text = value.asDate().asShortTime
+fun TextView.setShortTime(value: String?) {
+    text = value?.asDate()?.asShortTime
 }

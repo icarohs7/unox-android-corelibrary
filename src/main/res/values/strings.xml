@@ -2,6 +2,7 @@
 <resources>
     <string name="a_pagar">A Pagar</string>
     <string name="a_receber">A Receber</string>
+    <string name="aberta">Aberta</string>
     <string name="abrir_drawer">Abrir menu</string>
     <string name="aceitar_pedido">Aceitar\nPedido</string>
     <string name="adicionar">Adicionar</string>
@@ -11,6 +12,7 @@
     <string name="adicionar_entrada">Adicionar Entrada</string>
     <string name="adicionar_gasto">Adicionar Gasto</string>
     <string name="adicionar_pagamento">Adicionar Pagamento</string>
+    <string name="editar_pagamento">Editar Pagamento</string>
     <string name="adicionar_produto">Adicionar Produto</string>
     <string name="adicionar_produto_barcode">Escanear código de barra</string>
     <string name="adicionar_receita">Adicionar Receita</string>
@@ -43,11 +45,8 @@
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
-    <string name="remover">Remover</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
     <string name="confirmar_remover_carteira">Remover Carteira</string>
-    <string name="produto_removido_sucesso">Produto Removido com Sucesso</string>
-    <string name="nao_e_possivel_adicionar_produto_sem_quantidade">Não é possível adicionar produto sem quantidade</string>
     <string name="confirmar_remover_carteira_mensagem">Deseja apagar %s?</string>
     <string name="confirmar_remover_conta">Remover Conta</string>
     <string name="confirmar_remover_conta_mensagem">Deseja apagar %s?</string>
@@ -56,6 +55,7 @@
     <string name="conta_de_origem">Conta de Origem</string>
     <string name="contas">Contas</string>
     <string name="convenio">Convênio</string>
+    <string name="crediario">Crediário</string>
     <string name="criar">Criar</string>
     <string name="criar_despesa">Criar Despesa</string>
     <string name="criar_entrada">Criar Entrada</string>
@@ -68,8 +68,6 @@
     <string name="data_do_pedido_colon">Data do Pedido:</string>
     <string name="data_upper">DATA</string>
     <string name="defina_o_dominio">Informe o domínio de sua empresa no campo abaixo</string>
-    <string name="finalizar">Finalizar</string>
-    <string name="finalizar_venda">Finalizar Venda</string>
     <string name="depesas_do_mes">Despesas do Mês</string>
     <string name="desconectar">Desconectar</string>
     <string name="desconto">Desconto</string>
@@ -84,8 +82,8 @@
     <string name="despesas_pagas">Despesas Pagas</string>
     <string name="detalhamento_do_pagamento">Detalhamento do pagamento</string>
     <string name="detalhamento_dos_itens">Detalhamento dos Itens</string>
-    <string name="detalhes_do_pedido">Detalhes do Pedido</string>
     <string name="detalhes">Detalhes</string>
+    <string name="detalhes_do_pedido">Detalhes do Pedido</string>
     <string name="detalhes_transacao">Detalhes</string>
     <string name="dominio">Dominio</string>
     <string name="editar">Editar</string>
@@ -112,18 +110,19 @@
     <string name="facebook">Facebook</string>
     <string name="faz_uso_regular_ou_tomou_nos_ultimos_30_dias">(Faz uso regular ou tomou nos últimos 30 dias?)</string>
     <string name="fazerLogin">Login</string>
+    <string name="fechada">Fechada</string>
     <string name="fechar_drawer">Fechar menu</string>
     <string name="feminino">Feminino</string>
-    <string name="registrada">Registrada</string>
-    <string name="aberta">Aberta</string>
-    <string name="fechada">Fechada</string>
     <string name="filtrar">Filtrar</string>
     <string name="filtro">Filtro</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="finalizar_venda">Finalizar Venda</string>
     <string name="forma_de_pagamento_colon">Forma de Pagamento:</string>
     <string name="gastos_do_mes">Gastos do Mês</string>
     <string name="historico">Histórico</string>
     <string name="horario">Horário</string>
     <string name="horario_colon">Horário:</string>
+    <string name="imprimir">Imprimir</string>
     <string name="informar_quantidade">Informar Quantidade</string>
     <string name="iniciando">Iniciando</string>
     <string name="inicio">Início</string>
@@ -146,6 +145,7 @@
     <string name="movimentacao_em_contas_mes">Movimentação em Contas / Mês</string>
     <string name="nao">Não</string>
     <string name="nao_aceitar_pedido">Não Aceitar Pedido</string>
+    <string name="nao_e_possivel_adicionar_produto_sem_quantidade">Não é possível adicionar produto sem quantidade</string>
     <string name="nao_informada">Não informado(a)</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
     <string name="no_de_items_colon">Nº de Items:</string>
@@ -156,9 +156,12 @@
     <string name="observacao_colon">Observação:</string>
     <string name="obtendo_localizacao">Obtendo localização…</string>
     <string name="pagamento_colon">Pagamento:</string>
+    <string name="pagamentos">Pagamentos</string>
+    <string name="pagamento_total">Pagamento Total</string>
     <string name="pagas">Pagas</string>
     <string name="pago">Pago</string>
     <string name="parcelas">Parcelas</string>
+    <string name="parcelas_colon">Parcelas:</string>
     <string name="particular">Particular</string>
     <string name="parto_cesariana">Cesariana</string>
     <string name="parto_normal">Normal</string>
@@ -172,6 +175,7 @@
     <string name="produto">Produto</string>
     <string name="produto_adicionado_sucesso">Produto adicionado com sucesso.</string>
     <string name="produto_colon">Produto:</string>
+    <string name="produto_removido_sucesso">Produto Removido com Sucesso</string>
     <string name="produtos">Produtos</string>
     <string name="quantidade">Quantidade </string>
     <string name="quantidade_alterada_sucesso">Quantidade Alterada com Sucesso</string>
@@ -185,12 +189,14 @@
     <string name="receitas_do_mes">Receitas do Mês</string>
     <string name="receitas_filtradas">Carteiras Filtradas</string>
     <string name="receitas_pagas">Receitas Pagas</string>
+    <string name="registrada">Registrada</string>
     <string name="registrar_entrada">Registrar Entrada</string>
     <string name="registrar_ponto">Registrar Ponto</string>
     <string name="registrar_saida">Registrar Saída</string>
     <string name="registro_de_entradas">Registro de Entradas</string>
     <string name="rejeitar_entrega">Rejeitar\nEntrega</string>
     <string name="rejeitar_pedido">Rejeitar\nPedido</string>
+    <string name="remover">Remover</string>
     <string name="resumo">Resumo</string>
     <string name="resumo_da_venda">Resumo da Venda</string>
     <string name="saida">Saída</string>
@@ -204,7 +210,6 @@
     <string name="salvar_no_crediario">Salvar no crediário</string>
     <string name="salvar_venda">Salvar Venda</string>
     <string name="selecionar">Selecionar</string>
-    <string name="imprimir">Imprimir</string>
     <string name="selecionar_carteira">Selecionar Carteira</string>
     <string name="selecionar_categoria">Selecionar Categoria</string>
     <string name="selecionar_conta">Selecionar Conta</string>
@@ -222,6 +227,7 @@
     <string name="tabela_de_preco">Tabela de Preço</string>
     <string name="telefone_colon">Telefone:</string>
     <string name="tem_ou_teve_alguma_vez">(Tem ou Teve alguma vez?)</string>
+    <string name="tipo">Tipo</string>
     <string name="tipo_de_pagamento">Tipo de pagamento</string>
     <string name="tipo_pressao_alta">Alta</string>
     <string name="tipo_pressao_baixa">Baixa</string>

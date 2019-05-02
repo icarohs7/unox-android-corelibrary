@@ -3,9 +3,14 @@
     <color name="colorSigeLightBlue">#0d74bd</color>
     <color name="colorSigeDarkBlue">#19308a</color>
 
-    <color name="colorAccent">@color/colorSigeLightBlue</color>
     <color name="colorPrimary">@color/colorSigeLightBlue</color>
-    <color name="colorPrimaryDark">@color/colorSigeDarkBlue</color>
+    <color name="colorPrimaryVariant">@color/colorPrimary</color>
+    <color name="colorOnPrimary">@color/white</color>
+
+    <color name="colorSecondary">@color/colorSigeDarkBlue</color>
+    <color name="colorSecondaryVariant">@color/colorSecondary</color>
+    <color name="colorOnSecondary">@color/white</color>
+
     <color name="colorNeutralGray">#646464</color>
     <color name="colorTextLight">#fff</color>
     <color name="colorGray">#646464</color>

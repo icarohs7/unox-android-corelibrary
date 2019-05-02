@@ -19,7 +19,7 @@
             android:theme="@style/AppTheme.Toolbar"
             app:layout_scrollFlags="scroll|enterAlways"
             app:titleTextColor="@color/white"
-            tools:background="@color/colorPrimaryDark"
+            tools:background="@color/colorSecondary"
             tools:layout_height="50dp" />
     </com.google.android.material.appbar.AppBarLayout>
 </layout>

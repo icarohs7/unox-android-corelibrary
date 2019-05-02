@@ -2,7 +2,6 @@ package base.corelibrary.presentation.main
 
 import android.graphics.Color
 import androidx.core.graphics.ColorUtils
-import androidx.core.graphics.luminance
 import arrow.core.Try
 import arrow.core.Tuple2
 import base.corelibrary.R
