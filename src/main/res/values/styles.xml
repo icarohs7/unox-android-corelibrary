@@ -8,11 +8,11 @@
         <item name="colorError">@color/colorError</item>
         <item name="colorOnError">@color/colorOnError</item>
 
-        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
         <item name="colorOnPrimary">@color/colorOnPrimary</item>
         <item name="colorOnSecondary">@color/colorOnSecondary</item>
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorSecondary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariant</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
@@ -32,10 +32,10 @@
     </style>
 
     <style name="Widget.App.Toolbar" parent="Theme.MaterialComponents">
-        <item name="actionMenuTextColor">@color/colorOnSecondary</item>
+        <item name="actionMenuTextColor">@color/colorOnPrimary</item>
         <item name="android:elevation">0dp</item>
-        <item name="colorControlNormal">@color/colorOnSecondary</item>
-        <item name="titleTextColor">@color/colorOnSecondary</item>
+        <item name="colorControlNormal">@color/colorOnPrimary</item>
+        <item name="titleTextColor">@color/colorOnPrimary</item>
     </style>
 
     <style name="FullscreenTheme" parent="Theme.MaterialComponents.NoActionBar">

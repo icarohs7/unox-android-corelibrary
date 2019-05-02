@@ -13,12 +13,12 @@
     <color name="colorOnSuccess">#FFFFFF</color>
 
     <color name="colorPrimary">@color/colorSigeLightBlue</color>
-    <color name="colorPrimaryVariant">@color/colorPrimary</color>
+    <color name="colorPrimaryVariant">@color/colorSigeDarkBlue</color>
     <color name="colorOnPrimary">@color/white</color>
 
-    <color name="colorSecondary">@color/colorSigeDarkBlue</color>
-    <color name="colorSecondaryVariant">@color/colorSecondary</color>
-    <color name="colorOnSecondary">@color/white</color>
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="colorSecondaryVariant">#808080</color>
+    <color name="colorOnSecondary">#222222</color>
 
     <color name="colorNeutralGray">#646464</color>
     <color name="colorTextLight">#fff</color>
