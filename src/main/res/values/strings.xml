@@ -41,10 +41,13 @@
     <string name="codigo_de_barra">Código de barra</string>
     <string name="codigo_upper">CÓDIGO</string>
     <string name="concluir_venda">Concluir Venda</string>
+    <string name="concluindo_venda">Concluindo Venda</string>
     <string name="conectado_como">Conectado como</string>
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
+    <string name="confirmar_acao">Confirmar Ação</string>
+    <string name="confirmar_venda">Confirmar Venda</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
     <string name="confirmar_remover_carteira">Remover Carteira</string>
     <string name="confirmar_remover_carteira_mensagem">Deseja apagar %s?</string>
@@ -75,6 +78,8 @@
     <string name="descricao">Descrição</string>
     <string name="deseja_remover_content_question">Deseja remover %s?</string>
     <string name="deseja_remover_transacao">Deseja remover essa transação?</string>
+    <string name="deseja_confirmar_essa_venda">Deseja confirmar essa venda?</string>
+    <string name="deseja_confirmar_essa_venda_no_crediario">Deseja confirmar essa venda no crediário?</string>
     <string name="despesa">Despesa</string>
     <string name="despesas">Despesas</string>
     <string name="despesas_do_mes">Despesas do Mês</string>
@@ -261,6 +266,7 @@
     <string name="vencimento_colon">Vencimento:</string>
     <string name="vencimentos">Vencimentos</string>
     <string name="venda_rapida">Venda Rápida</string>
+    <string name="venda_salva_sucesso">Venda Salva com Sucesso</string>
     <string name="ver_mais">Ver Mais</string>
     <string name="ver_mais_right_arrow">Ver Mais ></string>
     <string name="voltar">Voltar</string>
