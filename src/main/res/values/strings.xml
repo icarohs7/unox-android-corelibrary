@@ -18,6 +18,7 @@
     <string name="adicionar_receita">Adicionar Receita</string>
     <string name="adicionar_transacao">Adicionar Transação</string>
     <string name="aluno_nao_registrado_title">Seja bem vindo ao aplicativo ViaPrime</string>
+    <string name="alterando_status_do_pedido">Alterando status do pedido</string>
     <string name="ambos">Ambos</string>
     <string name="anestesia_tipo_geral">Geral</string>
     <string name="anestesia_tipo_local">Local</string>
