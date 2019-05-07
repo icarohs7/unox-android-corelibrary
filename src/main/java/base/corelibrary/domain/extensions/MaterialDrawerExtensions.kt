@@ -2,12 +2,12 @@ package base.corelibrary.domain.extensions
 
 import base.corelibrary.databinding.NavHeaderBinding
 import co.zsmb.materialdrawerkt.builders.DrawerBuilderKt
-import co.zsmb.materialdrawerkt.draweritems.badgeable.PrimaryDrawerItemKt
+import co.zsmb.materialdrawerkt.draweritems.base.AbstractDrawerItemKt
 import com.mikepenz.materialdrawer.Drawer
 import com.mikepenz.materialdrawer.holder.StringHolder
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem
 
-var PrimaryDrawerItemKt.id: Int
+var AbstractDrawerItemKt<*>.id: Int
     get() = this.identifier.toInt()
     set(value) {
         identifier = value.toLong()

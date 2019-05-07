@@ -227,8 +227,11 @@
     <string name="sem_produtos_na_venda">Sem produtos na venda</string>
     <string name="sem_produtos_na_venda_descricao">Adicione produtos através do botão na parte inferior da tela</string>
     <string name="senha">Senha</string>
+    <string name="nunca">Nunca</string>
     <string name="sim">Sim</string>
     <string name="sincronizar">Sincronizar</string>
+    <string name="sem_registros_para_sincronizar">Sem registros para sincronizar</string>
+    <string name="ultima_sincronização_colon_content">Última Sincronização: %s</string>
     <string name="sincronizando_pedidos">Sincronizando Pedidos</string>
     <string name="status_colon">Status:</string>
     <string name="tabela_de_preco">Tabela de Preço</string>
