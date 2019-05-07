@@ -229,6 +229,7 @@
     <string name="senha">Senha</string>
     <string name="sim">Sim</string>
     <string name="sincronizar">Sincronizar</string>
+    <string name="sincronizando_pedidos">Sincronizando Pedidos</string>
     <string name="status_colon">Status:</string>
     <string name="tabela_de_preco">Tabela de Preço</string>
     <string name="telefone_colon">Telefone:</string>

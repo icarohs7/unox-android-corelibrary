@@ -60,7 +60,7 @@ abstract class BaseMainActivity(
         nav.setOnNavigationItemSelectedListener(::onOptionsItemSelected)
     }
 
-    open suspend fun onSetupDrawer(): Drawer? = BaseMainDrawerConfig().setup(this)
+    open suspend fun onSetupDrawer(): Drawer? = BaseMainDrawerConfig<BaseMainActivity>().setup(this)
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return super.onOptionsItemSelected(item) || onMenuItemSelect(item.itemId)

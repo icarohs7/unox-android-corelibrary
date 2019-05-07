@@ -15,8 +15,10 @@ import com.github.icarohs7.unoxcore.extensions.capitalizeWords
 import com.mikepenz.materialdrawer.Drawer
 import splitties.resources.color
 
-open class BaseMainDrawerConfig(private val builder: DrawerBuilderKt.(BaseMainActivity) -> Unit = {}) {
-    fun setup(activity: BaseMainActivity): Drawer = with(activity) {
+open class BaseMainDrawerConfig<T : BaseMainActivity>(
+        private val builder: DrawerBuilderKt.(T) -> Unit = {}
+) {
+    fun setup(activity: T): Drawer = with(activity) {
         val navDrawer = drawer {
             defaultSettings(this)
             builder(this, activity)
