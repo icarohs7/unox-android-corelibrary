@@ -3,8 +3,10 @@ package base.corelibrary.presentation.main
 import android.view.View
 import androidx.core.view.isGone
 import arrow.core.Try
+import arrow.core.orNull
 import base.corelibrary.domain.extensions.viewAnimate
 import com.github.florent37.viewanimator.AnimationBuilder
+import com.google.android.material.badge.BadgeDrawable
 import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import timber.log.Timber
@@ -13,12 +15,10 @@ fun BaseMainActivity.toggleLoading(isLoading: Boolean) {
     binding.progressBar.isGone = !isLoading
 }
 
-fun BaseMainActivity.addBadgeToBottomNavIcon(iconIndex: Int, badgeView: View) {
-    Try {
-        val menuView = binding.bottomNav.getChildAt(0) as BottomNavigationMenuView
-        val itemView = menuView.getChildAt(iconIndex) as BottomNavigationItemView
-        itemView.addView(badgeView)
-    }.fold(Timber::e) {}
+fun BaseMainActivity.bottomNavBadge(menuItemId: Int): BadgeDrawable? {
+    return Try {
+        binding.bottomNav.showBadge(menuItemId)
+    }.orNull()
 }
 
 fun BaseMainActivity.Companion.hideToolbar(animate: Boolean = false): Unit = this {
