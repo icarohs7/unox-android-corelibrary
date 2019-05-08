@@ -17,8 +17,9 @@ operator fun Drawer.get(itemId: Int): IDrawerItem<*, *>? {
     return getDrawerItem(itemId.toLong())
 }
 
-fun Drawer.updateBadge(itemId: Int, badgeText: String) {
-    updateBadge(itemId.toLong(), StringHolder(badgeText))
+fun Drawer.updateBadge(itemId: Int, badgeText: String?) {
+    val strHolder = if (badgeText == null) null else StringHolder(badgeText)
+    updateBadge(itemId.toLong(), strHolder)
 }
 
 fun DrawerBuilderKt.defaultHeader() {

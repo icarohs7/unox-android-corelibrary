@@ -1,13 +1,11 @@
 package base.corelibrary.domain.extensions
 
 import android.view.View
-import android.view.inputmethod.InputMethodManager
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import com.github.florent37.viewanimator.AnimationBuilder
 import com.github.florent37.viewanimator.ViewAnimator
 import com.github.icarohs7.unoxandroidarch.extensions.doOnEnd
-import splitties.systemservices.inputMethodManager
 
 fun View.animatedShow(duration: Long = 200L) {
     isVisible = true

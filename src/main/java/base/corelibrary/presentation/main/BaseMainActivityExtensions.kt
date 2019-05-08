@@ -7,9 +7,6 @@ import arrow.core.orNull
 import base.corelibrary.domain.extensions.viewAnimate
 import com.github.florent37.viewanimator.AnimationBuilder
 import com.google.android.material.badge.BadgeDrawable
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView
-import timber.log.Timber
 
 fun BaseMainActivity.toggleLoading(isLoading: Boolean) {
     binding.progressBar.isGone = !isLoading
