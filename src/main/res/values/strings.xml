@@ -66,6 +66,8 @@
     <string name="criar_gasto">Criar Gasto</string>
     <string name="criar_receita">Criar Receita</string>
     <string name="data">Data</string>
+    <string name="conectividade">Conectividade</string>
+    <string name="definicoes">Definições</string>
     <string name="data_colon">Data:</string>
     <string name="data_de_pagamento">Data de Pagamento</string>
     <string name="data_de_vencimento">Data de Vencimento</string>
@@ -129,7 +131,9 @@
     <string name="horario">Horário</string>
     <string name="horario_colon">Horário:</string>
     <string name="imprimir">Imprimir</string>
+    <string name="conectar_impressora">Conectar Impressora</string>
     <string name="informar_quantidade">Informar Quantidade</string>
+    <string name="selecione_impressora_para_conectar">Selecione a impressora para se conectar</string>
     <string name="iniciando">Iniciando</string>
     <string name="inicio">Início</string>
     <string name="item">Item</string>
@@ -206,6 +210,7 @@
     <string name="resumo">Resumo</string>
     <string name="resumo_da_venda">Resumo da Venda</string>
     <string name="saida">Saída</string>
+    <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
     <string name="saidas">Saídas</string>
     <string name="saidas_colon">Saídas:</string>
     <string name="sair">Sair</string>
