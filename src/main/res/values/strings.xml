@@ -13,7 +13,8 @@
     <string name="adicionar_gasto">Adicionar Gasto</string>
     <string name="adicionar_pagamento">Adicionar Pagamento</string>
     <string name="adicionar_produto">Adicionar Produto</string>
-    <string name="adicionar_produto_barcode">Escanear código de barra</string>
+    <string name="ler_codigo_de_barra">Ler código de barra</string>
+    <string name="ler_codigo">Ler código</string>
     <string name="adicionar_receita">Adicionar Receita</string>
     <string name="adicionar_transacao">Adicionar Transação</string>
     <string name="alterando_status_do_pedido">Alterando status do pedido</string>
