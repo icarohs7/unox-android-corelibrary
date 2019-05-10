@@ -20,6 +20,9 @@
     <color name="colorSecondaryVariant">#808080</color>
     <color name="colorOnSecondary">#222222</color>
 
+    <color name="colorPrimaryDark">@color/colorPrimaryVariant</color>
+    <color name="colorAccent">@color/colorPrimaryVariant</color>
+
     <color name="colorNeutralGray">#646464</color>
     <color name="colorTextLight">#fff</color>
     <color name="colorGray">#646464</color>
