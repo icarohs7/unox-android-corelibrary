@@ -22,7 +22,6 @@ dependencies {
     api(Deps.kodaTime)
 
     api(AndroidDeps.circularImageView)
-    api(AndroidDeps.koinAndroidxViewmodel)
     api(AndroidDeps.kotprefGson)
     api(AndroidDeps.maskedEditText)
     api(AndroidDeps.materialDialogsDateTime)
