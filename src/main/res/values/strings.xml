@@ -267,6 +267,7 @@
     <string name="transferir">Transferir</string>
     <string name="troco_no_dinheiro">Troco no dinheiro</string>
     <string name="ultima_sincronização_colon_content">Última Sincronização: %s</string>
+    <string name="ultima_sincronização_colon">Última Sincronização:</string>
     <string name="url_exemplo">Exemplo: suaempresa para suaempresa.sige.pro</string>
     <string name="url_hint">Informe o nome de sua empresa como consta na url de seu sistema</string>
     <string name="valor">Valor</string>
