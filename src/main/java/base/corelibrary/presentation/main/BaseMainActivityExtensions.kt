@@ -18,6 +18,13 @@ fun BaseMainActivity.bottomNavBadge(menuItemId: Int): BadgeDrawable? {
     }.orNull()
 }
 
+fun BaseMainActivity.setBottomNavBadgeIntNoZero(menuItemId: Int, number: Int): BadgeDrawable? {
+    return Try {
+        if (number > 0) bottomNavBadge(menuItemId)?.apply { this.number = number }
+        else null.apply { binding.bottomNav.removeBadge(menuItemId) }
+    }.orNull()
+}
+
 fun BaseMainActivity.Companion.hideToolbar(animate: Boolean = false): Unit = this {
     binding.layoutToolbar.root.animateToggleVisibility(false, animate) {
         dp().translationY(-500f)

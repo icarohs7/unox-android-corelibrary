@@ -22,6 +22,11 @@ fun Drawer.updateBadge(itemId: Int, badgeText: String?) {
     updateBadge(itemId.toLong(), strHolder)
 }
 
+fun Drawer.updateIntBadgeNoZero(itemId: Int, number: Int) {
+    if (number > 0) updateBadge(itemId, "$number")
+    else updateBadge(itemId, null)
+}
+
 fun DrawerBuilderKt.defaultHeader() {
     headerView = NavHeaderBinding.inflate(activity.layoutInflater).root
 }
