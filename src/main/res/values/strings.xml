@@ -49,6 +49,7 @@
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
+    <string name="confirmar_registro">Confirmar Registro</string>
     <string name="confirmar_acao">Confirmar Ação</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
     <string name="confirmar_remover_carteira">Remover Carteira</string>
@@ -136,6 +137,7 @@
     <string name="imprimir">Imprimir</string>
     <string name="informar_quantidade">Informar Quantidade</string>
     <string name="iniciando">Iniciando</string>
+    <string name="iniciando_ellipsis">Iniciando…</string>
     <string name="inicio">Início</string>
     <string name="item">Item</string>
     <string name="item_ja_esta_no_carrinho">Item já está no carrinho</string>
