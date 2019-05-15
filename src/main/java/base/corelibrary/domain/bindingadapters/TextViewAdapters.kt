@@ -10,30 +10,30 @@ import java.util.Date
 
 @BindingAdapter("app:numberText")
 fun <T : Number> TextView.setNumberText(value: T?) {
-    text = value?.toString()
+    text = value?.toString() ?: return
 }
 
 @BindingAdapter("app:currencyText")
-fun TextView.setCurrencyText(value: Double) {
-    text = value.asCurrency()
+fun TextView.setCurrencyText(value: Double?) {
+    text = value?.asCurrency() ?: return
 }
 
 @BindingAdapter("app:brDateText")
 fun TextView.setBrDate(value: Date?) {
-    text = value?.asBrDate
+    text = value?.asBrDate ?: return
 }
 
 @BindingAdapter("app:brStringDateText")
 fun TextView.setBrDate(value: String?) {
-    text = value?.asDate()?.asBrDate
+    text = value?.asDate()?.asBrDate ?: return
 }
 
 @BindingAdapter("app:shortTimeText")
 fun TextView.setShortTime(value: Date?) {
-    text = value?.asShortTime
+    text = value?.asShortTime ?: return
 }
 
 @BindingAdapter("app:shortStringTimeText")
 fun TextView.setShortTime(value: String?) {
-    text = value?.asDate()?.asShortTime
+    text = value?.asDate()?.asShortTime ?: return
 }

@@ -13,8 +13,6 @@
     <string name="adicionar_gasto">Adicionar Gasto</string>
     <string name="adicionar_pagamento">Adicionar Pagamento</string>
     <string name="adicionar_produto">Adicionar Produto</string>
-    <string name="ler_codigo_de_barra">Ler código de barra</string>
-    <string name="ler_codigo">Ler código</string>
     <string name="adicionar_receita">Adicionar Receita</string>
     <string name="adicionar_transacao">Adicionar Transação</string>
     <string name="alterando_status_do_pedido">Alterando status do pedido</string>
@@ -49,9 +47,9 @@
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
-    <string name="confirmar_registro">Confirmar Registro</string>
     <string name="confirmar_acao">Confirmar Ação</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
+    <string name="confirmar_registro">Confirmar Registro</string>
     <string name="confirmar_remover_carteira">Remover Carteira</string>
     <string name="confirmar_remover_carteira_mensagem">Deseja apagar %s?</string>
     <string name="confirmar_remover_conta">Remover Conta</string>
@@ -115,7 +113,6 @@
     <string name="enviar">Enviar</string>
     <string name="enviar_registros">Enviar registros</string>
     <string name="erro_sem_permissao_camera_scan_barcode">É necessário ceder o acesso à camera ao aplicativo para utilizar o scanner de códigos de barra</string>
-    <string name="ocorreu_um_erro_ao_salvar_a_venda">Ocorreu um erro ao salvar a venda</string>
     <string name="estoque">Estoque: </string>
     <string name="estoque_colon">Estoque:</string>
     <string name="exit">Sair</string>
@@ -134,6 +131,7 @@
     <string name="historico">Histórico</string>
     <string name="horario">Horário</string>
     <string name="horario_colon">Horário:</string>
+    <string name="impressora_invalida">Impressora inválida</string>
     <string name="imprimir">Imprimir</string>
     <string name="informar_quantidade">Informar Quantidade</string>
     <string name="iniciando">Iniciando</string>
@@ -145,6 +143,8 @@
     <string name="ja_adicionado">Já Adicionado</string>
     <string name="ja_teve_alergia_ou_manifestou_alguma_reacao">(Já teve alergia ou manifestou alguma reação adversa a alguma substância e/ou medicação?)</string>
     <string name="legenda">Legenda</string>
+    <string name="ler_codigo">Ler código</string>
+    <string name="ler_codigo_de_barra">Ler código de barra</string>
     <string name="ligar_central">Ligar Central</string>
     <string name="ligar_cliente">Ligar\nCliente</string>
     <string name="limpar_formulario">Limpar Formulário</string>
@@ -154,8 +154,8 @@
     <string name="masculino">Masculino</string>
     <string name="mes_anterior_colon">Mês Anterior:</string>
     <string name="meu_carrinho">Meu Carrinho</string>
-    <string name="minhas_entregas">Minhas Entregas</string>
     <string name="minha_agenda">Minha Agenda</string>
+    <string name="minhas_entregas">Minhas Entregas</string>
     <string name="movimentacao_em_contas_mes">Movimentação em Contas / Mês</string>
     <string name="nao">Não</string>
     <string name="nao_aceitar_pedido">Não Aceitar Pedido</string>
@@ -163,7 +163,6 @@
     <string name="nao_informada">Não informado(a)</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
     <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
-    <string name="impressora_invalida">Impressora inválida</string>
     <string name="no_de_items_colon">Nº de Items:</string>
     <string name="nome_colon">Nome:</string>
     <string name="nome_da_nova_categoria">Nome da nova categoria</string>
@@ -172,6 +171,7 @@
     <string name="observacao">Observação</string>
     <string name="observacao_colon">Observação:</string>
     <string name="obtendo_localizacao">Obtendo localização…</string>
+    <string name="ocorreu_um_erro_ao_salvar_a_venda">Ocorreu um erro ao salvar a venda</string>
     <string name="pagamento_colon">Pagamento:</string>
     <string name="pagamento_total">Pagamento Total</string>
     <string name="pagamentos">Pagamentos</string>
@@ -231,8 +231,8 @@
     <string name="selecionar_carteira">Selecionar Carteira</string>
     <string name="selecionar_categoria">Selecionar Categoria</string>
     <string name="selecionar_conta">Selecionar Conta</string>
-    <string name="selecione_impressora_para_conectar">Selecione a impressora para se conectar</string>
     <string name="selecione_a_impressora">Selecione a impressora</string>
+    <string name="selecione_impressora_para_conectar">Selecione a impressora para se conectar</string>
     <string name="sem_categoria">Sem Categoria</string>
     <string name="sem_estoque">Sem Estoque</string>
     <string name="sem_pagamentos_na_venda">Sem pagamentos na venda</string>
@@ -257,6 +257,8 @@
     <string name="todas">Todas</string>
     <string name="todas_as_transacoes">Todas as Transações</string>
     <string name="total">Total: </string>
+    <string name="total_da_venda_colon">Total da Venda:</string>
+    <string name="total_de_pagamentos_colon">Total de Pagamentos:</string>
     <string name="transacao_atualizada_sucesso">Transação atualizada com sucesso.</string>
     <string name="transacao_criada_sucesso">Transação criada com sucesso.</string>
     <string name="transacao_removida_sucesso">Transação removida com sucesso.</string>
@@ -265,9 +267,10 @@
     <string name="transferencia_de_content">Transferência de %s</string>
     <string name="transferencia_para_content">Transferência para %s</string>
     <string name="transferir">Transferir</string>
+    <string name="troco_colon">Troco:</string>
     <string name="troco_no_dinheiro">Troco no dinheiro</string>
-    <string name="ultima_sincronização_colon_content">Última Sincronização: %s</string>
     <string name="ultima_sincronização_colon">Última Sincronização:</string>
+    <string name="ultima_sincronização_colon_content">Última Sincronização: %s</string>
     <string name="url_exemplo">Exemplo: suaempresa para suaempresa.sige.pro</string>
     <string name="url_hint">Informe o nome de sua empresa como consta na url de seu sistema</string>
     <string name="valor">Valor</string>

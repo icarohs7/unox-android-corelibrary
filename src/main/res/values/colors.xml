@@ -11,6 +11,8 @@
     <color name="colorOnError">#FFFFFF</color>
     <color name="colorSuccess">#2F8417</color>
     <color name="colorOnSuccess">#FFFFFF</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorOnWarning">#000000</color>
 
     <color name="colorPrimary">@color/colorSigeLightBlue</color>
     <color name="colorPrimaryVariant">@color/colorSigeDarkBlue</color>
