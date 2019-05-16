@@ -41,6 +41,7 @@
     <string name="codigo_upper">CÓDIGO</string>
     <string name="concluindo_venda">Concluindo Venda</string>
     <string name="concluir_venda">Concluir Venda</string>
+    <string name="conectado">Conectado</string>
     <string name="conectado_como">Conectado como</string>
     <string name="conectar_impressora">Conectar Impressora</string>
     <string name="conectividade">Conectividade</string>
@@ -80,7 +81,9 @@
     <string name="desconto_colon">Desconto:</string>
     <string name="descricao">Descrição</string>
     <string name="deseja_confirmar_essa_venda">Deseja confirmar essa venda?</string>
+    <string name="deseja_finalizar_essa_venda">Deseja finalizar essa venda?</string>
     <string name="deseja_confirmar_essa_venda_no_crediario">Deseja confirmar essa venda no crediário?</string>
+    <string name="deseja_finalizar_essa_venda_no_crediario">Deseja finalizar essa venda no crediário?</string>
     <string name="deseja_remover_content_question">Deseja remover %s?</string>
     <string name="deseja_remover_transacao">Deseja remover essa transação?</string>
     <string name="despesa">Despesa</string>
@@ -93,6 +96,7 @@
     <string name="detalhes">Detalhes</string>
     <string name="detalhes_do_pedido">Detalhes do Pedido</string>
     <string name="detalhes_transacao">Detalhes</string>
+    <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
     <string name="dominio">Dominio</string>
     <string name="editar">Editar</string>
     <string name="editar_desconto">Editar Desconto</string>
@@ -100,7 +104,6 @@
     <string name="editar_entrada">Editar Entrada</string>
     <string name="editar_gasto">Editar Gasto</string>
     <string name="editar_pagamento">Editar Pagamento</string>
-    <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
     <string name="editar_pagamentos">Editar Pagamentos</string>
     <string name="editar_quantidade">Editar Quantidade</string>
     <string name="editar_receita">Editar Receita</string>
@@ -127,6 +130,7 @@
     <string name="filtrar">Filtrar</string>
     <string name="filtro">Filtro</string>
     <string name="finalizar">Finalizar</string>
+    <string name="finalizando_venda">Finalizando venda</string>
     <string name="finalizar_venda">Finalizar Venda</string>
     <string name="forma_de_pagamento_colon">Forma de Pagamento:</string>
     <string name="gastos_do_mes">Gastos do Mês</string>
@@ -163,8 +167,8 @@
     <string name="nao_aceitar_pedido">Não Aceitar Pedido</string>
     <string name="nao_e_possivel_adicionar_produto_sem_quantidade">Não é possível adicionar produto sem quantidade</string>
     <string name="nao_informada">Não informado(a)</string>
+    <string name="nenhum_dispositivo_conectado">Nenhum dispositivo conectado</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
-    <string name="nenhum_dispositivo_conectado">Nenhum Dispositivo Conectado</string>
     <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
     <string name="no_de_items_colon">Nº de Items:</string>
     <string name="nome_colon">Nome:</string>
@@ -175,6 +179,7 @@
     <string name="observacao_colon">Observação:</string>
     <string name="obtendo_localizacao">Obtendo localização…</string>
     <string name="ocorreu_um_erro_ao_salvar_a_venda">Ocorreu um erro ao salvar a venda</string>
+    <string name="ocorreu_um_erro_ao_finalizar_a_venda">Ocorreu um erro ao finalizar a venda</string>
     <string name="pagamento_colon">Pagamento:</string>
     <string name="pagamento_total">Pagamento Total</string>
     <string name="pagamentos">Pagamentos</string>
@@ -218,6 +223,8 @@
     <string name="rejeitar_entrega">Rejeitar\nEntrega</string>
     <string name="rejeitar_pedido">Rejeitar\nPedido</string>
     <string name="remover">Remover</string>
+    <string name="remover_pagamento">Remover pagamento</string>
+    <string name="restante_a_pagar_colon">Restante a Pagar:</string>
     <string name="resumo">Resumo</string>
     <string name="resumo_da_venda">Resumo da Venda</string>
     <string name="saida">Saída</string>
@@ -262,6 +269,7 @@
     <string name="total">Total: </string>
     <string name="total_da_venda_colon">Total da Venda:</string>
     <string name="total_de_pagamentos_colon">Total de Pagamentos:</string>
+    <string name="total_de_produtos_colon">Total de Produtos:</string>
     <string name="transacao_atualizada_sucesso">Transação atualizada com sucesso.</string>
     <string name="transacao_criada_sucesso">Transação criada com sucesso.</string>
     <string name="transacao_removida_sucesso">Transação removida com sucesso.</string>
@@ -293,6 +301,7 @@
     <string name="vencimentos">Vencimentos</string>
     <string name="venda_rapida">Venda Rápida</string>
     <string name="venda_salva_sucesso">Venda Salva com Sucesso</string>
+    <string name="venda_finalizada_com_sucesso">Venda finalizada com sucesso</string>
     <string name="ver_mais">Ver Mais</string>
     <string name="ver_mais_right_arrow">Ver Mais ></string>
     <string name="voltar">Voltar</string>
