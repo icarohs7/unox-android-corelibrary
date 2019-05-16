@@ -100,6 +100,7 @@
     <string name="editar_entrada">Editar Entrada</string>
     <string name="editar_gasto">Editar Gasto</string>
     <string name="editar_pagamento">Editar Pagamento</string>
+    <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
     <string name="editar_pagamentos">Editar Pagamentos</string>
     <string name="editar_quantidade">Editar Quantidade</string>
     <string name="editar_receita">Editar Receita</string>
@@ -163,6 +164,7 @@
     <string name="nao_e_possivel_adicionar_produto_sem_quantidade">Não é possível adicionar produto sem quantidade</string>
     <string name="nao_informada">Não informado(a)</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
+    <string name="nenhum_dispositivo_conectado">Nenhum Dispositivo Conectado</string>
     <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
     <string name="no_de_items_colon">Nº de Items:</string>
     <string name="nome_colon">Nome:</string>
