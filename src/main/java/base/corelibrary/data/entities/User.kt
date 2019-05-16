@@ -10,5 +10,5 @@ object User : KotprefModel() {
     var name: String by stringPref("")
     var email: String by stringPref("")
     var isRegistered: Boolean by booleanPref(false)
-    var extraProperties: Map<String, Any?> by gsonPref(emptyMap())
+    var extraProperties: MutableMap<String, Any?> by gsonPref(mutableMapOf())
 }

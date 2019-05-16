@@ -100,6 +100,7 @@
     <string name="editar_entrada">Editar Entrada</string>
     <string name="editar_gasto">Editar Gasto</string>
     <string name="editar_pagamento">Editar Pagamento</string>
+    <string name="editar_pagamentos">Editar Pagamentos</string>
     <string name="editar_quantidade">Editar Quantidade</string>
     <string name="editar_receita">Editar Receita</string>
     <string name="email">Email</string>
