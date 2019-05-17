@@ -183,9 +183,11 @@
     <string name="pagamento_colon">Pagamento:</string>
     <string name="pagamento_total">Pagamento Total</string>
     <string name="pagamentos">Pagamentos</string>
+    <string name="novo_pagamento">Novo pagamento</string>
     <string name="pagas">Pagas</string>
     <string name="pago">Pago</string>
     <string name="parcelas">Parcelas</string>
+    <string name="parcelas_up_to">Parcelas (Até %s)</string>
     <string name="parcelas_colon">Parcelas:</string>
     <string name="particular">Particular</string>
     <string name="parto_cesariana">Cesariana</string>
