@@ -186,6 +186,7 @@
     <string name="novo_pagamento">Novo pagamento</string>
     <string name="pagas">Pagas</string>
     <string name="pago">Pago</string>
+    <string name="n_produtos_colon">Nº Produtos:</string>
     <string name="parcelas">Parcelas</string>
     <string name="parcelas_up_to">Parcelas (Até %s)</string>
     <string name="parcelas_colon">Parcelas:</string>
@@ -193,6 +194,7 @@
     <string name="parto_cesariana">Cesariana</string>
     <string name="parto_normal">Normal</string>
     <string name="pedido">Pedido</string>
+    <string name="vendas">Vendas</string>
     <string name="pedidos_abertos">Pedidos Abertos</string>
     <string name="pedidos_entregues">Pedidos Entregues</string>
     <string name="pesquisar">Pesquisar</string>
@@ -247,6 +249,7 @@
     <string name="selecione_impressora_para_conectar">Selecione a impressora para se conectar</string>
     <string name="sem_categoria">Sem Categoria</string>
     <string name="sem_estoque">Sem Estoque</string>
+    <string name="nenhum_pedido">Nenhum pedido</string>
     <string name="sem_pagamentos_na_venda">Sem pagamentos na venda</string>
     <string name="sem_pagamentos_na_venda_descricao">Adicione pagamentos através do botão na parte inferior da tela</string>
     <string name="sem_produto_suficiente_em_estoque">Sem produto suficiente em estoque</string>
