@@ -219,6 +219,7 @@
     <string name="receitas_filtradas">Carteiras Filtradas</string>
     <string name="receitas_pagas">Receitas Pagas</string>
     <string name="recibo">Recibo</string>
+    <string name="nfc">NFC</string>
     <string name="registrada">Registrada</string>
     <string name="registrar_entrada">Registrar Entrada</string>
     <string name="registrar_ponto">Registrar Ponto</string>
