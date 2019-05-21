@@ -4,6 +4,10 @@
     <string name="a_receber">A Receber</string>
     <string name="aberta">Aberta</string>
     <string name="abrir_drawer">Abrir menu</string>
+    <string name="abrir_caixa">Abrir caixa</string>
+    <string name="caixa_fechado_com_sucesso">Caixa fechado com sucesso</string>
+    <string name="houve_um_erro_ao_fechar_o_caixa">Houve um erro ao fechar o caixa</string>
+    <string name="fechar_caixa">Fechar caixa</string>
     <string name="aceitar_pedido">Aceitar\nPedido</string>
     <string name="adicionar">Adicionar</string>
     <string name="adicionar_ao_carrinho">Adicionar ao Carrinho</string>
@@ -81,6 +85,7 @@
     <string name="desconto_colon">Desconto:</string>
     <string name="descricao">Descrição</string>
     <string name="deseja_confirmar_essa_venda">Deseja confirmar essa venda?</string>
+    <string name="deseja_fechar_o_caixa">Deseja fechar o caixa?</string>
     <string name="deseja_finalizar_essa_venda">Deseja finalizar essa venda?</string>
     <string name="deseja_confirmar_essa_venda_no_crediario">Deseja confirmar essa venda no crediário?</string>
     <string name="deseja_finalizar_essa_venda_no_crediario">Deseja finalizar essa venda no crediário?</string>
@@ -126,6 +131,7 @@
     <string name="fazerLogin">Login</string>
     <string name="fechada">Fechada</string>
     <string name="fechar_drawer">Fechar menu</string>
+    <string name="fechando_caixa">Fechando caixa</string>
     <string name="feminino">Feminino</string>
     <string name="filtrar">Filtrar</string>
     <string name="filtro">Filtro</string>
@@ -261,6 +267,7 @@
     <string name="sim">Sim</string>
     <string name="sincronizando_pedidos">Sincronizando Pedidos</string>
     <string name="sincronizar">Sincronizar</string>
+    <string name="sincronizando">Sincronizando</string>
     <string name="status_colon">Status:</string>
     <string name="status_colon_content">Status: %s</string>
     <string name="tabela_de_preco">Tabela de Preço</string>

@@ -1,7 +1,10 @@
 package base.corelibrary.domain.extensions
 
+import base.corelibrary.R
 import base.corelibrary.databinding.NavHeaderBinding
 import co.zsmb.materialdrawerkt.builders.DrawerBuilderKt
+import co.zsmb.materialdrawerkt.draweritems.badge
+import co.zsmb.materialdrawerkt.draweritems.badgeable.BadgeableKt
 import co.zsmb.materialdrawerkt.draweritems.base.AbstractDrawerItemKt
 import com.mikepenz.materialdrawer.Drawer
 import com.mikepenz.materialdrawer.holder.StringHolder
@@ -29,4 +32,11 @@ fun Drawer.updateIntBadgeNoZero(itemId: Int, number: Int) {
 
 fun DrawerBuilderKt.defaultHeader() {
     headerView = NavHeaderBinding.inflate(activity.layoutInflater).root
+}
+
+fun BadgeableKt.defaultNumberBadge(initialValue: Number) {
+    badge("$initialValue") {
+        colorRes = R.color.colorError
+        textColorRes = R.color.white
+    }
 }
