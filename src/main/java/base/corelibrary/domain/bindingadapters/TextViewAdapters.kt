@@ -1,6 +1,7 @@
 package base.corelibrary.domain.bindingadapters
 
 import android.widget.TextView
+import androidx.core.view.isGone
 import androidx.databinding.BindingAdapter
 import com.github.icarohs7.unoxandroidarch.extensions.asBrDate
 import com.github.icarohs7.unoxandroidarch.extensions.asDate
@@ -36,4 +37,10 @@ fun TextView.setShortTime(value: Date?) {
 @BindingAdapter("app:shortStringTimeText")
 fun TextView.setShortTime(value: String?) {
     text = value?.asDate()?.asShortTime ?: return
+}
+
+@BindingAdapter("app:textOrGone")
+fun TextView.setTextOrSetGone(value: String?) {
+    text = value
+    isGone = value.isNullOrBlank()
 }
