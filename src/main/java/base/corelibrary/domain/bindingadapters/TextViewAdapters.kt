@@ -39,6 +39,13 @@ fun TextView.setShortTime(value: String?) {
     text = value?.asDate()?.asShortTime ?: return
 }
 
+@BindingAdapter("app:dateTextFromTimestamp")
+fun TextView.setBrDateTextFromTimestamp(timestamp: Long?) {
+    timestamp ?: return
+    val time = Date(timestamp)
+    text = time.asBrDate
+}
+
 @BindingAdapter("app:textOrGone")
 fun TextView.setTextOrSetGone(value: String?) {
     text = value
