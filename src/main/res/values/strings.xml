@@ -161,6 +161,7 @@
     <string name="ligar_central">Ligar Central</string>
     <string name="ligar_cliente">Ligar\nCliente</string>
     <string name="limpar_formulario">Limpar Formulário</string>
+    <string name="limpar_carrinho">Limpar Carrinho</string>
     <string name="login">Usuário</string>
     <string name="login_e_senha">Login e Senha</string>
     <string name="logout">Sair</string>
