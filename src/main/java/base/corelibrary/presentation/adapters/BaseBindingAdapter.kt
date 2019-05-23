@@ -20,13 +20,6 @@ abstract class BaseBindingAdapter<T, DB : ViewDataBinding>(
         diffCallback ?: AllRefreshDiffCallback()
 ) {
     /**
-     * Current data set loaded in the
-     * adapter
-     */
-    val currentDataSet: List<T>
-        get() = (0 until itemCount).map { index -> getItem(index) }
-
-    /**
      * Function converting an list item to an actual view
      */
     abstract fun onBindItemToView(index: Int, item: T, view: DB)

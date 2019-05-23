@@ -36,11 +36,6 @@ private fun <T, DB : ViewDataBinding> buildAdapterAndSetupRecycler(
 ): BaseBindingAdapter<T, DB> {
 
     val adapter = object : BaseBindingAdapter<T, DB>(builder.itemLayout, builder.diffCallback) {
-        override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
-            super.onAttachedToRecyclerView(recyclerView)
-            submitList(builder.items)
-        }
-
         override fun onBindItemToView(index: Int, item: T, view: DB) {
             builder.bindFun(view, index, item)
         }
@@ -50,6 +45,7 @@ private fun <T, DB : ViewDataBinding> buildAdapterAndSetupRecycler(
     recyclerView.layoutManager = builder.layoutManager
     recyclerView.adapter = configuredAdapter
 
+    adapter.submitList(builder.items)
     return configuredAdapter
 }
 
