@@ -39,5 +39,8 @@ dependencies {
     api(AndroidDeps.unoxAndroidArch)
     api(AndroidDeps.viewAnimator)
 
+    debugApi(AndroidDeps.chuck)
+    releaseApi(AndroidDeps.chuckNoOp)
+
     AndroidKaptDeps.core.forEach(::kapt)
 }

@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.RecyclerView
 import base.corelibrary.R
 import base.corelibrary.databinding.ItemEmptyBinding
 import base.corelibrary.domain.callbacks.SimpleSwipeCallback
-import com.github.icarohs7.unoxandroidarch.presentation.adapters.BaseBindingAdapter
-import com.github.icarohs7.unoxandroidarch.presentation.adapters.UnoxAdapterBuilder
-import com.github.icarohs7.unoxandroidarch.presentation.adapters.useUnoxAdapter
+import base.corelibrary.presentation.adapters.BaseBindingAdapter
+import base.corelibrary.presentation.adapters.UnoxAdapterBuilder
+import base.corelibrary.presentation.adapters.useUnoxAdapter
 
 fun <T> RecyclerView.useContainerAdapter(
         builder: UnoxAdapterBuilder<T, ItemEmptyBinding>.() -> Unit

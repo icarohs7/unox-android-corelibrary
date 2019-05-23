@@ -14,7 +14,7 @@ import base.corelibrary.R
 import base.corelibrary.databinding.ActivityBaseMainBinding
 import base.corelibrary.domain.navigate
 import com.github.icarohs7.unoxandroidarch.extensions.showConfirmDialog
-import com.github.icarohs7.unoxandroidarch.onActivity
+import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import com.github.icarohs7.unoxandroidarch.presentation.activities.BaseBindingActivity
 import com.github.icarohs7.unoxandroidarch.state.addOnLoadingListener
 import com.google.android.material.appbar.AppBarLayout

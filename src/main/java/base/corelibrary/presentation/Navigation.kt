@@ -1,8 +1,8 @@
 package base.corelibrary.presentation
 
 import androidx.appcompat.app.AppCompatActivity
-import com.github.icarohs7.unoxandroidarch.extensions.navigateTo
-import com.github.icarohs7.unoxandroidarch.onActivity
+import com.github.icarohs7.unoxandroidarch.extensions.startActivity
+import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import kotlin.reflect.KClass
 
 typealias ActivityClass = KClass<out AppCompatActivity>
@@ -15,14 +15,14 @@ object AppView {
 
 object CoreNavigation {
     fun splashActivity() {
-        onActivity { navigateTo(AppView.SPLASH, finishActivity = true) }
+        onActivity { startActivity(AppView.SPLASH, finishActivity = true) }
     }
 
     fun loginActivity() {
-        onActivity { navigateTo(AppView.LOGIN, finishActivity = true) }
+        onActivity { startActivity(AppView.LOGIN, finishActivity = true) }
     }
 
     fun mainActivity() {
-        onActivity { navigateTo(AppView.MAIN, finishActivity = true) }
+        onActivity { startActivity(AppView.MAIN, finishActivity = true) }
     }
 }

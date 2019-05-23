@@ -17,9 +17,9 @@ import base.corelibrary.R
 import base.corelibrary.presentation.main.BaseMainActivity
 import com.andrognito.flashbar.Flashbar
 import com.github.icarohs7.unoxandroidarch.Injector
-import com.github.icarohs7.unoxandroidarch.Intent
 import com.github.icarohs7.unoxandroidarch.Messages
-import com.github.icarohs7.unoxandroidarch.onActivity
+import com.github.icarohs7.unoxandroidarch.toplevel.Intent
+import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import com.github.icarohs7.unoxcore.UnoxCore
 import kotlinx.coroutines.Dispatchers
 import org.koin.core.get
