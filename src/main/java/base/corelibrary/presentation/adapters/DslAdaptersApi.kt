@@ -72,9 +72,9 @@ fun <T> RecyclerView.useRightSwipeContainerAdapter(
 
 fun <T> RecyclerView.renderRightSwipeContainerAdapter(
         items: List<T> = emptyList(),
-        bindFun: ItemEmptyBinding.(item: T) -> Unit
-): BaseBindingAdapter<T, ItemEmptyBinding> {
-    return useContainerAdapter {
+        bindFun: LayoutSwipeMenuRightBinding.(item: T) -> Unit
+): BaseBindingAdapter<T, LayoutSwipeMenuRightBinding> {
+    return useRightSwipeContainerAdapter {
         bind { item -> bindFun(item) }
         if (items.isNotEmpty()) loadList(items)
     }
