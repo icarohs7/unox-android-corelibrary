@@ -20,7 +20,6 @@ fun <T, DB : ViewDataBinding> RecyclerView.useUnoxAdapter(
 ): BaseBindingAdapter<T, DB> {
     val builder = UnoxAdapterBuilder<T, DB>(context)
     builderBlock(builder)
-
     return buildAdapterAndSetupRecycler(this@useUnoxAdapter, builder)
 }
 

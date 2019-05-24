@@ -22,6 +22,7 @@ dependencies {
     api(Deps.kodaTime)
 
     api(AndroidDeps.circularImageView)
+    api(AndroidDeps.flexboxLayout)
     api(AndroidDeps.kotprefGson)
     api(AndroidDeps.maskedEditText)
     api(AndroidDeps.materialDialogsDateTime)
@@ -36,6 +37,7 @@ dependencies {
     api(AndroidDeps.splittiesLifecycleCoroutines)
     api(AndroidDeps.splittiesSnackbar)
     api(AndroidDeps.splittiesToast)
+    api(AndroidDeps.swipeRevealLayout)
     api(AndroidDeps.unoxAndroidArch)
     api(AndroidDeps.viewAnimator)
 
