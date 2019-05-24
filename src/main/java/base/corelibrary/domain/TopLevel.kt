@@ -6,6 +6,7 @@ import android.app.Activity
 import android.app.Service
 import android.os.Bundle
 import androidx.core.os.bundleOf
+import androidx.databinding.ViewDataBinding
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import arrow.core.Try

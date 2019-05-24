@@ -1,6 +1,7 @@
 package base.corelibrary.presentation.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
@@ -16,18 +17,13 @@ import arrow.core.Try
 abstract class BaseBindingAdapter<T, DB : ViewDataBinding>(
         @LayoutRes val itemLayout: Int,
         diffCallback: DiffUtil.ItemCallback<T>? = null
-) : ListAdapter<T, BaseBindingAdapter.BaseBindingViewHolder<DB>>(
+) : ListAdapter<T, SimpleViewHolder>(
         diffCallback ?: AllRefreshDiffCallback()
 ) {
     /**
-     * Function converting an list item to an actual view
-     */
-    abstract fun onBindItemToView(index: Int, item: T, view: DB)
-
-    /**
      * Creation of the viewholder
      */
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseBindingViewHolder<DB> {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SimpleViewHolder {
         val binding: DB = DataBindingUtil.inflate(
                 LayoutInflater.from(parent.context),
                 itemLayout,
@@ -35,17 +31,15 @@ abstract class BaseBindingAdapter<T, DB : ViewDataBinding>(
                 false
         )
 
-        return BaseBindingViewHolder(binding)
-    }
-
-    override fun onBindViewHolder(holder: BaseBindingViewHolder<DB>, position: Int) {
-        Try { onBindItemToView(position, getItem(position), holder.binding) }
+        return SimpleViewHolder(binding.root)
     }
 
     /**
-     * Viewholder for the adapter
+     * Retrieve the databinding class of the given viewholder
      */
-    class BaseBindingViewHolder<DB : ViewDataBinding>(val binding: DB) : RecyclerView.ViewHolder(binding.root)
+    fun inflateBinding(viewHolder: SimpleViewHolder): DB {
+        return requireNotNull(DataBindingUtil.findBinding(viewHolder.view))
+    }
 
     /**
      * Default callback for lazy people, will just

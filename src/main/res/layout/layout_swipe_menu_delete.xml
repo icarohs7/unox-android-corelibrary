@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="removeHandler"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:flexDirection="row">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/error_button_color"
+            android:onClick="@{ removeHandler::onClick }"
+            app:icon="@drawable/ic_delete_white_24dp"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+</layout>
