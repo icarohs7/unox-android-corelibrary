@@ -8,6 +8,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 import base.corelibrary.R
 import base.corelibrary.databinding.ItemEmptyBinding
+import base.corelibrary.databinding.LayoutSwipeMenuDeleteBinding
 import base.corelibrary.databinding.LayoutSwipeMenuEditDeleteBinding
 import base.corelibrary.databinding.LayoutSwipeMenuRightBinding
 import base.corelibrary.domain.extensions.plusAssign
@@ -83,6 +84,21 @@ fun <T> RecyclerView.renderRightSwipeContainerAdapter(
 ): BaseBindingAdapter<T, LayoutSwipeMenuRightBinding> {
     return useRightSwipeContainerAdapter {
         bind { item -> bindFun(item) }
+        if (items.isNotEmpty()) loadList(items)
+    }
+}
+
+fun <T> RecyclerView.renderSwipeDeleteMenu(
+        items: List<T> = emptyList(),
+        bindFun: (item: T, layoutContent: FrameLayout, swipeMenu: LayoutSwipeMenuDeleteBinding) -> Unit
+): BaseBindingAdapter<T, LayoutSwipeMenuRightBinding> {
+    return useRightSwipeContainerAdapter {
+        bind { item ->
+            val swipeMenu = LayoutSwipeMenuDeleteBinding.inflate(layoutInflater).apply {
+                layoutUnderContent += this
+            }
+            bindFun(item, layoutOverContent, swipeMenu)
+        }
         if (items.isNotEmpty()) loadList(items)
     }
 }
