@@ -56,7 +56,7 @@ inline fun <reified T> createRetrofitService(
     return Retrofit
             .Builder()
             .baseUrl(baseUrl)
-            .addConverterFactory(RetrofitExtensions.getJsonConverter())
+            .addConverterFactory(RetrofitExtensions.getKotlinxSerializationConverter())
             .client(RetrofitExtensions.getHttpClient(clientExtraConfig))
             .apply(builderExtraConfig)
             .build()
@@ -64,7 +64,7 @@ inline fun <reified T> createRetrofitService(
 }
 
 object RetrofitExtensions {
-    fun getJsonConverter(): Converter.Factory {
+    fun getKotlinxSerializationConverter(): Converter.Factory {
         val contentType = MediaType.get("application/json")
         return Json
                 .nonstrict
