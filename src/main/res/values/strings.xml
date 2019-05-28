@@ -127,6 +127,7 @@
     <string name="facebook">Facebook</string>
     <string name="faz_uso_regular_ou_tomou_nos_ultimos_30_dias">(Faz uso regular ou tomou nos últimos 30 dias?)</string>
     <string name="fazerLogin">Login</string>
+    <string name="fale_conosco">Fale Conosco</string>
     <string name="fechada">Fechada</string>
     <string name="fechando_caixa">Fechando caixa</string>
     <string name="fechar_caixa">Fechar caixa</string>
@@ -159,8 +160,10 @@
     <string name="ler_codigo">Ler código</string>
     <string name="ler_codigo_de_barra">Ler código de barra</string>
     <string name="ligar_central">Ligar Central</string>
+    <string name="ligue_agora">Ligue Agora</string>
     <string name="ligar_cliente">Ligar\nCliente</string>
     <string name="limpar_carrinho">Limpar Carrinho</string>
+    <string name="limpar">Limpar</string>
     <string name="limpar_formulario">Limpar Formulário</string>
     <string name="login">Usuário</string>
     <string name="login_e_senha">Login e Senha</string>
@@ -206,6 +209,7 @@
     <string name="parto_cesariana">Cesariana</string>
     <string name="parto_normal">Normal</string>
     <string name="pedido">Pedido</string>
+    <string name="pedir_gas">Pedir Gás</string>
     <string name="pedidos_abertos">Pedidos Abertos</string>
     <string name="pedidos_entregues">Pedidos Entregues</string>
     <string name="pesquisar">Pesquisar</string>
@@ -278,6 +282,7 @@
     <string name="tabela_de_preco">Tabela de Preço</string>
     <string name="telefone_colon">Telefone:</string>
     <string name="tem_ou_teve_alguma_vez">(Tem ou Teve alguma vez?)</string>
+    <string name="avancar">Avançar</string>
     <string name="tipo">Tipo</string>
     <string name="tipo_de_pagamento">Tipo de pagamento</string>
     <string name="tipo_pressao_alta">Alta</string>
@@ -309,6 +314,7 @@
     <string name="valor_desconto_upper_colon">VALOR DESCONTO:</string>
     <string name="valor_no_crediario_upper_colon">VALOR NO CREDIÁRIO:</string>
     <string name="valor_pago">Valor Pago</string>
+    <string name="valor_do_seu_pedido">Valor do seu pedido</string>
     <string name="valor_total">Valor Total</string>
     <string name="valor_total_do_pedido_colon">Valor Total do Pedido:</string>
     <string name="valor_total_upper_colon">VALOR TOTAL:</string>

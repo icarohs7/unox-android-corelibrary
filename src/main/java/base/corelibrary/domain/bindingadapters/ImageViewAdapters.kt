@@ -8,8 +8,5 @@ import com.squareup.picasso.NetworkPolicy
 
 @BindingAdapter("app:url_src")
 fun ImageView.loadUrlImage(path: String) {
-    load(path) {
-        memoryPolicy(MemoryPolicy.NO_CACHE, MemoryPolicy.NO_STORE)
-                .networkPolicy(NetworkPolicy.NO_CACHE, NetworkPolicy.NO_STORE)
-    }
+    load(path)
 }
