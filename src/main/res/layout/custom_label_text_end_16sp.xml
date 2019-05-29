@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:text="@{ label }"
+            android:textSize="16sp"
             tools:text="Some Label:" />
 
         <TextView
@@ -30,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@{ text }"
+            android:textSize="16sp"
             tools:text="Some text" />
 
     </LinearLayout>

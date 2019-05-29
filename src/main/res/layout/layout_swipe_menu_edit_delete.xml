@@ -19,16 +19,18 @@
         app:flexDirection="row">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_edit"
             android:layout_width="56dp"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
-            android:backgroundTint="@color/primary_button_color"
+            android:backgroundTint="@color/colorSigeLightBlue"
             android:onClick="@{ editHandler::onClick }"
             app:icon="@drawable/ic_edit_white_24dp"
             app:iconGravity="textEnd"
             app:iconPadding="0dp" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_delete"
             android:layout_width="56dp"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
