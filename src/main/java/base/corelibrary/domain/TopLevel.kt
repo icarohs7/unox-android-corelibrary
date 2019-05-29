@@ -5,8 +5,10 @@ package base.corelibrary.domain
 import android.app.Activity
 import android.app.Service
 import android.os.Bundle
+import androidx.annotation.IdRes
 import androidx.core.os.bundleOf
 import androidx.databinding.ViewDataBinding
+import androidx.navigation.NavDirections
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import arrow.core.Try
@@ -37,6 +39,25 @@ inline fun <reified T : Any> kget(): T = Injector.get()
  * Helper used to navigate to another
  * navigation destination or action
  */
+fun navigate(directions: NavDirections, navOptions: NavOptions? = null) {
+    val options = navOptions ?: androidx.navigation.navOptions {
+        anim {
+            enter = R.anim.enter_animation
+            exit = R.anim.exit_animation
+            popEnter = R.anim.enter_animation
+            popExit = R.anim.exit_animation
+        }
+    }
+    onActivity<BaseMainActivity> {
+        Try { navController.navigate(directions, options) }
+                .fold(Timber.tag("Navigation")::e) { Timber.tag("Navigation").i("$it") }
+    }
+}
+
+/**
+ * Helper used to navigate to another
+ * navigation destination or action
+ */
 fun navigate(
         dest: Int,
         args: Bundle? = null,
@@ -55,6 +76,18 @@ fun navigate(
         Try { navController.navigate(dest, args, options, navigatorExtras) }
                 .fold(Timber.tag("Navigation")::e) { Timber.tag("Navigation").i("$it") }
     }
+}
+
+/**
+ * Navigate to the giving location popping out all backstack
+ * destinations in between
+ */
+fun navigatePopping(@IdRes destination: Int, args: Bundle? = null) {
+    val navOptions = NavOptions
+            .Builder()
+            .setPopUpTo(destination, true)
+            .build()
+    navigate(destination, args, navOptions)
 }
 
 /** Show a flashbar snackbar with a yellow gradient background */

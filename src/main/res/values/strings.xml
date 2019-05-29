@@ -26,7 +26,10 @@
     <string name="anestesia_tipo_sedacao">Sedação</string>
     <string name="atualizar_dados">Sincronizar Dados</string>
     <string name="atualizar_perfil">Sincronizar Perfil</string>
+    <string name="avancar">Avançar</string>
     <string name="back">Voltar</string>
+    <string name="bairro">Bairro</string>
+    <string name="bairro_colon">Bairro:</string>
     <string name="bolso">Bolso</string>
     <string name="buscar_dados">Buscar Dados</string>
     <string name="caixa_fechado_com_sucesso">Caixa fechado com sucesso</string>
@@ -37,10 +40,13 @@
     <string name="carteira_colon_content">Carteira: %s</string>
     <string name="carteiras_filtradas">Carteiras Filtradas</string>
     <string name="categoria">Categoria</string>
+    <string name="cidade">Cidade</string>
+    <string name="cidade_colon">Cidade:</string>
     <string name="cliente">Cliente</string>
     <string name="codigo">Código</string>
     <string name="codigo_de_barra">Código de barra</string>
     <string name="codigo_upper">CÓDIGO</string>
+    <string name="complemento_referencia">Complemento/Referência</string>
     <string name="concluindo_venda">Concluindo Venda</string>
     <string name="concluir_venda">Concluir Venda</string>
     <string name="conectado">Conectado</string>
@@ -111,6 +117,8 @@
     <string name="editar_quantidade">Editar Quantidade</string>
     <string name="editar_receita">Editar Receita</string>
     <string name="email">Email</string>
+    <string name="endereco">Endereço</string>
+    <string name="endereco_para_entrega">Endereço para entrega:</string>
     <string name="endereco_para_entrega_colon">Endereço para entrega:</string>
     <string name="entrada">Entrada</string>
     <string name="entradas">Entradas</string>
@@ -125,9 +133,9 @@
     <string name="estoque_colon">Estoque:</string>
     <string name="exit">Sair</string>
     <string name="facebook">Facebook</string>
+    <string name="fale_conosco">Fale Conosco</string>
     <string name="faz_uso_regular_ou_tomou_nos_ultimos_30_dias">(Faz uso regular ou tomou nos últimos 30 dias?)</string>
     <string name="fazerLogin">Login</string>
-    <string name="fale_conosco">Fale Conosco</string>
     <string name="fechada">Fechada</string>
     <string name="fechando_caixa">Fechando caixa</string>
     <string name="fechar_caixa">Fechar caixa</string>
@@ -139,6 +147,7 @@
     <string name="finalizar">Finalizar</string>
     <string name="finalizar_venda">Finalizar Venda</string>
     <string name="forma_de_pagamento_colon">Forma de Pagamento:</string>
+    <string name="forma_de_pagamento_padrao">Forma de pagamento padrão</string>
     <string name="gastos_do_mes">Gastos do Mês</string>
     <string name="historico">Histórico</string>
     <string name="horario">Horário</string>
@@ -160,10 +169,10 @@
     <string name="ler_codigo">Ler código</string>
     <string name="ler_codigo_de_barra">Ler código de barra</string>
     <string name="ligar_central">Ligar Central</string>
-    <string name="ligue_agora">Ligue Agora</string>
     <string name="ligar_cliente">Ligar\nCliente</string>
-    <string name="limpar_carrinho">Limpar Carrinho</string>
+    <string name="ligue_agora">Ligue Agora</string>
     <string name="limpar">Limpar</string>
+    <string name="limpar_carrinho">Limpar Carrinho</string>
     <string name="limpar_formulario">Limpar Formulário</string>
     <string name="login">Usuário</string>
     <string name="login_e_senha">Login e Senha</string>
@@ -185,10 +194,12 @@
     <string name="nenhum_pedido">Nenhum pedido</string>
     <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
     <string name="nfc">NFC</string>
+    <string name="no">Nº</string>
     <string name="no_de_items_colon">Nº de Items:</string>
     <string name="nome_colon">Nome:</string>
     <string name="nome_da_nova_categoria">Nome da nova categoria</string>
     <string name="nome_da_nova_conta">Nome da nova conta</string>
+    <string name="nome_de_quem_vai_receber_no_endereco">Nome de quem vai receber no endereço</string>
     <string name="novo_pagamento">Novo pagamento</string>
     <string name="nunca">Nunca</string>
     <string name="observacao">Observação</string>
@@ -209,9 +220,9 @@
     <string name="parto_cesariana">Cesariana</string>
     <string name="parto_normal">Normal</string>
     <string name="pedido">Pedido</string>
-    <string name="pedir_gas">Pedir Gás</string>
     <string name="pedidos_abertos">Pedidos Abertos</string>
     <string name="pedidos_entregues">Pedidos Entregues</string>
+    <string name="pedir_gas">Pedir Gás</string>
     <string name="pesquisar">Pesquisar</string>
     <string name="pin">Pin</string>
     <string name="precisao_de_content_metros">Precisão de %s metros</string>
@@ -262,6 +273,7 @@
     <string name="selecionar_carteira">Selecionar Carteira</string>
     <string name="selecionar_categoria">Selecionar Categoria</string>
     <string name="selecionar_conta">Selecionar Conta</string>
+    <string name="selecionar_endereco">Selecionar endereço</string>
     <string name="selecione_a_impressora">Selecione a impressora</string>
     <string name="selecione_impressora_para_conectar">Selecione a impressora para se conectar</string>
     <string name="sem_categoria">Sem Categoria</string>
@@ -270,6 +282,8 @@
     <string name="sem_pagamentos_na_venda_descricao">Adicione pagamentos através do botão na parte inferior da tela</string>
     <string name="sem_produto_suficiente_em_estoque">Sem produto suficiente em estoque</string>
     <string name="sem_produtos_na_venda">Sem produtos na venda</string>
+    <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
+    <string name="registre_um_endereco_no_botao_abaixo">Registre um endereço no botão abaixo</string>
     <string name="sem_produtos_na_venda_descricao">Adicione produtos através do botão na parte inferior da tela</string>
     <string name="sem_registros_para_sincronizar">Sem registros para sincronizar</string>
     <string name="senha">Senha</string>
@@ -281,8 +295,8 @@
     <string name="status_colon_content">Status: %s</string>
     <string name="tabela_de_preco">Tabela de Preço</string>
     <string name="telefone_colon">Telefone:</string>
+    <string name="telefone_de_contato">Telefone de contato</string>
     <string name="tem_ou_teve_alguma_vez">(Tem ou Teve alguma vez?)</string>
-    <string name="avancar">Avançar</string>
     <string name="tipo">Tipo</string>
     <string name="tipo_de_pagamento">Tipo de pagamento</string>
     <string name="tipo_pressao_alta">Alta</string>
@@ -312,9 +326,9 @@
     <string name="valor_a_ser_transferido">Valor a ser transferido</string>
     <string name="valor_colon">Valor: </string>
     <string name="valor_desconto_upper_colon">VALOR DESCONTO:</string>
+    <string name="valor_do_seu_pedido">Valor do seu pedido</string>
     <string name="valor_no_crediario_upper_colon">VALOR NO CREDIÁRIO:</string>
     <string name="valor_pago">Valor Pago</string>
-    <string name="valor_do_seu_pedido">Valor do seu pedido</string>
     <string name="valor_total">Valor Total</string>
     <string name="valor_total_do_pedido_colon">Valor Total do Pedido:</string>
     <string name="valor_total_upper_colon">VALOR TOTAL:</string>

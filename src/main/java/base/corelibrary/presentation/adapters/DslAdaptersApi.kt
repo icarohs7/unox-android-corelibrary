@@ -20,6 +20,15 @@ import splitties.systemservices.layoutInflater
  * Builder used to create a multi purpose adapter
  * and use it on the given [RecyclerView]
  * using a DSL
+ * Example usage:
+ * ```kotlin
+ * adapter = binding.recycler.useUnoxAdapter {
+ *     useItemLayout(R.layout.item_product)
+ *     bind { product ->
+ *         invalidateItem(product)
+ *     }
+ * }
+ * ```
  */
 @MainThread
 fun <T, DB : ViewDataBinding> RecyclerView.useUnoxAdapter(
@@ -103,6 +112,23 @@ fun <T> RecyclerView.renderSwipeDeleteMenu(
     }
 }
 
+/**
+ * Example Usage: <br>
+ * ```kotlin
+ * adapter = recycler.renderSwipeEditDeleteMenu { item, layoutContent, swipeMenu ->
+ *     ItemOrderItemBinding.inflate(layoutInflater).apply {
+ *         layoutContent += this
+ *         root.updateLayoutParams<FrameLayout.LayoutParams> { setMargins(root.dip(6)) }
+ *         invalidateItem(item)
+ *     }
+ *     swipeMenu.apply {
+ *         root.updateLayoutParams<FrameLayout.LayoutParams> { setMargins(root.dip(6)) }
+ *         setEditHandler { EditOrderItemQuantityDialog(item.a, item.b) }
+ *         setRemoveHandler { launch { orderItemRepository.delete(item.a) } }
+ *     }
+ * }
+ * ```
+ */
 fun <T> RecyclerView.renderSwipeEditDeleteMenu(
         items: List<T> = emptyList(),
         bindFun: (item: T, layoutContent: FrameLayout, swipeMenu: LayoutSwipeMenuEditDeleteBinding) -> Unit
