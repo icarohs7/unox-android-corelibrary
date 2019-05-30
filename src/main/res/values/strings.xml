@@ -56,6 +56,7 @@
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
+    <string name="confirmar_pedido">Confirmar pedido</string>
     <string name="confirmar_acao">Confirmar Ação</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
     <string name="confirmar_registro">Confirmar Registro</string>
@@ -162,7 +163,7 @@
     <string name="item">Item</string>
     <string name="item_ja_esta_no_carrinho">Item já está no carrinho</string>
     <string name="items">Items</string>
-    <string name="itens_colon">Itens:</string>
+    <string name="items_colon">Items:</string>
     <string name="ja_adicionado">Já Adicionado</string>
     <string name="ja_teve_alergia_ou_manifestou_alguma_reacao">(Já teve alergia ou manifestou alguma reação adversa a alguma substância e/ou medicação?)</string>
     <string name="legenda">Legenda</string>
@@ -258,6 +259,7 @@
     <string name="remover_pagamento">Remover pagamento</string>
     <string name="restante_a_pagar_colon">Restante a Pagar:</string>
     <string name="resumo">Resumo</string>
+    <string name="resumo_do_pedido">Resumo do pedido</string>
     <string name="resumo_da_venda">Resumo da Venda</string>
     <string name="saida">Saída</string>
     <string name="saidas">Saídas</string>
