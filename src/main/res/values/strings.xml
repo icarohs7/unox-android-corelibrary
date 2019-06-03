@@ -31,7 +31,6 @@
     <string name="bairro">Bairro</string>
     <string name="bairro_colon">Bairro:</string>
     <string name="bolso">Bolso</string>
-    <string name="sucesso">Sucesso</string>
     <string name="buscar_dados">Buscar Dados</string>
     <string name="caixa_fechado_com_sucesso">Caixa fechado com sucesso</string>
     <string name="cancelar">Cancelar</string>
@@ -57,8 +56,8 @@
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
-    <string name="confirmar_pedido">Confirmar pedido</string>
     <string name="confirmar_acao">Confirmar Ação</string>
+    <string name="confirmar_pedido">Confirmar pedido</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
     <string name="confirmar_registro">Confirmar Registro</string>
     <string name="confirmar_remover_carteira">Remover Carteira</string>
@@ -130,8 +129,8 @@
     <string name="entregar_pedido">Entregar Pedido</string>
     <string name="enviar">Enviar</string>
     <string name="enviar_registros">Enviar registros</string>
-    <string name="erro_sem_permissao_camera_scan_barcode">É necessário ceder o acesso à camera ao aplicativo para utilizar o scanner de códigos de barra</string>
     <string name="erro">Erro</string>
+    <string name="erro_sem_permissao_camera_scan_barcode">É necessário ceder o acesso à camera ao aplicativo para utilizar o scanner de códigos de barra</string>
     <string name="estoque">Estoque: </string>
     <string name="estoque_colon">Estoque:</string>
     <string name="exit">Sair</string>
@@ -146,8 +145,8 @@
     <string name="feminino">Feminino</string>
     <string name="filtrar">Filtrar</string>
     <string name="filtro">Filtro</string>
-    <string name="finalizando_venda">Finalizando venda</string>
     <string name="finalizando_pedido">Finalizando pedido</string>
+    <string name="finalizando_venda">Finalizando venda</string>
     <string name="finalizar">Finalizar</string>
     <string name="finalizar_pedido">Finalizar Pedido</string>
     <string name="finalizar_venda">Finalizar Venda</string>
@@ -166,8 +165,8 @@
     <string name="inicio">Início</string>
     <string name="item">Item</string>
     <string name="item_ja_esta_no_carrinho">Item já está no carrinho</string>
-    <string name="items">Items</string>
-    <string name="items_colon">Items:</string>
+    <string name="itens">Itens</string>
+    <string name="itens_colon">Itens:</string>
     <string name="ja_adicionado">Já Adicionado</string>
     <string name="ja_teve_alergia_ou_manifestou_alguma_reacao">(Já teve alergia ou manifestou alguma reação adversa a alguma substância e/ou medicação?)</string>
     <string name="legenda">Legenda</string>
@@ -195,6 +194,7 @@
     <string name="nao_foi_possivel_obter_localizacao_aproximada">Não foi possível obter a localização aproximada</string>
     <string name="nao_informada">Não informado(a)</string>
     <string name="nenhum_dispositivo_conectado">Nenhum dispositivo conectado</string>
+    <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
     <string name="nenhum_pedido">Nenhum pedido</string>
     <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
@@ -256,6 +256,7 @@
     <string name="registrar_entrada">Registrar Entrada</string>
     <string name="registrar_ponto">Registrar Ponto</string>
     <string name="registrar_saida">Registrar Saída</string>
+    <string name="registre_um_endereco_no_botao_abaixo">Registre um endereço no botão abaixo</string>
     <string name="registro_de_entradas">Registro de Entradas</string>
     <string name="rejeitar_entrega">Rejeitar\nEntrega</string>
     <string name="rejeitar_pedido">Rejeitar\nPedido</string>
@@ -263,8 +264,8 @@
     <string name="remover_pagamento">Remover pagamento</string>
     <string name="restante_a_pagar_colon">Restante a Pagar:</string>
     <string name="resumo">Resumo</string>
-    <string name="resumo_do_pedido">Resumo do pedido</string>
     <string name="resumo_da_venda">Resumo da Venda</string>
+    <string name="resumo_do_pedido">Resumo do pedido</string>
     <string name="saida">Saída</string>
     <string name="saidas">Saídas</string>
     <string name="saidas_colon">Saídas:</string>
@@ -288,8 +289,6 @@
     <string name="sem_pagamentos_na_venda_descricao">Adicione pagamentos através do botão na parte inferior da tela</string>
     <string name="sem_produto_suficiente_em_estoque">Sem produto suficiente em estoque</string>
     <string name="sem_produtos_na_venda">Sem produtos na venda</string>
-    <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
-    <string name="registre_um_endereco_no_botao_abaixo">Registre um endereço no botão abaixo</string>
     <string name="sem_produtos_na_venda_descricao">Adicione produtos através do botão na parte inferior da tela</string>
     <string name="sem_registros_para_sincronizar">Sem registros para sincronizar</string>
     <string name="senha">Senha</string>
@@ -299,6 +298,7 @@
     <string name="sincronizar">Sincronizar</string>
     <string name="status_colon">Status:</string>
     <string name="status_colon_content">Status: %s</string>
+    <string name="sucesso">Sucesso</string>
     <string name="tabela_de_preco">Tabela de Preço</string>
     <string name="telefone_colon">Telefone:</string>
     <string name="telefone_de_contato">Telefone de contato</string>
