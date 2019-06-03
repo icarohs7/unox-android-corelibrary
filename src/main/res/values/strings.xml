@@ -31,6 +31,7 @@
     <string name="bairro">Bairro</string>
     <string name="bairro_colon">Bairro:</string>
     <string name="bolso">Bolso</string>
+    <string name="sucesso">Sucesso</string>
     <string name="buscar_dados">Buscar Dados</string>
     <string name="caixa_fechado_com_sucesso">Caixa fechado com sucesso</string>
     <string name="cancelar">Cancelar</string>
@@ -130,6 +131,7 @@
     <string name="enviar">Enviar</string>
     <string name="enviar_registros">Enviar registros</string>
     <string name="erro_sem_permissao_camera_scan_barcode">É necessário ceder o acesso à camera ao aplicativo para utilizar o scanner de códigos de barra</string>
+    <string name="erro">Erro</string>
     <string name="estoque">Estoque: </string>
     <string name="estoque_colon">Estoque:</string>
     <string name="exit">Sair</string>
@@ -145,7 +147,9 @@
     <string name="filtrar">Filtrar</string>
     <string name="filtro">Filtro</string>
     <string name="finalizando_venda">Finalizando venda</string>
+    <string name="finalizando_pedido">Finalizando pedido</string>
     <string name="finalizar">Finalizar</string>
+    <string name="finalizar_pedido">Finalizar Pedido</string>
     <string name="finalizar_venda">Finalizar Venda</string>
     <string name="forma_de_pagamento_colon">Forma de Pagamento:</string>
     <string name="forma_de_pagamento_padrao">Forma de pagamento padrão</string>
@@ -361,4 +365,5 @@
         O prontuário não pode ser editado, caso precise fazer alguma
         correção, preencha um novo.
     </string>
+    <string name="seu_pedido_foi_enviado_e_sera_entregue_em_breve">Seu pedido foi enviado e será entregue em breve</string>
 </resources>
