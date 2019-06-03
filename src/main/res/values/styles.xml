@@ -20,6 +20,8 @@
         <item name="actionOverflowButtonStyle">@style/Widget.App.ActionButton.Overflow</item>
         <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
         <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+
+        <item name="android:fitsSystemWindows">true</item>
     </style>
 
     <style name="Widget.App.ActionButton.Overflow" parent="@style/Widget.AppCompat.ActionButton.Overflow">
