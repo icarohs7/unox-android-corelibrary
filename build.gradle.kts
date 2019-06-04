@@ -39,7 +39,7 @@ dependencies {
     api(AndroidDeps.splittiesSnackbar)
     api(AndroidDeps.splittiesToast)
     api(AndroidDeps.swipeRevealLayout)
-    api(AndroidDeps.unoxAndroidArch)
+    api(AndroidDeps.unoxAndroidArchCore)
     api(AndroidDeps.viewAnimator)
 
     debugApi(AndroidDeps.chuck)
