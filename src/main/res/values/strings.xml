@@ -69,8 +69,8 @@
     <string name="conta_de_destino">Conta de Destino</string>
     <string name="conta_de_origem">Conta de Origem</string>
     <string name="contas">Contas</string>
-    <string name="convenio">ConvênTry</string>
-    <string name="crediario">CrediárTry</string>
+    <string name="convenio">Convênio</string>
+    <string name="crediario">Crediário</string>
     <string name="criar">Criar</string>
     <string name="criar_despesa">Criar Despesa</string>
     <string name="criar_entrada">Criar Entrada</string>
@@ -107,7 +107,7 @@
     <string name="detalhes_do_pedido">Detalhes do Pedido</string>
     <string name="detalhes_transacao">Detalhes</string>
     <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
-    <string name="dominio">DominTry</string>
+    <string name="dominio">Dominio</string>
     <string name="editar">Editar</string>
     <string name="editar_desconto">Editar Desconto</string>
     <string name="editar_despesa">Editar Despesa</string>
@@ -154,7 +154,7 @@
     <string name="forma_de_pagamento_padrao">Forma de pagamento padrão</string>
     <string name="gastos_do_mes">Gastos do Mês</string>
     <string name="historico">Histórico</string>
-    <string name="horario">HorárTry</string>
+    <string name="horario">Horário</string>
     <string name="horario_colon">Horário:</string>
     <string name="houve_um_erro_ao_fechar_o_caixa">Houve um erro ao fechar o caixa</string>
     <string name="impressora_invalida">Impressora inválida</string>
@@ -162,7 +162,7 @@
     <string name="informar_quantidade">Informar Quantidade</string>
     <string name="iniciando">Iniciando</string>
     <string name="iniciando_ellipsis">Iniciando…</string>
-    <string name="inicio">InícTry</string>
+    <string name="inicio">Início</string>
     <string name="item">Item</string>
     <string name="item_ja_esta_no_carrinho">Item já está no carrinho</string>
     <string name="itens">Itens</string>
@@ -177,8 +177,8 @@
     <string name="ligue_agora">Ligue Agora</string>
     <string name="limpar">Limpar</string>
     <string name="limpar_carrinho">Limpar Carrinho</string>
-    <string name="limpar_formulario">Limpar FormulárTry</string>
-    <string name="login">UsuárTry</string>
+    <string name="limpar_formulario">Limpar Formulário</string>
+    <string name="login">Usuário</string>
     <string name="login_e_senha">Login e Senha</string>
     <string name="logout">Sair</string>
     <string name="masculino">Masculino</string>
@@ -274,7 +274,7 @@
     <string name="saldo_colon_content">Saldo: %s</string>
     <string name="saldo_do_mes_colon">Saldo do mês: </string>
     <string name="salvar">Salvar</string>
-    <string name="salvar_no_crediario">Salvar no crediárTry</string>
+    <string name="salvar_no_crediario">Salvar no crediário</string>
     <string name="salvar_venda">Salvar Venda</string>
     <string name="selecionar">Selecionar</string>
     <string name="selecionar_carteira">Selecionar Carteira</string>
@@ -338,7 +338,7 @@
     <string name="valor_total">Valor Total</string>
     <string name="valor_total_do_pedido_colon">Valor Total do Pedido:</string>
     <string name="valor_total_upper_colon">VALOR TOTAL:</string>
-    <string name="valor_unitario">Valor UnitárTry</string>
+    <string name="valor_unitario">Valor Unitário</string>
     <string name="valor_upper_colon">VALOR:</string>
     <string name="vencidas">Vencidas</string>
     <string name="vencimento_colon">Vencimento:</string>
