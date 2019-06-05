@@ -7,14 +7,11 @@ import android.app.Service
 import android.os.Bundle
 import androidx.annotation.IdRes
 import androidx.core.os.bundleOf
-import androidx.databinding.ViewDataBinding
 import androidx.navigation.NavDirections
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import arrow.core.Try
 import arrow.effects.ForIO
-import arrow.effects.IO
-import arrow.effects.extensions.io.fx.fx
 import arrow.effects.typeclasses.ConcurrentCancellableContinuation
 import base.corelibrary.R
 import base.corelibrary.presentation.main.BaseMainActivity
@@ -24,7 +21,6 @@ import com.github.icarohs7.unoxandroidarch.Messages
 import com.github.icarohs7.unoxandroidarch.toplevel.Intent
 import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import com.github.icarohs7.unoxcore.UnoxCore
-import kotlinx.coroutines.Dispatchers
 import org.koin.core.get
 import splitties.init.appCtx
 import timber.log.Timber
@@ -118,23 +114,6 @@ fun showFlashSnackbar(message: String, duration: Int = 1000, context: Activity? 
 fun <T> logExecution(value: T): T {
     Timber.tag("LOGEXECUTION").i("$value")
     return value
-}
-
-/**
- * Execute an [fx] on the [Dispatchers.Default]
- */
-fun <A> bgFx(block: suspend ConcurrentCancellableContinuation<ForIO, *>.() -> A): IO<A> {
-    return fx {
-        continueOn(Dispatchers.Default)
-        block()
-    }
-}
-
-/**
- * @see [fx]
- */
-fun <A> uFx(block: suspend ConcurrentCancellableContinuation<ForIO, *>.() -> A): IO<A> {
-    return fx(block)
 }
 
 /**

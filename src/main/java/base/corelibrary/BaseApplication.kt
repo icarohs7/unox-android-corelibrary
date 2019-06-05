@@ -9,7 +9,6 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.annotation.CallSuper
-import androidx.work.WorkManager
 import com.chibatching.kotpref.Kotpref
 import com.chibatching.kotpref.gsonpref.gson
 import com.facebook.stetho.Stetho
@@ -57,7 +56,6 @@ abstract class BaseApplication : Application() {
         startKoin {
             androidContext(this@BaseApplication)
             modules(listOf(module {
-                single { WorkManager.getInstance() }
             }) + onCreateKoinModules())
         }
     }
