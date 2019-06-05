@@ -10,6 +10,7 @@ import androidx.core.os.bundleOf
 import androidx.navigation.NavDirections
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
+import arrow.core.Failure
 import arrow.core.Try
 import arrow.effects.ForIO
 import arrow.effects.typeclasses.ConcurrentCancellableContinuation
@@ -19,11 +20,15 @@ import com.andrognito.flashbar.Flashbar
 import com.github.icarohs7.unoxandroidarch.Injector
 import com.github.icarohs7.unoxandroidarch.Messages
 import com.github.icarohs7.unoxandroidarch.toplevel.Intent
+import com.github.icarohs7.unoxandroidarch.toplevel.appHasInternetConnection
 import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import com.github.icarohs7.unoxcore.UnoxCore
+import com.github.icarohs7.unoxcore.extensions.coroutines.onBackground
+import kotlinx.coroutines.CoroutineScope
 import org.koin.core.get
 import splitties.init.appCtx
 import timber.log.Timber
+import java.net.ConnectException
 
 /**
  * Short hand syntax to fetch an instance from
