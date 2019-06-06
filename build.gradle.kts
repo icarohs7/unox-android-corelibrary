@@ -12,14 +12,14 @@ android {
 }
 
 dependencies {
-    api(Deps.arrowCoreExtensions)
-    api(Deps.arrowEffectsExtensions)
-    api(Deps.arrowEffectsIoExtensions)
-    api(Deps.arrowSyntax)
-    api(Deps.arrowTypeclasses)
     api(Deps.gson)
     api(Deps.jodaTime)
     api(Deps.kodaTime)
+    api(Deps.kotlinxSerialization)
+    api(Deps.okHttp)
+    api(Deps.okHttpLoggingInterceptor)
+    api(Deps.retrofit)
+    api(Deps.retrofitKotlinxSerializationConverter)
 
     api(AndroidDeps.circularImageView)
     api(AndroidDeps.flexboxLayout)
@@ -38,6 +38,8 @@ dependencies {
     api(AndroidDeps.splittiesLifecycleCoroutines)
     api(AndroidDeps.splittiesSnackbar)
     api(AndroidDeps.splittiesToast)
+    api(AndroidDeps.stetho)
+    api(AndroidDeps.stethoOkHttp)
     api(AndroidDeps.swipeRevealLayout)
     api(AndroidDeps.unoxAndroidArchCore)
     api(AndroidDeps.viewAnimator)

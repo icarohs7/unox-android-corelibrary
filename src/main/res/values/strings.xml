@@ -108,6 +108,7 @@
     <string name="detalhes_transacao">Detalhes</string>
     <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
     <string name="dominio">Dominio</string>
+    <string name="dominio_da_empresa">Dominio da empresa</string>
     <string name="editar">Editar</string>
     <string name="editar_desconto">Editar Desconto</string>
     <string name="editar_despesa">Editar Despesa</string>

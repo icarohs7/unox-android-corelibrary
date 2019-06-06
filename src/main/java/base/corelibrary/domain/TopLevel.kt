@@ -12,8 +12,6 @@ import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import arrow.core.Failure
 import arrow.core.Try
-import arrow.effects.ForIO
-import arrow.effects.typeclasses.ConcurrentCancellableContinuation
 import base.corelibrary.R
 import base.corelibrary.presentation.main.BaseMainActivity
 import com.andrognito.flashbar.Flashbar
@@ -119,20 +117,6 @@ fun showFlashSnackbar(message: String, duration: Int = 1000, context: Activity? 
 fun <T> logExecution(value: T): T {
     Timber.tag("LOGEXECUTION").i("$value")
     return value
-}
-
-/**
- * Syntax sugar to continue the execution on a background dispatcher
- */
-suspend inline fun <A> ConcurrentCancellableContinuation<ForIO, A>.continueOnBackground() {
-    continueOn(UnoxCore.backgroundDispatcher)
-}
-
-/**
- * Syntax sugar to continue the execution on a foreground dispatcher
- */
-suspend inline fun <A> ConcurrentCancellableContinuation<ForIO, A>.continueOnForeground() {
-    continueOn(UnoxCore.foregroundDispatcher)
 }
 
 /**
