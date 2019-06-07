@@ -12,6 +12,7 @@ android {
 }
 
 dependencies {
+    api(Deps.arrowSyntax)
     api(Deps.gson)
     api(Deps.jodaTime)
     api(Deps.kodaTime)
