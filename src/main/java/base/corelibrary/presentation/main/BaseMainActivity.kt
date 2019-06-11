@@ -12,7 +12,7 @@ import arrow.core.Try
 import arrow.core.getOrElse
 import base.corelibrary.R
 import base.corelibrary.databinding.ActivityBaseMainBinding
-import base.corelibrary.domain.navigate
+import base.corelibrary.domain.toplevel.navigate
 import com.github.icarohs7.unoxandroidarch.extensions.showConfirmDialog
 import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import com.github.icarohs7.unoxandroidarch.presentation.activities.BaseBindingActivity
