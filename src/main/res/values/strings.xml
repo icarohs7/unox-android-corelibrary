@@ -40,6 +40,7 @@
     <string name="carteira_colon_content">Carteira: %s</string>
     <string name="carteiras_filtradas">Carteiras Filtradas</string>
     <string name="categoria">Categoria</string>
+    <string name="cep">CEP</string>
     <string name="cidade">Cidade</string>
     <string name="cidade_colon">Cidade:</string>
     <string name="cliente">Cliente</string>
@@ -208,11 +209,10 @@
     <string name="nome_de_quem_vai_receber_no_endereco">Nome de quem vai receber no endereço</string>
     <string name="novo_pagamento">Novo pagamento</string>
     <string name="nunca">Nunca</string>
-    <string name="cep">CEP</string>
     <string name="observacao">Observação</string>
     <string name="observacao_colon">Observação:</string>
-    <string name="obtendo_informacoes_do_local">Obtendo informações do local…</string>
     <string name="obtendo_endereco">Obtendo endereço</string>
+    <string name="obtendo_informacoes_do_local">Obtendo informações do local…</string>
     <string name="obtendo_localizacao">Obtendo localização…</string>
     <string name="ocorreu_um_erro_ao_finalizar_a_venda">Ocorreu um erro ao finalizar a venda</string>
     <string name="ocorreu_um_erro_ao_salvar_a_venda">Ocorreu um erro ao salvar a venda</string>
@@ -261,6 +261,8 @@
     <string name="registrar_saida">Registrar Saída</string>
     <string name="registre_um_endereco_no_botao_abaixo">Registre um endereço no botão abaixo</string>
     <string name="registro_de_entradas">Registro de Entradas</string>
+    <string name="registro_sincronizado_com_servidor_question">Registro sincronizado com o servidor?</string>
+    <string name="registro_sincronizado_question">Registro sincronizado?</string>
     <string name="rejeitar_entrega">Rejeitar\nEntrega</string>
     <string name="rejeitar_pedido">Rejeitar\nPedido</string>
     <string name="remover">Remover</string>
