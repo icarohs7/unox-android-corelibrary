@@ -4,11 +4,15 @@ plugins {
     id("kotlin-kapt")
     id("kotlinx-serialization")
     id("androidx.navigation.safeargs.kotlin")
+    id("project-report")
     defaults.`android-module`
 }
 
 android {
     defaultSettings()
+    defaultConfig {
+        consumerProguardFiles("proguard-rules.pro", "./proguard")
+    }
 }
 
 dependencies {
