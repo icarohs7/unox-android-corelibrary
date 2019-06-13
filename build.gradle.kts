@@ -4,7 +4,7 @@ plugins {
     id("kotlin-kapt")
     id("kotlinx-serialization")
     id("androidx.navigation.safeargs.kotlin")
-    id("project-report")
+    id("jacoco")
     defaults.`android-module`
 }
 
