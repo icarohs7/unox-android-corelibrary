@@ -243,6 +243,7 @@
     <string name="pedir_gas">Pedir Gás</string>
     <string name="pesquisar">Pesquisar</string>
     <string name="pin">Pin</string>
+    <string name="privado">Privado</string>
     <string name="precisao_de_content_metros">Precisão de %s metros</string>
     <string name="precisao_indisponivel_no_momento">Precisão indisponível no momento</string>
     <string name="preco">Preço: </string>
