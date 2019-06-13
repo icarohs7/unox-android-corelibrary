@@ -42,6 +42,7 @@
     <string name="carteiras_filtradas">Carteiras Filtradas</string>
     <string name="categoria">Categoria</string>
     <string name="cep">CEP</string>
+    <string name="chegada">Chegada</string>
     <string name="cidade">Cidade</string>
     <string name="cidade_colon">Cidade:</string>
     <string name="cliente">Cliente</string>
@@ -68,15 +69,9 @@
     <string name="confirmar_remover_conta_mensagem">Deseja apagar %s?</string>
     <string name="confirmar_venda">Confirmar Venda</string>
     <string name="conta">Conta</string>
-    <string name="motorista">Motorista</string>
     <string name="conta_de_destino">Conta de Destino</string>
     <string name="conta_de_origem">Conta de Origem</string>
     <string name="contas">Contas</string>
-    <string name="origem_colon">Origem:</string>
-    <string name="origem">Origem</string>
-    <string name="veiculo">Veículo</string>
-    <string name="destino_colon">Destino:</string>
-    <string name="destino">Destino</string>
     <string name="convenio">Convênio</string>
     <string name="crediario">Crediário</string>
     <string name="criar">Criar</string>
@@ -109,6 +104,8 @@
     <string name="despesas_do_mes">Despesas do Mês</string>
     <string name="despesas_filtradas">Carteiras Filtradas</string>
     <string name="despesas_pagas">Despesas Pagas</string>
+    <string name="destino">Destino</string>
+    <string name="destino_colon">Destino:</string>
     <string name="detalhamento_do_pagamento">Detalhamento do pagamento</string>
     <string name="detalhamento_dos_itens">Detalhamento dos Itens</string>
     <string name="detalhes">Detalhes</string>
@@ -116,8 +113,6 @@
     <string name="detalhes_transacao">Detalhes</string>
     <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
     <string name="dominio">Dominio</string>
-    <string name="empresa">Empresa</string>
-    <string name="particular">Particular</string>
     <string name="dominio_da_empresa">Dominio da empresa</string>
     <string name="editar">Editar</string>
     <string name="editar_desconto">Editar Desconto</string>
@@ -129,6 +124,7 @@
     <string name="editar_quantidade">Editar Quantidade</string>
     <string name="editar_receita">Editar Receita</string>
     <string name="email">Email</string>
+    <string name="empresa">Empresa</string>
     <string name="endereco">Endereço</string>
     <string name="endereco_para_entrega">Endereço para entrega:</string>
     <string name="endereco_para_entrega_colon">Endereço para entrega:</string>
@@ -180,6 +176,7 @@
     <string name="itens_colon">Itens:</string>
     <string name="ja_adicionado">Já Adicionado</string>
     <string name="ja_teve_alergia_ou_manifestou_alguma_reacao">(Já teve alergia ou manifestou alguma reação adversa a alguma substância e/ou medicação?)</string>
+    <string name="km">KM</string>
     <string name="legenda">Legenda</string>
     <string name="ler_codigo">Ler código</string>
     <string name="ler_codigo_de_barra">Ler código de barra</string>
@@ -197,6 +194,8 @@
     <string name="meu_carrinho">Meu Carrinho</string>
     <string name="minha_agenda">Minha Agenda</string>
     <string name="minhas_entregas">Minhas Entregas</string>
+    <string name="motorista">Motorista</string>
+    <string name="motorista_colon">Motorista:</string>
     <string name="movimentacao_em_contas_mes">Movimentação em Contas / Mês</string>
     <string name="n_produtos_colon">Nº Produtos:</string>
     <string name="nao">Não</string>
@@ -213,6 +212,7 @@
     <string name="no">Nº</string>
     <string name="no_de_items_colon">Nº de Items:</string>
     <string name="nome_colon">Nome:</string>
+    <string name="nome_da_empresa">Nome da empresa</string>
     <string name="nome_da_nova_categoria">Nome da nova categoria</string>
     <string name="nome_da_nova_conta">Nome da nova conta</string>
     <string name="nome_de_quem_vai_receber_no_endereco">Nome de quem vai receber no endereço</string>
@@ -225,16 +225,17 @@
     <string name="obtendo_localizacao">Obtendo localização…</string>
     <string name="ocorreu_um_erro_ao_finalizar_a_venda">Ocorreu um erro ao finalizar a venda</string>
     <string name="ocorreu_um_erro_ao_salvar_a_venda">Ocorreu um erro ao salvar a venda</string>
+    <string name="origem">Origem</string>
+    <string name="origem_colon">Origem:</string>
     <string name="pagamento_colon">Pagamento:</string>
     <string name="pagamento_total">Pagamento Total</string>
     <string name="pagamentos">Pagamentos</string>
     <string name="pagas">Pagas</string>
     <string name="pago">Pago</string>
-    <string name="km">KM</string>
     <string name="parcelas">Parcelas</string>
-    <string name="chegada">Chegada</string>
     <string name="parcelas_colon">Parcelas:</string>
     <string name="parcelas_up_to">Parcelas (Até %s)</string>
+    <string name="particular">Particular</string>
     <string name="parto_cesariana">Cesariana</string>
     <string name="parto_normal">Normal</string>
     <string name="pedido">Pedido</string>
@@ -243,11 +244,11 @@
     <string name="pedir_gas">Pedir Gás</string>
     <string name="pesquisar">Pesquisar</string>
     <string name="pin">Pin</string>
-    <string name="privado">Privado</string>
     <string name="precisao_de_content_metros">Precisão de %s metros</string>
     <string name="precisao_indisponivel_no_momento">Precisão indisponível no momento</string>
     <string name="preco">Preço: </string>
     <string name="preenchimento_exclusivo">(Preenchimento Exclusivo)</string>
+    <string name="privado">Privado</string>
     <string name="produto">Produto</string>
     <string name="produto_adicionado_sucesso">Produto adicionado com sucesso.</string>
     <string name="produto_colon">Produto:</string>
@@ -340,8 +341,8 @@
     <string name="troco_colon">Troco:</string>
     <string name="troco_no_dinheiro">Troco no dinheiro</string>
     <string name="ultima_sincronização_colon">Última Sincronização:</string>
-    <string name="ultima_viagem_colon">Última Viagem:</string>
     <string name="ultima_sincronização_colon_content">Última Sincronização: %s</string>
+    <string name="ultima_viagem_colon">Última Viagem:</string>
     <string name="url_exemplo">Exemplo: suaempresa para suaempresa.sige.pro</string>
     <string name="url_hint">Informe o nome de sua empresa como consta na url de seu sistema</string>
     <string name="valor">Valor</string>
@@ -357,6 +358,7 @@
     <string name="valor_total_upper_colon">VALOR TOTAL:</string>
     <string name="valor_unitario">Valor Unitário</string>
     <string name="valor_upper_colon">VALOR:</string>
+    <string name="veiculo">Veículo</string>
     <string name="vencidas">Vencidas</string>
     <string name="vencimento_colon">Vencimento:</string>
     <string name="vencimentos">Vencimentos</string>
@@ -368,7 +370,6 @@
     <string name="ver_mais_right_arrow">Ver Mais ></string>
     <string name="voltar">Voltar</string>
     <string name="x">x</string>
-    <string name="motorista_colon">Motorista:</string>
     <string name="aluno_nao_registrado_msg">
         Você poderá visualizar todas as aulas agendadas. Procure a secretaria
         para fazer sua inscrição
