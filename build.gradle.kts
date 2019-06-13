@@ -54,3 +54,10 @@ dependencies {
 
     AndroidKaptDeps.core.forEach(::kapt)
 }
+
+setupJacoco {
+    sourceDirectories.setFrom(files(
+            android.sourceSets["main"].java.srcDirs,
+            "src/main/kotlin"
+    ))
+}
