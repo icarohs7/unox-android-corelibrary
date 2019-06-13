@@ -68,9 +68,15 @@
     <string name="confirmar_remover_conta_mensagem">Deseja apagar %s?</string>
     <string name="confirmar_venda">Confirmar Venda</string>
     <string name="conta">Conta</string>
+    <string name="motorista">Motorista</string>
     <string name="conta_de_destino">Conta de Destino</string>
     <string name="conta_de_origem">Conta de Origem</string>
     <string name="contas">Contas</string>
+    <string name="origem_colon">Origem:</string>
+    <string name="origem">Origem</string>
+    <string name="veiculo">Veículo</string>
+    <string name="destino_colon">Destino:</string>
+    <string name="destino">Destino</string>
     <string name="convenio">Convênio</string>
     <string name="crediario">Crediário</string>
     <string name="criar">Criar</string>
@@ -110,6 +116,8 @@
     <string name="detalhes_transacao">Detalhes</string>
     <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
     <string name="dominio">Dominio</string>
+    <string name="empresa">Empresa</string>
+    <string name="particular">Particular</string>
     <string name="dominio_da_empresa">Dominio da empresa</string>
     <string name="editar">Editar</string>
     <string name="editar_desconto">Editar Desconto</string>
@@ -222,10 +230,11 @@
     <string name="pagamentos">Pagamentos</string>
     <string name="pagas">Pagas</string>
     <string name="pago">Pago</string>
+    <string name="km">KM</string>
     <string name="parcelas">Parcelas</string>
+    <string name="chegada">Chegada</string>
     <string name="parcelas_colon">Parcelas:</string>
     <string name="parcelas_up_to">Parcelas (Até %s)</string>
-    <string name="particular">Particular</string>
     <string name="parto_cesariana">Cesariana</string>
     <string name="parto_normal">Normal</string>
     <string name="pedido">Pedido</string>
@@ -330,6 +339,7 @@
     <string name="troco_colon">Troco:</string>
     <string name="troco_no_dinheiro">Troco no dinheiro</string>
     <string name="ultima_sincronização_colon">Última Sincronização:</string>
+    <string name="ultima_viagem_colon">Última Viagem:</string>
     <string name="ultima_sincronização_colon_content">Última Sincronização: %s</string>
     <string name="url_exemplo">Exemplo: suaempresa para suaempresa.sige.pro</string>
     <string name="url_hint">Informe o nome de sua empresa como consta na url de seu sistema</string>
@@ -357,6 +367,7 @@
     <string name="ver_mais_right_arrow">Ver Mais ></string>
     <string name="voltar">Voltar</string>
     <string name="x">x</string>
+    <string name="motorista_colon">Motorista:</string>
     <string name="aluno_nao_registrado_msg">
         Você poderá visualizar todas as aulas agendadas. Procure a secretaria
         para fazer sua inscrição
