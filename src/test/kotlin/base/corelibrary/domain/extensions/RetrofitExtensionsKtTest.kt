@@ -5,6 +5,8 @@ import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.Test
+import retrofit2.Retrofit
+import retrofit2.create
 import retrofit2.http.GET
 import se.lovef.assert.v1.shouldEqual
 
@@ -24,12 +26,21 @@ class RetrofitExtensionsKtTest {
         server.enqueue(MockResponse().setBody("[10,20,30,40]"))
         server.start()
 
-        val retrofit = createRetrofitService<TestApiService>(server.url("/").toString())
+        val retrofit = retrofitInstance(server.url("/").toString())
 
         val response1 = runBlocking { retrofit.getMessage() }
         response1 shouldEqual TestClass(message = "Omai wa mou shindeiru!")
 
         val response2 = runBlocking { retrofit.getNumbers() }
         response2 shouldEqual listOf(10, 20, 30, 40)
+    }
+
+    private fun retrofitInstance(baseUrl: String): TestApiService {
+        return Retrofit
+                .Builder()
+                .baseUrl(baseUrl)
+                .addConverterFactory(RetrofitExtensions.getKotlinxSerializationConverter())
+                .build()
+                .create()
     }
 }
