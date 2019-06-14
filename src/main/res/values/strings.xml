@@ -195,6 +195,7 @@
     <string name="minha_agenda">Minha Agenda</string>
     <string name="minhas_entregas">Minhas Entregas</string>
     <string name="motorista">Motorista</string>
+    <string name="placa_colon">Placa:</string>
     <string name="motorista_colon">Motorista:</string>
     <string name="movimentacao_em_contas_mes">Movimentação em Contas / Mês</string>
     <string name="n_produtos_colon">Nº Produtos:</string>
