@@ -291,6 +291,7 @@
     <string name="saldo_colon_content">Saldo: %s</string>
     <string name="saldo_do_mes_colon">Saldo do mês: </string>
     <string name="salvar">Salvar</string>
+    <string name="salvando">Salvando</string>
     <string name="salvar_no_crediario">Salvar no crediário</string>
     <string name="salvar_venda">Salvar Venda</string>
     <string name="selecionar">Selecionar</string>
@@ -316,6 +317,9 @@
     <string name="status_colon">Status:</string>
     <string name="status_colon_content">Status: %s</string>
     <string name="sucesso">Sucesso</string>
+    <string name="detalhes_da_diaria">Detalhes da Diária</string>
+    <string name="diaria_salva_com_sucesso">Diária salva com sucesso</string>
+    <string name="houve_um_erro_ao_salvar_a_diaria">Houve um erro ao salvar a diária</string>
     <string name="tabela_de_preco">Tabela de Preço</string>
     <string name="telefone_colon">Telefone:</string>
     <string name="telefone_de_contato">Telefone de contato</string>
@@ -359,6 +363,10 @@
     <string name="valor_unitario">Valor Unitário</string>
     <string name="valor_upper_colon">VALOR:</string>
     <string name="veiculo">Veículo</string>
+    <string name="veiculo_colon">Veículo:</string>
+    <string name="kilometros_colon">Kilômetros:</string>
+    <string name="tipo_da_viagem_colon">Tipo da viagem:</string>
+    <string name="tipo_de_uso_colon">Tipo de uso:</string>
     <string name="vencidas">Vencidas</string>
     <string name="vencimento_colon">Vencimento:</string>
     <string name="vencimentos">Vencimentos</string>
