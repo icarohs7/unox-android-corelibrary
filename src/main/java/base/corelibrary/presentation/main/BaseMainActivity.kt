@@ -84,7 +84,7 @@ abstract class BaseMainActivity(
         }
     }
 
-    open fun onConfirmLogout() {
+    open suspend fun onConfirmLogout() {
     }
 
     open fun onRefresh() {
