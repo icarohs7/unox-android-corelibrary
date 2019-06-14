@@ -5,12 +5,16 @@
     <data>
 
         <variable
-            name="entries"
-            type="String[]" />
-
-        <variable
             name="hint"
             type="String" />
+
+        <variable
+            name="text"
+            type="androidx.lifecycle.MutableLiveData&lt;String&gt;" />
+
+        <variable
+            name="entries"
+            type="String[]" />
 
         <variable
             name="itemSelectedHandler"
@@ -18,17 +22,18 @@
     </data>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layout_dropdown"
+        android:id="@+id/layout_input"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@{ hint }">
 
         <AutoCompleteTextView
-            android:id="@+id/txt_dropdown"
+            android:id="@+id/edit_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:completionThreshold="@{ 999999 }"
+            android:text="@={ text }"
             app:entries="@{ entries }"
             app:onItemSelected="@{ itemSelectedHandler }" />
 

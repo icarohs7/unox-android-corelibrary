@@ -13,6 +13,10 @@
             type="String" />
 
         <variable
+            name="text"
+            type="androidx.lifecycle.MutableLiveData&lt;String&gt;" />
+
+        <variable
             name="itemSelectedHandler"
             type="android.widget.AdapterView.OnItemSelectedListener" />
     </data>
@@ -30,6 +34,7 @@
             android:layout_height="wrap_content"
             android:completionThreshold="@{ 999999 }"
             android:editable="false"
+            android:text="@={ text }"
             app:entries="@{ entries }"
             app:onItemSelected="@{ itemSelectedHandler }" />
 

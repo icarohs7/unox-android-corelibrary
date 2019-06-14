@@ -32,6 +32,8 @@ dependencies {
     api(AndroidDeps.iconicsMaterial)
     api(AndroidDeps.iconicsMaterialOriginal)
     api(AndroidDeps.kotprefGson)
+    api(AndroidDeps.lifecycleLivedataKtx)
+    api(AndroidDeps.lifecycleRuntimeKtx)
     api(AndroidDeps.maskedEditText)
     api(AndroidDeps.materialDialogsDateTime)
     api(AndroidDeps.materialDialogsInput)
