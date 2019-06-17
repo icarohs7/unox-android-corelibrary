@@ -7,11 +7,17 @@ import com.github.icarohs7.unoxandroidarch.extensions.asBrDate
 import com.github.icarohs7.unoxandroidarch.extensions.asDate
 import com.github.icarohs7.unoxandroidarch.extensions.asShortTime
 import com.github.icarohs7.unoxcore.extensions.asCurrency
+import java.text.NumberFormat
 import java.util.Date
 
 @BindingAdapter("app:numberText")
 fun <T : Number> TextView.setNumberText(value: T?) {
     text = value?.toString() ?: return
+}
+
+@BindingAdapter("app:localizedNumberText")
+fun <T : Number> TextView.setLocalizedNumberText(value: T?) {
+    text = value?.let(NumberFormat.getInstance()::format) ?: return
 }
 
 @BindingAdapter("app:currencyText")
