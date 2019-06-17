@@ -23,6 +23,16 @@ import splitties.init.appCtx
 import timber.log.Timber
 
 /**
+ * Set the title of the activity
+ * currently in foreground
+ */
+var activityTitle: String
+    get() = throw NotImplementedError()
+    set(value) {
+        onActivity { title = value }
+    }
+
+/**
  * Short hand syntax to fetch an instance from
  * the DI container
  */
