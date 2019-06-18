@@ -17,6 +17,7 @@ android {
 
 dependencies {
     api(Deps.arrowSyntax)
+    api(Deps.coroutinesReactive)
     api(Deps.gson)
     api(Deps.jodaTime)
     api(Deps.kodaTime)
