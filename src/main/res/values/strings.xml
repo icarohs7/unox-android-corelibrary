@@ -33,6 +33,7 @@
     <string name="bairro_colon">Bairro:</string>
     <string name="bolso">Bolso</string>
     <string name="buscar_dados">Buscar Dados</string>
+    <string name="buscar_endereco">Buscar endereço</string>
     <string name="caixa_fechado_com_sucesso">Caixa fechado com sucesso</string>
     <string name="cancelar">Cancelar</string>
     <string name="carregando">Carregando…</string>
