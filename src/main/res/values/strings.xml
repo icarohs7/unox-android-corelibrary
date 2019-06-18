@@ -108,6 +108,7 @@
     <string name="despesas_pagas">Despesas Pagas</string>
     <string name="destino">Destino</string>
     <string name="destino_colon">Destino:</string>
+    <string name="destino_nao_pode_ser_igual_a_origem">Destino não pode ser igual à origem</string>
     <string name="detalhamento_do_pagamento">Detalhamento do pagamento</string>
     <string name="detalhamento_dos_itens">Detalhamento dos Itens</string>
     <string name="detalhes">Detalhes</string>
@@ -299,6 +300,7 @@
     <string name="saldo_do_mes_colon">Saldo do mês: </string>
     <string name="salvando">Salvando</string>
     <string name="salvar">Salvar</string>
+    <string name="salvar_diaria">Salvar Diária</string>
     <string name="salvar_no_crediario">Salvar no crediário</string>
     <string name="salvar_venda">Salvar Venda</string>
     <string name="selecionar">Selecionar</string>
