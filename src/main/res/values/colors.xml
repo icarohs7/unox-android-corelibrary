@@ -2,6 +2,8 @@
 <resources>
     <color name="colorSigeLightBlue">#0d74bd</color>
     <color name="colorSigeDarkBlue">#19308a</color>
+    <color name="colorOnSigeLightBlue">@color/white</color>
+    <color name="colorOnSigeDarkBlue">@color/white</color>
 
     <color name="colorBackground">#FFFFFF</color>
     <color name="colorOnBackground">#000000</color>
@@ -16,7 +18,7 @@
 
     <color name="colorPrimary">@color/colorSigeLightBlue</color>
     <color name="colorPrimaryVariant">@color/colorSigeDarkBlue</color>
-    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorOnPrimary">@color/colorOnSigeLightBlue</color>
 
     <color name="colorSecondary">#FFFFFF</color>
     <color name="colorSecondaryVariant">#808080</color>
