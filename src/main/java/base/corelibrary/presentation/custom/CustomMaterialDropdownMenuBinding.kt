@@ -12,6 +12,6 @@ var CustomMaterialDropdownMenuBinding.selectedIndex: Int
         txtDropdown.selectedItemIndex = value
     }
 
-var CustomMaterialDropdownMenuBinding.text: String?
+var CustomMaterialDropdownMenuBinding.dropdownText: String?
     get() = txtDropdown.text?.toString()
     set(value) = txtDropdown.setText(value)
