@@ -28,3 +28,10 @@ fun View.animatedChangeAlpha(newAlpha: Float, duration: Long = 200L) {
 fun View.viewAnimate(): AnimationBuilder {
     return ViewAnimator.animate(this)
 }
+
+fun View.rootParent(): View? {
+    var p = (parent as? View?)
+    while (p?.parent as? View? != null)
+        p = p.parent as? View?
+    return p
+}
