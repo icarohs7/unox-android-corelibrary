@@ -248,6 +248,8 @@
     <string name="parcelas_colon">Parcelas:</string>
     <string name="parcelas_up_to">Parcelas (Até %s)</string>
     <string name="particular">Particular</string>
+    <string name="relatorio_enviado_com_sucesso">Relatório enviado com sucesso</string>
+    <string name="houve_um_erro_ao_enviar_o_relatorio">Houve um erro ao enviar o relatório</string>
     <string name="parto_cesariana">Cesariana</string>
     <string name="parto_normal">Normal</string>
     <string name="pedido">Pedido</string>
