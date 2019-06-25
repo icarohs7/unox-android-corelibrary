@@ -117,6 +117,7 @@
     <string name="detalhes_transacao">Detalhes</string>
     <string name="diaria_salva_com_sucesso">Diária salva com sucesso</string>
     <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
+    <string name="distancia_km_colon">Distância (Km):</string>
     <string name="dominio">Dominio</string>
     <string name="dominio_da_empresa">Dominio da empresa</string>
     <string name="editar">Editar</string>
@@ -183,7 +184,6 @@
     <string name="ja_adicionado">Já Adicionado</string>
     <string name="ja_teve_alergia_ou_manifestou_alguma_reacao">(Já teve alergia ou manifestou alguma reação adversa a alguma substância e/ou medicação?)</string>
     <string name="kilometros_colon">Kilômetros:</string>
-    <string name="distancia_km_colon">Distância (Km):</string>
     <string name="km">KM</string>
     <string name="legenda">Legenda</string>
     <string name="ler_codigo">Ler código</string>
@@ -207,9 +207,6 @@
     <string name="movimentacao_em_contas_mes">Movimentação em Contas / Mês</string>
     <string name="n_produtos_colon">Nº Produtos:</string>
     <string name="nao">Não</string>
-    <string name="relatar_problema">Relatar problema</string>
-    <string name="nenhuma_categoria_carregada">Nenhuma categoria carregada</string>
-    <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="nao_aceitar_pedido">Não Aceitar Pedido</string>
     <string name="nao_e_possivel_adicionar_produto_sem_quantidade">Não é possível adicionar produto sem quantidade</string>
     <string name="nao_foi_possivel_obter_localizacao_aproximada">Não foi possível obter a localização aproximada</string>
@@ -218,6 +215,7 @@
     <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
     <string name="nenhum_pedido">Nenhum pedido</string>
+    <string name="nenhuma_categoria_carregada">Nenhuma categoria carregada</string>
     <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
     <string name="nfc">NFC</string>
     <string name="no">Nº</string>
@@ -289,6 +287,7 @@
     <string name="registro_sincronizado_question">Registro sincronizado?</string>
     <string name="rejeitar_entrega">Rejeitar\nEntrega</string>
     <string name="rejeitar_pedido">Rejeitar\nPedido</string>
+    <string name="relatar_problema">Relatar problema</string>
     <string name="remover">Remover</string>
     <string name="remover_pagamento">Remover pagamento</string>
     <string name="restante_a_pagar_colon">Restante a Pagar:</string>
@@ -315,6 +314,7 @@
     <string name="selecionar_endereco">Selecionar endereço</string>
     <string name="selecionar_origem">Selecionar Origem</string>
     <string name="selecionar_veiculo">Selecionar Veículo</string>
+    <string name="selecionar_veiculo_com_problema">Selecionar Veículo com problema</string>
     <string name="selecione_a_impressora">Selecione a impressora</string>
     <string name="selecione_impressora_para_conectar">Selecione a impressora para se conectar</string>
     <string name="sem_categoria">Sem Categoria</string>
@@ -388,6 +388,7 @@
     <string name="vendas">Vendas</string>
     <string name="ver_mais">Ver Mais</string>
     <string name="ver_mais_right_arrow">Ver Mais ></string>
+    <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="voltar">Voltar</string>
     <string name="x">x</string>
     <string name="aluno_nao_registrado_msg">
