@@ -141,6 +141,7 @@
     <string name="entrega">Entrega</string>
     <string name="entregar_pedido">Entregar Pedido</string>
     <string name="enviar">Enviar</string>
+    <string name="enviando_relatorio">Enviando relatório</string>
     <string name="enviar_registros">Enviar registros</string>
     <string name="erro">Erro</string>
     <string name="erro_sem_permissao_camera_scan_barcode">É necessário ceder o acesso à camera ao aplicativo para utilizar o scanner de códigos de barra</string>
@@ -174,6 +175,8 @@
     <string name="impressora_invalida">Impressora inválida</string>
     <string name="imprimir">Imprimir</string>
     <string name="informar_quantidade">Informar Quantidade</string>
+    <string name="informar_problema">Informar Problema</string>
+    <string name="problema_encontrado_colon">Problema encontrado:</string>
     <string name="iniciando">Iniciando</string>
     <string name="iniciando_ellipsis">Iniciando…</string>
     <string name="inicio">Início</string>
@@ -280,6 +283,7 @@
     <string name="registrada">Registrada</string>
     <string name="registrar_entrada">Registrar Entrada</string>
     <string name="registrar_ponto">Registrar Ponto</string>
+    <string name="relatar">Relatar</string>
     <string name="registrar_saida">Registrar Saída</string>
     <string name="registre_um_endereco_no_botao_abaixo">Registre um endereço no botão abaixo</string>
     <string name="registro_de_entradas">Registro de Entradas</string>
@@ -314,6 +318,7 @@
     <string name="selecionar_endereco">Selecionar endereço</string>
     <string name="selecionar_origem">Selecionar Origem</string>
     <string name="selecionar_veiculo">Selecionar Veículo</string>
+    <string name="selecionar_problema">Selecionar Problema</string>
     <string name="selecionar_veiculo_com_problema">Selecionar Veículo com problema</string>
     <string name="selecione_a_impressora">Selecione a impressora</string>
     <string name="selecione_impressora_para_conectar">Selecione a impressora para se conectar</string>
