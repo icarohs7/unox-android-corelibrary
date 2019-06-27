@@ -35,6 +35,7 @@
     <string name="buscar_dados">Buscar Dados</string>
     <string name="buscar_endereco">Buscar endereço</string>
     <string name="caixa_fechado_com_sucesso">Caixa fechado com sucesso</string>
+    <string name="calendario">Calendário</string>
     <string name="cancelar">Cancelar</string>
     <string name="carregando">Carregando…</string>
     <string name="carrinho">Carrinho</string>
@@ -205,6 +206,7 @@
     <string name="mes_anterior_colon">Mês Anterior:</string>
     <string name="meu_carrinho">Meu Carrinho</string>
     <string name="minha_agenda">Minha Agenda</string>
+    <string name="minhas_aulas">Minhas Aulas</string>
     <string name="minhas_entregas">Minhas Entregas</string>
     <string name="motorista">Motorista</string>
     <string name="motorista_colon">Motorista:</string>
