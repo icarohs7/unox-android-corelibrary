@@ -6,18 +6,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <base.corelibrary.presentation.custom.HardSwipeRefresh
-            android:id="@+id/swipe_refresh"
+        <com.umutbey.stateviews.StateView
+            android:id="@+id/state_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler"
+            <base.corelibrary.presentation.custom.HardSwipeRefresh
+                android:id="@+id/swipe_refresh"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clipToPadding="false"
-                android:paddingBottom="75dp" />
-        </base.corelibrary.presentation.custom.HardSwipeRefresh>
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingBottom="75dp" />
+            </base.corelibrary.presentation.custom.HardSwipeRefresh>
+        </com.umutbey.stateviews.StateView>
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fab"
