@@ -336,6 +336,8 @@
     <string name="sem_pagamentos_na_venda_descricao">Adicione pagamentos através do botão na parte inferior da tela</string>
     <string name="sem_produto_suficiente_em_estoque">Sem produto suficiente em estoque</string>
     <string name="sem_produtos_na_venda">Sem produtos na venda</string>
+    <string name="nenhum_produto_encontrado">Nenhum produto encontrado</string>
+    <string name="verifique_a_grade_produtos_e_caixa_selecionado">Verifique a grade de produtos ou se há uma tabela de preços selecionada</string>
     <string name="sem_produtos_na_venda_descricao">Adicione produtos através do botão na parte inferior da tela</string>
     <string name="sem_registros_para_sincronizar">Sem registros para sincronizar</string>
     <string name="senha">Senha</string>
