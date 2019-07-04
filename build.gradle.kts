@@ -16,10 +16,13 @@ android {
 }
 
 dependencies {
+    api(Deps.arrowCoreData)
     api(Deps.arrowSyntax)
     api(Deps.coroutinesReactive)
+    api(Deps.coroutinesRx2)
     api(Deps.gson)
     api(Deps.jodaTime)
+    api(Deps.khronos)
     api(Deps.kodaTime)
     api(Deps.kotlinStdLib)
     api(Deps.kotlinxSerialization)
@@ -27,9 +30,6 @@ dependencies {
     api(Deps.okHttpLoggingInterceptor)
     api(Deps.retrofit)
     api(Deps.retrofitKotlinxSerializationConverter)
-    api(Deps.arrowCoreData)
-    api(Deps.coroutinesRx2)
-    api(Deps.khronos)
     api(Deps.rxKotlin)
     api(Deps.rxRelay)
 
