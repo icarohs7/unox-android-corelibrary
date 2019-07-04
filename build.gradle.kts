@@ -44,7 +44,6 @@ dependencies {
     api(AndroidDeps.lifecycleLivedataKtx)
     api(AndroidDeps.lifecycleReactiveStreamsKtx)
     api(AndroidDeps.lifecycleRuntimeKtx)
-    api(AndroidDeps.maskedEditText)
     api(AndroidDeps.materialComponents)
     api(AndroidDeps.materialDialogs)
     api(AndroidDeps.materialEditText)
