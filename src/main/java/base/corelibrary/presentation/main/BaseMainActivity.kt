@@ -14,12 +14,11 @@ import base.corelibrary.R
 import base.corelibrary.databinding.ActivityBaseMainBinding
 import base.corelibrary.domain.toplevel.navigate
 import com.github.icarohs7.unoxandroidarch.extensions.showConfirmDialog
-import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import com.github.icarohs7.unoxandroidarch.presentation.activities.BaseBindingActivity
 import com.github.icarohs7.unoxandroidarch.state.addOnLoadingListener
+import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.mikepenz.materialdrawer.Drawer
 import kotlinx.coroutines.launch
 import splitties.resources.color
 import splitties.views.backgroundColor
@@ -29,7 +28,6 @@ abstract class BaseMainActivity(
         private val enableToolbarScroll: Boolean = false
 ) : BaseBindingActivity<ActivityBaseMainBinding>() {
     val navController: NavController by lazy { findNavController(R.id.nav_host_fragment) }
-    var drawer: Drawer? = null
 
     override fun onBindingCreated(savedInstanceState: Bundle?) {
         super.onBindingCreated(savedInstanceState)
@@ -44,23 +42,19 @@ abstract class BaseMainActivity(
 
     private fun setupNavigation(): Unit = with(binding) {
         launch {
-            drawer = onSetupDrawer()
             setupToolbar(layoutToolbar.toolbar)
             setupBottomNav(bottomNav)
         }
     }
 
-    fun setupToolbar(toolbar: Toolbar) {
+    open fun setupToolbar(toolbar: Toolbar) {
         setSupportActionBar(toolbar)
-        toolbar.setupWithNavController(navController, drawer?.drawerLayout)
     }
 
-    fun setupBottomNav(nav: BottomNavigationView) {
+    open fun setupBottomNav(nav: BottomNavigationView) {
         nav.setupWithNavController(navController)
         nav.setOnNavigationItemSelectedListener(::onOptionsItemSelected)
     }
-
-    open suspend fun onSetupDrawer(): Drawer? = BaseMainDrawerConfig<BaseMainActivity>().setup(this)
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return super.onOptionsItemSelected(item) || onMenuItemSelect(item.itemId)

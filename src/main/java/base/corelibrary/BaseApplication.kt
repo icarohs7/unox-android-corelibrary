@@ -14,9 +14,6 @@ import com.chibatching.kotpref.gsonpref.gson
 import com.facebook.stetho.Stetho
 import com.github.icarohs7.unoxandroidarch.UnoxAndroidArch
 import com.google.gson.Gson
-import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader
-import com.mikepenz.materialdrawer.util.DrawerImageLoader
-import com.mikepenz.materialdrawer.util.DrawerUIUtils
 import com.squareup.picasso.Picasso
 import com.umutbey.stateviews.StateViewsBuilder
 import org.koin.android.ext.koin.androidContext
@@ -37,7 +34,6 @@ abstract class BaseApplication : Application() {
         setupUnoxAndroidArch()
         setupKotpref()
         lockOrientation()
-        setupMaterialDrawerImageLoading()
 
         val stateViewsBuilder = StateViewsBuilder.init().setState(
                 tag = EMPTY_ADAPTER_STATE_TAG,
@@ -121,26 +117,6 @@ abstract class BaseApplication : Application() {
 
             override fun onActivityDestroyed(activity: Activity) {
 
-            }
-        })
-    }
-
-    private fun setupMaterialDrawerImageLoading() {
-        DrawerImageLoader.init(object : AbstractDrawerImageLoader() {
-            private val picasso by lazy { Picasso.get() }
-
-            override fun placeholder(ctx: Context, tag: String?): Drawable {
-                return DrawerUIUtils.getPlaceHolder(ctx)
-            }
-
-            override fun set(imageView: ImageView, uri: Uri, placeholder: Drawable?, tag: String?) {
-                picasso.load(uri)
-                        .also { placeholder?.let(it::placeholder) }
-                        .into(imageView)
-            }
-
-            override fun cancel(imageView: ImageView) {
-                picasso.cancelRequest(imageView)
             }
         })
     }
