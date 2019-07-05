@@ -2,19 +2,11 @@ package base.corelibrary
 
 import android.app.Activity
 import android.app.Application
-import android.content.Context
 import android.content.pm.ActivityInfo
-import android.graphics.drawable.Drawable
-import android.net.Uri
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.annotation.CallSuper
-import com.chibatching.kotpref.Kotpref
-import com.chibatching.kotpref.gsonpref.gson
 import com.facebook.stetho.Stetho
 import com.github.icarohs7.unoxandroidarch.UnoxAndroidArch
-import com.google.gson.Gson
-import com.squareup.picasso.Picasso
 import com.umutbey.stateviews.StateViewsBuilder
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -32,7 +24,6 @@ abstract class BaseApplication : Application() {
         setupKoin()
         setupTimber()
         setupUnoxAndroidArch()
-        setupKotpref()
         lockOrientation()
 
         val stateViewsBuilder = StateViewsBuilder.init().setState(
@@ -69,11 +60,6 @@ abstract class BaseApplication : Application() {
     private fun setupUnoxAndroidArch(): Unit = UnoxAndroidArch.run {
         init()
         screenTransition = UnoxAndroidArch.AnimationType.FADE
-    }
-
-    private fun setupKotpref() {
-        Kotpref.init(applicationContext)
-        Kotpref.gson = Gson()
     }
 
     /**

@@ -1,7 +1,11 @@
 package base.corelibrary.data.entities
 
+import androidx.core.content.edit
+import base.corelibrary.domain.extensions.deserialize
 import com.chibatching.kotpref.KotprefModel
-import com.chibatching.kotpref.gsonpref.gsonPref
+import kotlinx.serialization.internal.StringSerializer
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.map
 
 object User : KotprefModel() {
     var id: Int by intPref(0)
@@ -10,5 +14,22 @@ object User : KotprefModel() {
     var name: String by stringPref("")
     var email: String by stringPref("")
     var isRegistered: Boolean by booleanPref(false)
-    var extraProperties: Map<String, Any?> by gsonPref(emptyMap())
+
+    private var extraProperties: Map<String, String>
+        get() {
+            val deserializer = Pair(StringSerializer, StringSerializer).map
+            val serialized = preferences.getString("extraProperties", "{}") ?: "{}"
+            return serialized.deserialize(deserializer)
+        }
+        set(value) {
+            val serializer = Pair(StringSerializer, StringSerializer).map
+            preferences.edit {
+                putString("extraProperties", Json.stringify(serializer, value))
+            }
+        }
+
+    operator fun get(key: String): String = extraProperties[key].orEmpty()
+    operator fun set(key: String, value: String) {
+        extraProperties = extraProperties + Pair(key, value)
+    }
 }
