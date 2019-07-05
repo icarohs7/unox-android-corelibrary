@@ -9,6 +9,6 @@ class HardSwipeRefresh @JvmOverloads constructor(
         attrs: AttributeSet? = null
 ) : SwipeRefreshLayout(ctx, attrs) {
     init {
-        setDistanceToTriggerSync(400)
+        setDistanceToTriggerSync(350)
     }
 }
