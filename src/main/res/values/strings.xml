@@ -62,7 +62,6 @@
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
-    <string name="continuar">Continuar</string>
     <string name="confirmar_acao">Confirmar Ação</string>
     <string name="confirmar_pedido">Confirmar pedido</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
@@ -76,6 +75,7 @@
     <string name="conta_de_destino">Conta de Destino</string>
     <string name="conta_de_origem">Conta de Origem</string>
     <string name="contas">Contas</string>
+    <string name="continuar">Continuar</string>
     <string name="convenio">Convênio</string>
     <string name="crediario">Crediário</string>
     <string name="criar">Criar</string>
@@ -217,6 +217,7 @@
     <string name="nao">Não</string>
     <string name="nao_aceitar_pedido">Não Aceitar Pedido</string>
     <string name="nao_e_possivel_adicionar_produto_sem_quantidade">Não é possível adicionar produto sem quantidade</string>
+    <string name="nao_foi_possivel_estabelecer_conexao_ao_servidor_verifique_seu_acesso_para_utilizar_todas_as_funcoes_do_aplicativo">Não foi possível estabelecer conexão ao servidor, verifique seu acesso para utilizar todas as funções do aplicativo</string>
     <string name="nao_foi_possivel_obter_localizacao_aproximada">Não foi possível obter a localização aproximada</string>
     <string name="nao_ha_diarias_em_seu_historico">Não há diárias em seu histórico</string>
     <string name="nao_informada">Não informado(a)</string>
@@ -224,6 +225,7 @@
     <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
     <string name="nenhum_pedido">Nenhum pedido</string>
+    <string name="nenhum_produto_encontrado">Nenhum produto encontrado</string>
     <string name="nenhuma_categoria_carregada">Nenhuma categoria carregada</string>
     <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
     <string name="nfc">NFC</string>
@@ -263,6 +265,7 @@
     <string name="pesquisar">Pesquisar</string>
     <string name="pin">Pin</string>
     <string name="placa_colon">Placa:</string>
+    <string name="ponto">Ponto</string>
     <string name="precisao_de_content_metros">Precisão de %s metros</string>
     <string name="precisao_indisponivel_no_momento">Precisão indisponível no momento</string>
     <string name="preco">Preço: </string>
@@ -332,16 +335,16 @@
     <string name="selecione_a_impressora">Selecione a impressora</string>
     <string name="selecione_impressora_para_conectar">Selecione a impressora para se conectar</string>
     <string name="sem_categoria">Sem Categoria</string>
+    <string name="sem_conexao">Sem Conexão</string>
     <string name="sem_estoque">Sem Estoque</string>
     <string name="sem_pagamentos_na_venda">Sem pagamentos na venda</string>
     <string name="sem_pagamentos_na_venda_descricao">Adicione pagamentos através do botão na parte inferior da tela</string>
     <string name="sem_produto_suficiente_em_estoque">Sem produto suficiente em estoque</string>
     <string name="sem_produtos_na_venda">Sem produtos na venda</string>
-    <string name="nenhum_produto_encontrado">Nenhum produto encontrado</string>
-    <string name="verifique_a_grade_produtos_e_caixa_selecionado">Verifique a grade de produtos ou se há uma tabela de preços selecionada</string>
     <string name="sem_produtos_na_venda_descricao">Adicione produtos através do botão na parte inferior da tela</string>
     <string name="sem_registros_para_sincronizar">Sem registros para sincronizar</string>
     <string name="senha">Senha</string>
+    <string name="seu_pedido_foi_enviado_e_sera_entregue_em_breve">Seu pedido foi enviado e será entregue em breve</string>
     <string name="sim">Sim</string>
     <string name="sincronizando">Sincronizando</string>
     <string name="sincronizando_pedidos">Sincronizando Pedidos</string>
@@ -404,12 +407,10 @@
     <string name="vendas">Vendas</string>
     <string name="ver_mais">Ver Mais</string>
     <string name="ver_mais_right_arrow">Ver Mais ></string>
+    <string name="verifique_a_grade_produtos_e_caixa_selecionado">Verifique a grade de produtos ou se há uma tabela de preços selecionada</string>
     <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="voltar">Voltar</string>
-    <string name="sem_conexao">Sem Conexão</string>
     <string name="x">x</string>
-    <string name="seu_pedido_foi_enviado_e_sera_entregue_em_breve">Seu pedido foi enviado e será entregue em breve</string>
-    <string name="nao_foi_possivel_estabelecer_conexao_ao_servidor_verifique_seu_acesso_para_utilizar_todas_as_funcoes_do_aplicativo">Não foi possível estabelecer conexão ao servidor, verifique seu acesso para utilizar todas as funções do aplicativo</string>
     <string name="aluno_nao_registrado_msg">
         Você poderá visualizar todas as aulas agendadas. Procure a secretaria
         para fazer sua inscrição
