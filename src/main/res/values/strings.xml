@@ -62,6 +62,7 @@
     <string name="configuracoes">Configurações</string>
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
+    <string name="continuar">Continuar</string>
     <string name="confirmar_acao">Confirmar Ação</string>
     <string name="confirmar_pedido">Confirmar pedido</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
@@ -405,7 +406,10 @@
     <string name="ver_mais_right_arrow">Ver Mais ></string>
     <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="voltar">Voltar</string>
+    <string name="sem_conexao">Sem Conexão</string>
     <string name="x">x</string>
+    <string name="seu_pedido_foi_enviado_e_sera_entregue_em_breve">Seu pedido foi enviado e será entregue em breve</string>
+    <string name="nao_foi_possivel_estabelecer_conexao_ao_servidor_verifique_seu_acesso_para_utilizar_todas_as_funcoes_do_aplicativo">Não foi possível estabelecer conexão ao servidor, verifique seu acesso para utilizar todas as funções do aplicativo</string>
     <string name="aluno_nao_registrado_msg">
         Você poderá visualizar todas as aulas agendadas. Procure a secretaria
         para fazer sua inscrição
@@ -420,5 +424,4 @@
         O prontuário não pode ser editado, caso precise fazer alguma
         correção, preencha um novo.
     </string>
-    <string name="seu_pedido_foi_enviado_e_sera_entregue_em_breve">Seu pedido foi enviado e será entregue em breve</string>
 </resources>
