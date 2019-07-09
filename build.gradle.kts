@@ -65,7 +65,6 @@ dependencies {
     api(AndroidDeps.splittiesResources)
     api(AndroidDeps.splittiesSnackbar)
     api(AndroidDeps.splittiesSystemservices)
-    api(AndroidDeps.splittiesToast)
     api(AndroidDeps.splittiesViews)
     api(AndroidDeps.splittiesViewsAppcompat)
     api(AndroidDeps.spotsDialog)
