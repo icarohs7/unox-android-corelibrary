@@ -222,6 +222,7 @@
     <string name="nao_foi_possivel_obter_localizacao_aproximada">Não foi possível obter a localização aproximada</string>
     <string name="nao_ha_diarias_em_seu_historico">Não há diárias em seu histórico</string>
     <string name="nao_informada">Não informado(a)</string>
+    <string name="nao_sincronizado">Não Sincronizado</string>
     <string name="nenhum_dispositivo_conectado">Nenhum dispositivo conectado</string>
     <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
