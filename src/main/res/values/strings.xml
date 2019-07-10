@@ -349,6 +349,7 @@
     <string name="sim">Sim</string>
     <string name="sincronizando">Sincronizando</string>
     <string name="sincronizando_pedidos">Sincronizando Pedidos</string>
+    <string name="sincronizando_registros">Sincronizando registros</string>
     <string name="sincronizar">Sincronizar</string>
     <string name="status_colon">Status:</string>
     <string name="status_colon_content">Status: %s</string>
