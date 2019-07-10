@@ -192,6 +192,7 @@
     <string name="ja_teve_alergia_ou_manifestou_alguma_reacao">(Já teve alergia ou manifestou alguma reação adversa a alguma substância e/ou medicação?)</string>
     <string name="kilometros_colon">Kilômetros:</string>
     <string name="km">KM</string>
+    <string name="km_colon">KM:</string>
     <string name="legenda">Legenda</string>
     <string name="ler_codigo">Ler código</string>
     <string name="ler_codigo_de_barra">Ler código de barra</string>
