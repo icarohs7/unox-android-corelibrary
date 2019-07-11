@@ -17,3 +17,7 @@ fun EditText.useDecimalNumberInputType() {
 fun EditText.usePhoneInputType() {
     inputType = InputType.TYPE_CLASS_PHONE
 }
+
+fun EditText.useUriInputType() {
+    inputType = InputType.TYPE_TEXT_VARIATION_URI
+}

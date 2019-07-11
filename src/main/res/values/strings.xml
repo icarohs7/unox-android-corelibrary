@@ -17,6 +17,7 @@
     <string name="adicionar_produto">Adicionar Produto</string>
     <string name="adicionar_receita">Adicionar Receita</string>
     <string name="adicionar_transacao">Adicionar Transação</string>
+    <string name="almoco">Almoço</string>
     <string name="alterando_status_do_pedido">Alterando status do pedido</string>
     <string name="aluno_nao_registrado_title">Seja bem vindo ao aplicativo ViaPrime</string>
     <string name="ambos">Ambos</string>
@@ -25,6 +26,7 @@
     <string name="anestesia_tipo_peridural">Peridural</string>
     <string name="anestesia_tipo_raqui">Raqui</string>
     <string name="anestesia_tipo_sedacao">Sedação</string>
+    <string name="ativar">Ativar</string>
     <string name="atualizar_dados">Sincronizar Dados</string>
     <string name="atualizar_perfil">Sincronizar Perfil</string>
     <string name="avancar">Avançar</string>
@@ -93,6 +95,7 @@
     <string name="defina_o_dominio">Informe o domínio de sua empresa no campo abaixo</string>
     <string name="definicoes">Definições</string>
     <string name="depesas_do_mes">Despesas do Mês</string>
+    <string name="desativar">Desativar</string>
     <string name="desconectar">Desconectar</string>
     <string name="desconto">Desconto</string>
     <string name="desconto_colon">Desconto:</string>
@@ -118,6 +121,7 @@
     <string name="detalhes_da_diaria">Detalhes da Diária</string>
     <string name="detalhes_do_pedido">Detalhes do Pedido</string>
     <string name="detalhes_transacao">Detalhes</string>
+    <string name="dia_da_semana">Dia da semana</string>
     <string name="diaria_salva_com_sucesso">Diária salva com sucesso</string>
     <string name="dispositivo_conectado_colon">Dispositivo Conectado:</string>
     <string name="distancia_km_colon">Distância (Km):</string>
@@ -138,6 +142,7 @@
     <string name="endereco_para_entrega">Endereço para entrega:</string>
     <string name="endereco_para_entrega_colon">Endereço para entrega:</string>
     <string name="entrada">Entrada</string>
+    <string name="entrada_almoco">Entrada almoço</string>
     <string name="entradas">Entradas</string>
     <string name="entradas_colon">Entradas:</string>
     <string name="entradas_do_mes">Entradas do Mês</string>
@@ -172,8 +177,11 @@
     <string name="forma_de_pagamento_padrao">Forma de pagamento padrão</string>
     <string name="gastos_do_mes">Gastos do Mês</string>
     <string name="historico">Histórico</string>
+    <string name="hora">Hora</string>
     <string name="horario">Horário</string>
     <string name="horario_colon">Horário:</string>
+    <string name="horarios_de_notificacoes_colon">Horários de Notificações:</string>
+    <string name="horarios_de_ponto_colon">Horários de ponto:</string>
     <string name="houve_um_erro_ao_enviar_o_relatorio">Houve um erro ao enviar o relatório</string>
     <string name="houve_um_erro_ao_fechar_o_caixa">Houve um erro ao fechar o caixa</string>
     <string name="houve_um_erro_ao_salvar_a_diaria">Houve um erro ao salvar a diária</string>
@@ -211,6 +219,7 @@
     <string name="minha_agenda">Minha Agenda</string>
     <string name="minhas_aulas">Minhas Aulas</string>
     <string name="minhas_entregas">Minhas Entregas</string>
+    <string name="minuto">Minuto</string>
     <string name="motorista">Motorista</string>
     <string name="motorista_colon">Motorista:</string>
     <string name="movimentacao_em_contas_mes">Movimentação em Contas / Mês</string>
@@ -238,6 +247,7 @@
     <string name="nome_da_nova_categoria">Nome da nova categoria</string>
     <string name="nome_da_nova_conta">Nome da nova conta</string>
     <string name="nome_de_quem_vai_receber_no_endereco">Nome de quem vai receber no endereço</string>
+    <string name="notificacoes_colon">Notificações:</string>
     <string name="novo_pagamento">Novo pagamento</string>
     <string name="nunca">Nunca</string>
     <string name="observacao">Observação</string>
@@ -313,6 +323,7 @@
     <string name="resumo_da_venda">Resumo da Venda</string>
     <string name="resumo_do_pedido">Resumo do pedido</string>
     <string name="saida">Saída</string>
+    <string name="saida_almoco">Saída almoço</string>
     <string name="saidas">Saídas</string>
     <string name="saidas_colon">Saídas:</string>
     <string name="sair">Sair</string>
