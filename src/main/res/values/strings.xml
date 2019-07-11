@@ -27,8 +27,10 @@
     <string name="anestesia_tipo_raqui">Raqui</string>
     <string name="anestesia_tipo_sedacao">Sedação</string>
     <string name="ativar">Ativar</string>
-    <string name="atualizar_dados">Sincronizar Dados</string>
+    <string name="atualizacao_disponivel">Atualização Disponível</string>
+    <string name="atualizacao_disponivel_msg">Há uma atualização disponível para o aplicativo. Clique em atualizar para ir à loja ou continuar para proseguir sem atualizar (não recomendado).</string>
     <string name="atualizar">Atualizar</string>
+    <string name="atualizar_dados">Sincronizar Dados</string>
     <string name="atualizar_perfil">Sincronizar Perfil</string>
     <string name="avancar">Avançar</string>
     <string name="back">Voltar</string>
@@ -248,8 +250,6 @@
     <string name="nome_da_nova_categoria">Nome da nova categoria</string>
     <string name="nome_da_nova_conta">Nome da nova conta</string>
     <string name="nome_de_quem_vai_receber_no_endereco">Nome de quem vai receber no endereço</string>
-    <string name="atualizacao_disponivel">Atualização Disponível</string>
-    <string name="atualizacao_disponivel_msg">Há uma atualização disponível para o aplicativo. Clique em atualizar para ir à loja ou continuar para proseguir sem atualizar (não recomendado).</string>
     <string name="notificacoes_colon">Notificações:</string>
     <string name="novo_pagamento">Novo pagamento</string>
     <string name="nunca">Nunca</string>
@@ -319,6 +319,7 @@
     <string name="relatar">Relatar</string>
     <string name="relatar_problema">Relatar problema</string>
     <string name="relatorio_enviado_com_sucesso">Relatório enviado com sucesso</string>
+    <string name="relogio_sem_sincronia_servidor">Não foi possível se conectar pois seu relógio se encontra fora de síncronia com o servidor</string>
     <string name="remover">Remover</string>
     <string name="remover_pagamento">Remover pagamento</string>
     <string name="restante_a_pagar_colon">Restante a Pagar:</string>
