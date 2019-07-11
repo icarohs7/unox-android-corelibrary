@@ -12,15 +12,13 @@ fun BaseMainActivity.toggleLoading(isLoading: Boolean) {
     binding.progressBar.isGone = !isLoading
 }
 
-fun BaseMainActivity.bottomNavBadge(menuItemId: Int): BadgeDrawable? {
-    return Try {
-        binding.bottomNav.showBadge(menuItemId)
-    }.orNull()
+fun BaseMainActivity.bottomNavBadge(menuItemId: Int): BadgeDrawable {
+    return binding.bottomNav.getOrCreateBadge(menuItemId).apply { setVisible(true) }
 }
 
 fun BaseMainActivity.setBottomNavBadgeIntNoZero(menuItemId: Int, number: Int): BadgeDrawable? {
     return Try {
-        if (number > 0) bottomNavBadge(menuItemId)?.apply { this.number = number }
+        if (number > 0) bottomNavBadge(menuItemId).apply { this.number = number }
         else null.apply { binding.bottomNav.removeBadge(menuItemId) }
     }.orNull()
 }
