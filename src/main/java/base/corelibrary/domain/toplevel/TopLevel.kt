@@ -5,6 +5,7 @@ package base.corelibrary.domain.toplevel
 import android.app.Activity
 import android.app.Service
 import android.os.Bundle
+import android.os.Process
 import androidx.annotation.IdRes
 import androidx.core.os.bundleOf
 import androidx.navigation.NavDirections
@@ -132,4 +133,13 @@ inline fun <reified T : Service> startService(vararg bundleExtras: Pair<String, 
     val intent = Intent<T>(appCtx)
     intent.putExtras(bundleOf(*bundleExtras))
     appCtx.startService(intent)
+}
+
+/**
+ * Finish the current application, killing
+ * the process and restarting it from scratch
+ * on the next restart
+ */
+fun killApp() {
+    Process.killProcess(Process.myPid())
 }
