@@ -185,6 +185,8 @@
     <string name="hora">Hora</string>
     <string name="horario">Horário</string>
     <string name="horario_colon">Horário:</string>
+    <string name="horario_de">Horário de</string>
+    <string name="horario_de_ponto">Horário de ponto</string>
     <string name="horarios_de_notificacoes_colon">Horários de Notificações:</string>
     <string name="horarios_de_ponto_colon">Horários de ponto:</string>
     <string name="houve_um_erro_ao_enviar_o_relatorio">Houve um erro ao enviar o relatório</string>
@@ -207,6 +209,7 @@
     <string name="km">KM</string>
     <string name="km_colon">KM:</string>
     <string name="legenda">Legenda</string>
+    <string name="lembre_se_de_bater_ponto">Lembre-se de bater ponto</string>
     <string name="ler_codigo">Ler código</string>
     <string name="ler_codigo_de_barra">Ler código de barra</string>
     <string name="ligar_central">Ligar Central</string>
@@ -236,6 +239,7 @@
     <string name="nao_foi_possivel_obter_localizacao_aproximada">Não foi possível obter a localização aproximada</string>
     <string name="nao_ha_diarias_em_seu_historico">Não há diárias em seu histórico</string>
     <string name="nao_informada">Não informado(a)</string>
+    <string name="nao_se_esqueca_de_efetuar_o_registro">Não se esqueça de efetuar o registro</string>
     <string name="nao_sincronizado">Não Sincronizado</string>
     <string name="nenhum_dispositivo_conectado">Nenhum dispositivo conectado</string>
     <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
@@ -252,6 +256,7 @@
     <string name="nome_da_nova_categoria">Nome da nova categoria</string>
     <string name="nome_da_nova_conta">Nome da nova conta</string>
     <string name="nome_de_quem_vai_receber_no_endereco">Nome de quem vai receber no endereço</string>
+    <string name="notificacoes">Notificações</string>
     <string name="notificacoes_colon">Notificações:</string>
     <string name="novo_pagamento">Novo pagamento</string>
     <string name="nunca">Nunca</string>
