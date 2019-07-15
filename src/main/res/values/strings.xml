@@ -26,6 +26,7 @@
     <string name="anestesia_tipo_peridural">Peridural</string>
     <string name="anestesia_tipo_raqui">Raqui</string>
     <string name="anestesia_tipo_sedacao">Sedação</string>
+    <string name="ativado">Ativado</string>
     <string name="ativar">Ativar</string>
     <string name="atualizacao_disponivel">Atualização Disponível</string>
     <string name="atualizacao_disponivel_msg">Há uma atualização disponível para o aplicativo. Clique em atualizar para ir à loja ou continuar para proseguir sem atualizar (não recomendado).</string>
@@ -98,6 +99,7 @@
     <string name="defina_o_dominio">Informe o domínio de sua empresa no campo abaixo</string>
     <string name="definicoes">Definições</string>
     <string name="depesas_do_mes">Despesas do Mês</string>
+    <string name="desativado">Desativado</string>
     <string name="desativar">Desativar</string>
     <string name="desconectar">Desconectar</string>
     <string name="desconto">Desconto</string>
