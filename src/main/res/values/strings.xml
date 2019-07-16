@@ -284,6 +284,7 @@
     <string name="pedidos_abertos">Pedidos Abertos</string>
     <string name="pedidos_entregues">Pedidos Entregues</string>
     <string name="pedir_gas">Pedir Gás</string>
+    <string name="pesquisa">Pesquisa</string>
     <string name="pesquisar">Pesquisar</string>
     <string name="pin">Pin</string>
     <string name="placa_colon">Placa:</string>
@@ -381,6 +382,7 @@
     <string name="telefone_colon">Telefone:</string>
     <string name="telefone_de_contato">Telefone de contato</string>
     <string name="tem_ou_teve_alguma_vez">(Tem ou Teve alguma vez?)</string>
+    <string name="termos_da_pesquisa">Termos da pesquisa</string>
     <string name="tipo">Tipo</string>
     <string name="tipo_da_viagem_colon">Tipo da viagem:</string>
     <string name="tipo_de_pagamento">Tipo de pagamento</string>
@@ -406,6 +408,7 @@
     <string name="ultima_sincronização_colon">Última Sincronização:</string>
     <string name="ultima_sincronização_colon_content">Última Sincronização: %s</string>
     <string name="ultima_viagem_colon">Última Viagem:</string>
+    <string name="ultimo_registro_colon">Último Registro:</string>
     <string name="url_exemplo">Exemplo: suaempresa para suaempresa.sige.pro</string>
     <string name="url_hint">Informe o nome de sua empresa como consta na url de seu sistema</string>
     <string name="valor">Valor</string>
@@ -450,5 +453,4 @@
         O prontuário não pode ser editado, caso precise fazer alguma
         correção, preencha um novo.
     </string>
-    <string name="ultimo_registro_colon">Último Registro:</string>
 </resources>
