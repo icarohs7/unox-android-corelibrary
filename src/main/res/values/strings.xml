@@ -450,4 +450,5 @@
         O prontuário não pode ser editado, caso precise fazer alguma
         correção, preencha um novo.
     </string>
+    <string name="ultimo_registro_colon">Último Registro:</string>
 </resources>
