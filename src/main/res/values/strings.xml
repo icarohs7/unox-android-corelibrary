@@ -210,6 +210,7 @@
     <string name="km_colon">KM:</string>
     <string name="legenda">Legenda</string>
     <string name="lembre_se_de_bater_ponto">Lembre-se de bater ponto</string>
+    <string name="lembre_se_de_bater_ponto_content_horas">Lembre-se de bater ponto %s horas</string>
     <string name="ler_codigo">Ler código</string>
     <string name="ler_codigo_de_barra">Ler código de barra</string>
     <string name="ligar_central">Ligar Central</string>
