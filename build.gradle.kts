@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    defaultSettings()
+    defaultSettings(project)
     defaultConfig {
         consumerProguardFiles("proguard-rules.pro", "./proguard")
     }
@@ -76,8 +76,8 @@ dependencies {
     api(AndroidDeps.unoxAndroidArchCore)
     api(AndroidDeps.viewAnimator)
 
-    debugApi(AndroidDeps.chuck)
-    releaseApi(AndroidDeps.chuckNoOp)
+    debugApi(AndroidDeps.chucker)
+    releaseApi(AndroidDeps.chuckerNoOp)
 
     AndroidKaptDeps.core.forEach(::kapt)
 }

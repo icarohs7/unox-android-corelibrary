@@ -2,8 +2,8 @@ package base.corelibrary.domain.extensions
 
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import com.readystatesoftware.chuck.ChuckInterceptor
 import kotlinx.serialization.json.Json
+import okhttp3.Interceptor
 import okhttp3.MediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -13,6 +13,10 @@ import retrofit2.create
 import splitties.init.appCtx
 import timber.log.Timber
 import java.util.concurrent.TimeUnit
+import com.readystatesoftware.chuck.api.ChuckCollector
+import com.readystatesoftware.chuck.api.ChuckInterceptor
+import okhttp3.MediaType.Companion.toMediaType
+
 
 /**
  * Short hand version to create a retrofit instance
@@ -65,27 +69,35 @@ inline fun <reified T> createRetrofitService(
 
 object RetrofitExtensions {
     fun getKotlinxSerializationConverter(): Converter.Factory {
-        val contentType = MediaType.get("application/json")
+        val contentType = "application/json".toMediaType()
         return Json
                 .nonstrict
                 .asConverterFactory(contentType)
     }
 
     fun getHttpClient(clientExtraConfig: OkHttpClient.Builder.() -> Unit = {}): OkHttpClient {
+
+
         return OkHttpClient
                 .Builder()
                 .readTimeout(60, TimeUnit.SECONDS)
                 .connectTimeout(60, TimeUnit.SECONDS)
-                .addInterceptor(getInterceptor())
-                .addInterceptor(ChuckInterceptor(appCtx))
+                .addInterceptor(getLoggingInterceptor())
+                .addInterceptor(getHttpInspectorInterceptor())
                 .addInterceptor(StethoInterceptor())
                 .apply(clientExtraConfig)
                 .build()
     }
 
-    private fun getInterceptor(): HttpLoggingInterceptor {
-        val log = { s: String -> Timber.tag("Retrofit").d(s) }
-        return HttpLoggingInterceptor(log)
-                .apply { level = HttpLoggingInterceptor.Level.BODY }
+    private fun getLoggingInterceptor(): Interceptor {
+        return HttpLoggingInterceptor(object : HttpLoggingInterceptor.Logger {
+            override fun log(message: String) {
+                Timber.tag("Retrofit").d(message)
+            }
+        }).apply { level = HttpLoggingInterceptor.Level.BODY }
+    }
+
+    private fun getHttpInspectorInterceptor(): Interceptor {
+        return ChuckInterceptor(appCtx, ChuckCollector(appCtx))
     }
 }
