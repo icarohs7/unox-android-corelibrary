@@ -68,7 +68,6 @@ dependencies {
     api(AndroidDeps.stateViews)
     api(AndroidDeps.stetho)
     api(AndroidDeps.stethoOkHttp)
-    api(AndroidDeps.swipeRevealLayout)
     api(AndroidDeps.timber)
     api(AndroidDeps.unoxAndroidArchCore)
     api(AndroidDeps.viewAnimator)
