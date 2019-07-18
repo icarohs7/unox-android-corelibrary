@@ -454,4 +454,6 @@
         O prontuário não pode ser editado, caso precise fazer alguma
         correção, preencha um novo.
     </string>
+    <string name="reportar_ocorrencia">Reportar Ocorrência</string>
+    <string name="justificativa">Justificativa</string>
 </resources>
