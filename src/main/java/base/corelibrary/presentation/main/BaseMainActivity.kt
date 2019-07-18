@@ -13,7 +13,6 @@ import arrow.core.getOrElse
 import base.corelibrary.R
 import base.corelibrary.databinding.ActivityBaseMainBinding
 import base.corelibrary.domain.toplevel.navigate
-import com.github.icarohs7.unoxandroidarch.extensions.showConfirmDialog
 import com.github.icarohs7.unoxandroidarch.presentation.activities.BaseBindingActivity
 import com.github.icarohs7.unoxandroidarch.state.addOnLoadingListener
 import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
@@ -67,18 +66,6 @@ abstract class BaseMainActivity(
     }
 
     open fun onLogout() {
-        showConfirmDialog("Confirmar", "Deseja se desconectar?") { dialog ->
-            btnYesDialogyesno.text = getString(R.string.sim)
-            btnNoDialogyesno.text = getString(R.string.nao)
-            txtTitleDialogyesno.backgroundColor = color(R.color.colorPrimary)
-            setYesHandler {
-                launch { onConfirmLogout() }
-                dialog.dismiss()
-            }
-        }
-    }
-
-    open suspend fun onConfirmLogout() {
     }
 
     open fun onRefresh() {

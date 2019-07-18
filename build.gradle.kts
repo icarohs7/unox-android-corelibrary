@@ -45,7 +45,6 @@ dependencies {
     api(AndroidDeps.lifecycleReactiveStreamsKtx)
     api(AndroidDeps.lifecycleRuntimeKtx)
     api(AndroidDeps.materialComponents)
-    api(AndroidDeps.materialDialogs)
     api(AndroidDeps.materialEditText)
     api(AndroidDeps.mvRx)
     api(AndroidDeps.navigationFragmentKtx)
