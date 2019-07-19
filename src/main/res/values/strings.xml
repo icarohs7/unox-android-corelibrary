@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="aluno_nao_registrado_msg">
+        Você poderá visualizar todas as aulas agendadas. Procure a secretaria
+        para fazer sua inscrição
+    </string>
+    <string name="big_text_placeholder">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Morbi elementum gravida imperdiet.
+        Duis ut tincidunt nisi, accumsan hendrerit neque. Integer facilisis mollis ex.
+        Aenean vehicula.
+    </string>
+    <string name="nao_pode_editar_formulario_msg">
+        O prontuário não pode ser editado, caso precise fazer alguma
+        correção, preencha um novo.
+    </string>
     <string name="a_pagar">A Pagar</string>
     <string name="a_receber">A Receber</string>
     <string name="aberta">Aberta</string>
@@ -161,6 +175,7 @@
     <string name="estoque">Estoque: </string>
     <string name="estoque_colon">Estoque:</string>
     <string name="evento_enviado_com_sucesso">Evento enviado com sucesso</string>
+    <string name="evento_reportado_com_sucesso">Evento reportado com sucesso.</string>
     <string name="exit">Sair</string>
     <string name="facebook">Facebook</string>
     <string name="fale_conosco">Fale Conosco</string>
@@ -191,6 +206,7 @@
     <string name="horarios_de_ponto_colon">Horários de ponto:</string>
     <string name="houve_um_erro_ao_enviar_o_relatorio">Houve um erro ao enviar o relatório</string>
     <string name="houve_um_erro_ao_fechar_o_caixa">Houve um erro ao fechar o caixa</string>
+    <string name="houve_um_erro_ao_reportar_o_evento">Houve um erro ao reportar o evento</string>
     <string name="houve_um_erro_ao_salvar_a_diaria">Houve um erro ao salvar a diária</string>
     <string name="impressora_invalida">Impressora inválida</string>
     <string name="imprimir">Imprimir</string>
@@ -205,6 +221,7 @@
     <string name="itens_colon">Itens:</string>
     <string name="ja_adicionado">Já Adicionado</string>
     <string name="ja_teve_alergia_ou_manifestou_alguma_reacao">(Já teve alergia ou manifestou alguma reação adversa a alguma substância e/ou medicação?)</string>
+    <string name="justificativa">Justificativa</string>
     <string name="kilometros_colon">Kilômetros:</string>
     <string name="km">KM</string>
     <string name="km_colon">KM:</string>
@@ -320,6 +337,7 @@
     <string name="registrar_ponto">Registrar Ponto</string>
     <string name="registrar_saida">Registrar Saída</string>
     <string name="registre_um_endereco_no_botao_abaixo">Registre um endereço no botão abaixo</string>
+    <string name="registro_a_ser_reportado_colon">Registro a ser reportado:</string>
     <string name="registro_de_entradas">Registro de Entradas</string>
     <string name="registro_sincronizado_com_servidor_question">Registro sincronizado com o servidor?</string>
     <string name="registro_sincronizado_question">Registro sincronizado?</string>
@@ -331,6 +349,8 @@
     <string name="relogio_sem_sincronia_servidor">Não foi possível se conectar pois seu relógio se encontra fora de síncronia com o servidor</string>
     <string name="remover">Remover</string>
     <string name="remover_pagamento">Remover pagamento</string>
+    <string name="reportando">Reportando</string>
+    <string name="reportar_ocorrencia">Reportar Ocorrência</string>
     <string name="restante_a_pagar_colon">Restante a Pagar:</string>
     <string name="resumo">Resumo</string>
     <string name="resumo_da_venda">Resumo da Venda</string>
@@ -440,20 +460,4 @@
     <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="voltar">Voltar</string>
     <string name="x">x</string>
-    <string name="aluno_nao_registrado_msg">
-        Você poderá visualizar todas as aulas agendadas. Procure a secretaria
-        para fazer sua inscrição
-    </string>
-    <string name="big_text_placeholder">
-        Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Morbi elementum gravida imperdiet.
-        Duis ut tincidunt nisi, accumsan hendrerit neque. Integer facilisis mollis ex.
-        Aenean vehicula.
-    </string>
-    <string name="nao_pode_editar_formulario_msg">
-        O prontuário não pode ser editado, caso precise fazer alguma
-        correção, preencha um novo.
-    </string>
-    <string name="reportar_ocorrencia">Reportar Ocorrência</string>
-    <string name="justificativa">Justificativa</string>
 </resources>
