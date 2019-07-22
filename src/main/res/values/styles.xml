@@ -20,6 +20,7 @@
         <item name="actionOverflowButtonStyle">@style/Widget.App.ActionButton.Overflow</item>
         <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
         <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="materialCardViewStyle">@style/Widget.App.MaterialCardView</item>
 
         <item name="android:fitsSystemWindows">true</item>
     </style>
@@ -31,6 +32,10 @@
     <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
         <item name="itemIconTint">@color/bottom_bar_item</item>
         <item name="itemTextColor">@color/bottom_bar_text</item>
+    </style>
+
+    <style name="Widget.App.MaterialCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface_button_color</item>
     </style>
 
     <style name="Widget.App.Toolbar" parent="Theme.MaterialComponents">
