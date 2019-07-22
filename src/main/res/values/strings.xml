@@ -86,6 +86,7 @@
     <string name="confirmar_pedido">Confirmar pedido</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
     <string name="confirmar_registro">Confirmar Registro</string>
+    <string name="confirmar_exclusao">Confirmar Exclusão</string>
     <string name="confirmar_remover_carteira">Remover Carteira</string>
     <string name="confirmar_remover_carteira_mensagem">Deseja apagar %s?</string>
     <string name="confirmar_remover_conta">Remover Conta</string>
@@ -126,6 +127,7 @@
     <string name="deseja_finalizar_essa_venda_no_crediario">Deseja finalizar essa venda no crediário?</string>
     <string name="deseja_remover_content_question">Deseja remover %s?</string>
     <string name="deseja_remover_transacao">Deseja remover essa transação?</string>
+    <string name="deseja_remover_o_registro_selecionado">Deseja remover o registro selecionado?</string>
     <string name="despesa">Despesa</string>
     <string name="despesas">Despesas</string>
     <string name="despesas_do_mes">Despesas do Mês</string>
