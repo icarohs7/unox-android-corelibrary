@@ -1,10 +1,8 @@
 package base.corelibrary.domain.extensions
 
 import android.graphics.Point
-import android.util.Log
 import android.view.Window
 import android.view.WindowManager
-import arrow.core.toT
 import kotlin.math.roundToInt
 
 /**

@@ -2,9 +2,11 @@ package base.corelibrary.domain.extensions
 
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
+import com.readystatesoftware.chuck.api.ChuckCollector
+import com.readystatesoftware.chuck.api.ChuckInterceptor
 import kotlinx.serialization.json.Json
 import okhttp3.Interceptor
-import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Converter
@@ -13,9 +15,6 @@ import retrofit2.create
 import splitties.init.appCtx
 import timber.log.Timber
 import java.util.concurrent.TimeUnit
-import com.readystatesoftware.chuck.api.ChuckCollector
-import com.readystatesoftware.chuck.api.ChuckInterceptor
-import okhttp3.MediaType.Companion.toMediaType
 
 
 /**

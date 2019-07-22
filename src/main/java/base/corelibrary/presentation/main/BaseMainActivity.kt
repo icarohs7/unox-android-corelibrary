@@ -19,8 +19,6 @@ import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.coroutines.launch
-import splitties.resources.color
-import splitties.views.backgroundColor
 
 @Suppress("MemberVisibilityCanBePrivate")
 abstract class BaseMainActivity(
@@ -33,10 +31,11 @@ abstract class BaseMainActivity(
         addOnLoadingListener(this::toggleLoading)
         setupNavigation()
         title = navController.currentDestination?.label
-        if (!enableToolbarScroll)
+        if (!enableToolbarScroll) {
             binding.layoutToolbar.toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
                 scrollFlags = 0
             }
+        }
     }
 
     private fun setupNavigation(): Unit = with(binding) {
@@ -50,9 +49,9 @@ abstract class BaseMainActivity(
         setSupportActionBar(toolbar)
     }
 
-    open fun setupBottomNav(nav: BottomNavigationView) {
-        nav.setupWithNavController(navController)
-        nav.setOnNavigationItemSelectedListener(::onOptionsItemSelected)
+    open fun setupBottomNav(bottomNav: BottomNavigationView): Unit = with(bottomNav) {
+        setupWithNavController(navController)
+        setOnNavigationItemSelectedListener(::onOptionsItemSelected)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

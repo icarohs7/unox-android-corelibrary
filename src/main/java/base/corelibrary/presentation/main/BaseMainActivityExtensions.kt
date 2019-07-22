@@ -13,7 +13,7 @@ fun BaseMainActivity.toggleLoading(isLoading: Boolean) {
 }
 
 fun BaseMainActivity.bottomNavBadge(menuItemId: Int): BadgeDrawable {
-    return binding.bottomNav.getOrCreateBadge(menuItemId).apply { setVisible(true) }
+    return binding.bottomNav.getOrCreateBadge(menuItemId).apply { isVisible = true }
 }
 
 fun BaseMainActivity.setBottomNavBadgeIntNoZero(menuItemId: Int, number: Int): BadgeDrawable? {
