@@ -344,6 +344,7 @@
     <string name="rejeitar_entrega">Rejeitar\nEntrega</string>
     <string name="rejeitar_pedido">Rejeitar\nPedido</string>
     <string name="relatar">Relatar</string>
+    <string name="apagar_registro">Apagar Registro</string>
     <string name="relatar_problema">Relatar problema</string>
     <string name="relatorio_enviado_com_sucesso">Relatório enviado com sucesso</string>
     <string name="relogio_sem_sincronia_servidor">Não foi possível se conectar pois seu relógio se encontra fora de síncronia com o servidor</string>
