@@ -27,7 +27,7 @@ dependencies {
     api(Deps.okHttpLoggingInterceptor)
     api(Deps.retrofit)
     api(Deps.retrofitKotlinxSerializationConverter)
-    api(Deps.rxKotlin)
+    api(Deps.rxJava2)
     api(Deps.rxRelay)
 
     api(AndroidDeps.disposer)
@@ -56,7 +56,6 @@ dependencies {
     api(AndroidDeps.roomRxJava2)
     api(AndroidDeps.spinKit)
     api(AndroidDeps.splittiesAppctx)
-    api(AndroidDeps.splittiesMainhandler)
     api(AndroidDeps.splittiesPermissions)
     api(AndroidDeps.splittiesResources)
     api(AndroidDeps.splittiesSystemservices)
@@ -67,7 +66,7 @@ dependencies {
     api(AndroidDeps.stethoOkHttp)
     api(AndroidDeps.timber)
     api(AndroidDeps.unoxAndroidArchCore)
-    api(AndroidDeps.viewAnimator)
+    api(AndroidDeps.viewAnimator) //TODO remove or move to separate module
 
     debugApi(AndroidDeps.chucker)
     releaseApi(AndroidDeps.chuckerNoOp)

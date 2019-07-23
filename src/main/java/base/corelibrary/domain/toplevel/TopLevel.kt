@@ -16,7 +16,7 @@ import base.corelibrary.R
 import base.corelibrary.presentation.main.BaseMainActivity
 import com.andrognito.flashbar.Flashbar
 import com.github.icarohs7.unoxandroidarch.Injector
-import com.github.icarohs7.unoxandroidarch.Messages
+import com.github.icarohs7.unoxandroidarch.toplevel.FlashBar
 import com.github.icarohs7.unoxandroidarch.toplevel.Intent
 import com.github.icarohs7.unoxandroidarch.toplevel.onActivity
 import org.koin.core.get
@@ -102,7 +102,7 @@ fun showWarningFlashBar(
         context: Activity? = null
 ) {
     fun messageBuilder(act: Activity) {
-        Messages.flashBar(act, message, duration, gravity) { backgroundDrawable(R.drawable.bg_gradient_yellow) }
+        FlashBar.show(act, message, duration, gravity) { backgroundDrawable(R.drawable.bg_gradient_yellow) }
     }
     context?.let(::messageBuilder) ?: onActivity(::messageBuilder)
 }
@@ -110,7 +110,7 @@ fun showWarningFlashBar(
 /** Show a flashbar snack with the default background and bottom gravity */
 fun showFlashSnackbar(message: String, duration: Int = 1000, context: Activity? = null) {
     fun messageBuilder(act: Activity) {
-        Messages.flashBar(act, message, duration, Flashbar.Gravity.BOTTOM)
+        FlashBar.show(act, message, duration, Flashbar.Gravity.BOTTOM)
     }
     context?.let(::messageBuilder) ?: onActivity(::messageBuilder)
 }
