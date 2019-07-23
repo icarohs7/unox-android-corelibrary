@@ -48,7 +48,6 @@ dependencies {
     api(AndroidDeps.navigationFragmentKtx)
     api(AndroidDeps.navigationUiKtx)
     api(AndroidDeps.picasso)
-    api(AndroidDeps.pugNotification)
     api(AndroidDeps.quantum)
     api(AndroidDeps.quantumRx)
     api(AndroidDeps.recyclerView)
