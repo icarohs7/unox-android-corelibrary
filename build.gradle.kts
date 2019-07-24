@@ -65,7 +65,6 @@ dependencies {
     api(AndroidDeps.stethoOkHttp)
     api(AndroidDeps.timber)
     api(AndroidDeps.unoxAndroidArchCore)
-    api(AndroidDeps.viewAnimator) //TODO remove or move to separate module
 
     debugApi(AndroidDeps.chucker)
     releaseApi(AndroidDeps.chuckerNoOp)
