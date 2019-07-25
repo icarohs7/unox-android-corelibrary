@@ -463,4 +463,6 @@
     <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="voltar">Voltar</string>
     <string name="x">x</string>
+    <string name="localizacao_desabilitada">Localização Desabilitada</string>
+    <string name="ative_a_localizacao_por_gps_para_utilizar_o_aplicativo">Ativa a localização por GPS para utilizar o aplicativo</string>
 </resources>
