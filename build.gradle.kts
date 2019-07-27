@@ -51,8 +51,6 @@ dependencies {
     api(AndroidDeps.quantum)
     api(AndroidDeps.quantumRx)
     api(AndroidDeps.recyclerView)
-    api(AndroidDeps.roomKtx)
-    api(AndroidDeps.roomRxJava2)
     api(AndroidDeps.spinKit)
     api(AndroidDeps.splittiesAppctx)
     api(AndroidDeps.splittiesPermissions)
@@ -68,8 +66,6 @@ dependencies {
 
     debugApi(AndroidDeps.chucker)
     releaseApi(AndroidDeps.chuckerNoOp)
-
-    AndroidKaptDeps.core.forEach(::kapt)
 }
 
 setupJacoco {
