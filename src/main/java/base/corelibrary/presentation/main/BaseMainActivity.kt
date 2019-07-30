@@ -28,7 +28,7 @@ abstract class BaseMainActivity(
 
     override fun onBindingCreated(savedInstanceState: Bundle?) {
         super.onBindingCreated(savedInstanceState)
-        addOnLoadingListener(this::toggleLoading)
+        addOnLoadingListener { isLoading -> toggleLoading(isLoading) }
         setupNavigation()
         title = navController.currentDestination?.label
         if (!enableToolbarScroll) {

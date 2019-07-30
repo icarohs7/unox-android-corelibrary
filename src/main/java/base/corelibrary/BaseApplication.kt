@@ -59,7 +59,6 @@ abstract class BaseApplication : Application() {
 
     private fun setupUnoxAndroidArch(): Unit = UnoxAndroidArch.run {
         init()
-        screenTransition = UnoxAndroidArch.AnimationType.FADE
     }
 
     /**
