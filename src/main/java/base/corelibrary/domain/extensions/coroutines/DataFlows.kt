@@ -22,8 +22,11 @@ class PublishDataFlow<T> {
  * Wrapper class holding an [kotlinx.coroutines.channels.ConflatedBroadcastChannel]
  * and a flow emitting its items
  */
-class BehaviorDataFlow<T>(initialValue: T) {
-    val channel: ConflatedBroadcastChannel<T> = ConflatedBroadcastChannel(initialValue)
+class BehaviorDataFlow<T>(initialValue: T? = null) {
+    val channel: ConflatedBroadcastChannel<T> = initialValue
+            ?.let(::ConflatedBroadcastChannel)
+            ?: ConflatedBroadcastChannel()
+
     val value: T get() = channel.value
 
     fun offer(value: T): Boolean = channel.offer(value)
