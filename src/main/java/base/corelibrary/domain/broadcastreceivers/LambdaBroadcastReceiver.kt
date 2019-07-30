@@ -3,13 +3,10 @@ package base.corelibrary.domain.broadcastreceivers
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.channels.ConflatedBroadcastChannel
 import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.rx2.awaitFirst
-import okhttp3.internal.cache2.Relay
 import splitties.init.appCtx
 
 class LambdaBroadcastReceiver : BroadcastReceiver() {
