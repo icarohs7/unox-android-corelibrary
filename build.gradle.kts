@@ -18,7 +18,6 @@ android {
 dependencies {
     api(Deps.arrowCoreData)
     api(Deps.arrowSyntax)
-    api(Deps.coroutinesReactive)
     api(Deps.coroutinesRx2)
     api(Deps.khronos)
     api(Deps.kotlinStdLib)
@@ -27,9 +26,7 @@ dependencies {
     api(Deps.okHttpLoggingInterceptor)
     api(Deps.retrofit)
     api(Deps.retrofitKotlinxSerializationConverter)
-    api(Deps.rxJava2)
 
-    api(AndroidDeps.disposer)
     api(AndroidDeps.drawableToolbox)
     api(AndroidDeps.flashbar)
     api(AndroidDeps.flexboxLayout)
