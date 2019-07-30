@@ -1,4 +1,4 @@
-package base.corelibrary.domain.extensions
+package base.corelibrary.domain.extensions.coroutines
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
