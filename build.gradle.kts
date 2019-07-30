@@ -28,7 +28,6 @@ dependencies {
     api(Deps.retrofit)
     api(Deps.retrofitKotlinxSerializationConverter)
     api(Deps.rxJava2)
-    api(Deps.rxRelay)
 
     api(AndroidDeps.disposer)
     api(AndroidDeps.drawableToolbox)
@@ -40,7 +39,6 @@ dependencies {
     api(AndroidDeps.kotpref)
     api(AndroidDeps.kotprefInitializer)
     api(AndroidDeps.lifecycleLivedataKtx)
-    api(AndroidDeps.lifecycleReactiveStreamsKtx)
     api(AndroidDeps.lifecycleRuntimeKtx)
     api(AndroidDeps.materialComponents)
     api(AndroidDeps.materialEditText)
