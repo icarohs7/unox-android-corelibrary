@@ -41,7 +41,6 @@ dependencies {
     api(AndroidDeps.mvRx)
     api(AndroidDeps.navigationFragmentKtx)
     api(AndroidDeps.navigationUiKtx)
-    api(AndroidDeps.picasso)
     api(AndroidDeps.recyclerView)
     api(AndroidDeps.spinKit)
     api(AndroidDeps.splittiesAppctx)

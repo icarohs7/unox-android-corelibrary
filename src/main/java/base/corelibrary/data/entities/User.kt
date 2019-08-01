@@ -6,6 +6,8 @@ import com.chibatching.kotpref.KotprefModel
 import kotlinx.serialization.internal.StringSerializer
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.map
+import kotlin.properties.ReadWriteProperty
+import kotlin.reflect.KProperty
 
 object User : KotprefModel() {
     var id: Int by intPref(0)
@@ -31,5 +33,10 @@ object User : KotprefModel() {
     operator fun get(key: String): String = extraProperties[key].orEmpty()
     operator fun set(key: String, value: String) {
         extraProperties = extraProperties + Pair(key, value)
+    }
+
+    operator fun getValue(thisRef: Any?, property: KProperty<*>): String = this[property.name]
+    operator fun setValue(thisRef: Any?, property: KProperty<*>, value: String) {
+        this[property.name] = value
     }
 }
