@@ -17,7 +17,6 @@ android {
 
 dependencies {
     api(Deps.arrowCoreData)
-    api(Deps.arrowSyntax)
     api(Deps.coroutinesCore)
     api(Deps.khronos)
     api(Deps.kotlinStdLib)
