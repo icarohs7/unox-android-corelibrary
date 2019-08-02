@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorSigeLightBlue">#0d74bd</color>
-    <color name="colorSigeDarkBlue">#19308a</color>
+    <color name="colorSigeLightBlue">#0D74BD</color>
+    <color name="colorSigeDarkBlue">#19308A</color>
     <color name="colorOnSigeLightBlue">@color/white</color>
     <color name="colorOnSigeDarkBlue">@color/white</color>
 
@@ -14,6 +14,7 @@
     <color name="colorSuccess">#2F8417</color>
     <color name="colorOnSuccess">#FFFFFF</color>
     <color name="colorWarning">#FF8800</color>
+    <color name="colorWarningYellow">#FFCC00</color>
     <color name="colorOnWarning">#FFFFFF</color>
 
     <color name="colorPrimary">@color/colorSigeLightBlue</color>
@@ -28,7 +29,7 @@
     <color name="colorAccent">@color/colorPrimaryVariant</color>
 
     <color name="colorNeutralGray">#646464</color>
-    <color name="colorTextLight">#fff</color>
+    <color name="colorTextLight">#FFF</color>
     <color name="colorGray">#646464</color>
     <color name="colorLightGray">#808080</color>
     <color name="colorSuccessLight">#AA2F8417</color>
