@@ -1,4 +1,4 @@
-package base.corelibrary.presentation.viewmodel
+package base.corelibrary.presentation._baseclasses
 
 import com.airbnb.mvrx.Async
 import com.airbnb.mvrx.BaseMvRxViewModel
@@ -10,7 +10,6 @@ import com.airbnb.mvrx.Success
 import com.github.icarohs7.unoxandroidarch.UnoxAndroidArch
 import com.github.icarohs7.unoxcore.extensions.coroutines.cancelCoroutineScope
 import io.reactivex.Flowable
-import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
@@ -23,15 +22,13 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.flow.onErrorReturn
-import kotlinx.coroutines.flow.subscribe
 import kotlinx.coroutines.plus
 
 /**
  * Base ViewModel implementing a [CoroutineScope]
  * and inheriting from [BaseMvRxViewModel]
  */
-open class NxMvRxViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel<S>(
+open class CoreMvRxViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel<S>(
         initialState,
         UnoxAndroidArch.isDebug,
         RealMvRxStateStore(initialState)
@@ -53,7 +50,7 @@ open class NxMvRxViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel<S
      */
     fun <T> Flow<T>.connectToState(transformer: S.(T) -> S): Job {
         return onEach { item -> setState { transformer(this, item) } }
-                .launchIn(this@NxMvRxViewModel + Dispatchers.Default)
+                .launchIn(this@CoreMvRxViewModel + Dispatchers.Default)
     }
 
     /**
@@ -98,7 +95,7 @@ open class NxMvRxViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel<S
      * Launch the collection of the given Flow
      * on the coroutine scope of this component
      */
-    fun Flow<*>.launchInScope(): Job = launchIn(this@NxMvRxViewModel)
+    fun Flow<*>.launchInScope(): Job = launchIn(this@CoreMvRxViewModel)
 
     override fun onCleared() {
         cancelCoroutineScope()
