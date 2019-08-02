@@ -3,6 +3,7 @@ package base.corelibrary.domain.extensions
 import android.graphics.Point
 import android.view.Window
 import android.view.WindowManager
+import arrow.core.Tuple2
 import kotlin.math.roundToInt
 
 /**
@@ -25,4 +26,15 @@ fun Window.resizeToScreenPercent(widthPercent: Int, heightPercent: Int) {
 fun Window.showKeyboard() {
     clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM)
     setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE)
+}
+
+/**
+ * Return the width and height of the
+ * given window
+ */
+fun Window.widthAndHeight(): Tuple2<Int, Int> {
+    val manager = windowManager
+    val point = Point()
+    manager.defaultDisplay.getSize(point)
+    return Tuple2(point.x, point.y)
 }

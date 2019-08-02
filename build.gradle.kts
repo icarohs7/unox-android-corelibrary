@@ -26,7 +26,6 @@ dependencies {
     api(Deps.retrofit)
     api(Deps.retrofitKotlinxSerializationConverter)
 
-    api(AndroidDeps.drawableToolbox)
     api(AndroidDeps.flashbar)
     api(AndroidDeps.flexboxLayout)
     api(AndroidDeps.fragmentKtx)
@@ -48,7 +47,6 @@ dependencies {
     api(AndroidDeps.splittiesResources)
     api(AndroidDeps.splittiesSystemservices)
     api(AndroidDeps.splittiesViews)
-    api(AndroidDeps.spotsDialog)
     api(AndroidDeps.stateViews)
     api(AndroidDeps.stetho)
     api(AndroidDeps.stethoOkHttp)
