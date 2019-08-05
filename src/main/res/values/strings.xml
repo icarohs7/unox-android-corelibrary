@@ -40,8 +40,10 @@
     <string name="anestesia_tipo_peridural">Peridural</string>
     <string name="anestesia_tipo_raqui">Raqui</string>
     <string name="anestesia_tipo_sedacao">Sedação</string>
+    <string name="apagar_registro">Apagar Registro</string>
     <string name="ativado">Ativado</string>
     <string name="ativar">Ativar</string>
+    <string name="ative_a_localizacao_por_gps_para_utilizar_o_aplicativo">Ativa a localização por GPS para utilizar o aplicativo</string>
     <string name="atualizacao_disponivel">Atualização Disponível</string>
     <string name="atualizacao_disponivel_msg">Há uma atualização disponível para o aplicativo. Clique em atualizar para ir à loja ou continuar para proseguir sem atualizar (não recomendado).</string>
     <string name="atualizar">Atualizar</string>
@@ -83,10 +85,10 @@
     <string name="confirmando_registro">Confirmando Registro…</string>
     <string name="confirmar">Confirmar</string>
     <string name="confirmar_acao">Confirmar Ação</string>
+    <string name="confirmar_exclusao">Confirmar Exclusão</string>
     <string name="confirmar_pedido">Confirmar pedido</string>
     <string name="confirmar_ponto">Confirmar registro de ponto</string>
     <string name="confirmar_registro">Confirmar Registro</string>
-    <string name="confirmar_exclusao">Confirmar Exclusão</string>
     <string name="confirmar_remover_carteira">Remover Carteira</string>
     <string name="confirmar_remover_carteira_mensagem">Deseja apagar %s?</string>
     <string name="confirmar_remover_conta">Remover Conta</string>
@@ -126,8 +128,8 @@
     <string name="deseja_finalizar_essa_venda">Deseja finalizar essa venda?</string>
     <string name="deseja_finalizar_essa_venda_no_crediario">Deseja finalizar essa venda no crediário?</string>
     <string name="deseja_remover_content_question">Deseja remover %s?</string>
-    <string name="deseja_remover_transacao">Deseja remover essa transação?</string>
     <string name="deseja_remover_o_registro_selecionado">Deseja remover o registro selecionado?</string>
+    <string name="deseja_remover_transacao">Deseja remover essa transação?</string>
     <string name="despesa">Despesa</string>
     <string name="despesas">Despesas</string>
     <string name="despesas_do_mes">Despesas do Mês</string>
@@ -182,7 +184,8 @@
     <string name="facebook">Facebook</string>
     <string name="fale_conosco">Fale Conosco</string>
     <string name="faz_uso_regular_ou_tomou_nos_ultimos_30_dias">(Faz uso regular ou tomou nos últimos 30 dias?)</string>
-    <string name="fazerLogin">Login</string>
+    <string name="fazer_login">Login</string>
+    <string name="fazer_pagamento">Fazer Pagamento</string>
     <string name="fechada">Fechada</string>
     <string name="fechando_caixa">Fechando caixa</string>
     <string name="fechar_caixa">Fechar caixa</string>
@@ -238,6 +241,7 @@
     <string name="limpar">Limpar</string>
     <string name="limpar_carrinho">Limpar Carrinho</string>
     <string name="limpar_formulario">Limpar Formulário</string>
+    <string name="localizacao_desabilitada">Localização Desabilitada</string>
     <string name="login">Usuário</string>
     <string name="login_e_senha">Login e Senha</string>
     <string name="logout">Sair</string>
@@ -346,7 +350,6 @@
     <string name="rejeitar_entrega">Rejeitar\nEntrega</string>
     <string name="rejeitar_pedido">Rejeitar\nPedido</string>
     <string name="relatar">Relatar</string>
-    <string name="apagar_registro">Apagar Registro</string>
     <string name="relatar_problema">Relatar problema</string>
     <string name="relatorio_enviado_com_sucesso">Relatório enviado com sucesso</string>
     <string name="relogio_sem_sincronia_servidor">Não foi possível se conectar pois seu relógio se encontra fora de síncronia com o servidor</string>
@@ -463,6 +466,4 @@
     <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="voltar">Voltar</string>
     <string name="x">x</string>
-    <string name="localizacao_desabilitada">Localização Desabilitada</string>
-    <string name="ative_a_localizacao_por_gps_para_utilizar_o_aplicativo">Ativa a localização por GPS para utilizar o aplicativo</string>
 </resources>
