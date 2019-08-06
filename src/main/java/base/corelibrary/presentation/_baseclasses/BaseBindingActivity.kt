@@ -4,12 +4,13 @@ import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.github.icarohs7.unoxandroidarch.presentation.activities.BaseScopedActivity
+import androidx.lifecycle.lifecycleScope
+import com.github.icarohs7.unoxandroidarch.presentation.activities.BaseArchActivity
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
 
-abstract class BaseBindingActivity<B : ViewDataBinding> : BaseScopedActivity() {
+abstract class BaseBindingActivity<B : ViewDataBinding> : BaseArchActivity() {
     /**
      * Initialized in [onCreate]
      */
@@ -40,7 +41,7 @@ abstract class BaseBindingActivity<B : ViewDataBinding> : BaseScopedActivity() {
      * Launch the collection of the given Flow
      * on the coroutine scope of this component
      */
-    fun Flow<*>.launchInScope(): Job = launchIn(this@BaseBindingActivity)
+    fun Flow<*>.launchInScope(): Job = launchIn(lifecycleScope)
 
     /**
      * @return layout to setup data binding.

@@ -1,5 +1,6 @@
 package base.corelibrary.presentation._baseclasses
 
+import androidx.lifecycle.viewModelScope
 import com.airbnb.mvrx.Async
 import com.airbnb.mvrx.BaseMvRxViewModel
 import com.airbnb.mvrx.Fail
@@ -19,6 +20,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
@@ -32,13 +34,13 @@ open class CoreMvRxViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel
         initialState,
         UnoxAndroidArch.isDebug,
         RealMvRxStateStore(initialState)
-), CoroutineScope by MainScope() {
+) {
     /**
      * Connect the given [Flow] to the
      * state of the viewmodel, updating
      * the state on each emission
      */
-    fun Flow<S>.connectToState(): Job {
+    fun Flow<S>.connectToState(): Flow<S> {
         return connectToState { this }
     }
 
@@ -48,9 +50,9 @@ open class CoreMvRxViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel
      * the emmited item and apply the reducer to
      * evolve the state
      */
-    fun <T> Flow<T>.connectToState(transformer: S.(T) -> S): Job {
+    fun <T> Flow<T>.connectToState(transformer: S.(T) -> S): Flow<T> {
         return onEach { item -> setState { transformer(this, item) } }
-                .launchIn(this@CoreMvRxViewModel + Dispatchers.Default)
+                .flowOn(Dispatchers.Default)
     }
 
     /**
@@ -95,10 +97,5 @@ open class CoreMvRxViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel
      * Launch the collection of the given Flow
      * on the coroutine scope of this component
      */
-    fun Flow<*>.launchInScope(): Job = launchIn(this@CoreMvRxViewModel)
-
-    override fun onCleared() {
-        cancelCoroutineScope()
-        super.onCleared()
-    }
+    fun Flow<*>.launchInScope(): Job = launchIn(viewModelScope)
 }

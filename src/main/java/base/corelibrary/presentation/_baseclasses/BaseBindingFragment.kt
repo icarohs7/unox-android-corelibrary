@@ -1,22 +1,29 @@
 package base.corelibrary.presentation._baseclasses
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.github.icarohs7.unoxandroidarch.presentation.fragments.BaseScopedFragment
+import androidx.lifecycle.lifecycleScope
+import com.airbnb.mvrx.BaseMvRxFragment
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.launch
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.EmptyCoroutineContext
 
 /**
  * Base fragment using databinding
  */
-abstract class BaseBindingFragment<B : ViewDataBinding> : BaseScopedFragment() {
+abstract class BaseBindingFragment<B : ViewDataBinding> : BaseMvRxFragment() {
     /**
      * Initialized on [onCreateView]
      */
@@ -31,6 +38,9 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseScopedFragment() {
         onBindingCreated(inflater, container, savedInstanceState)
         afterInitialSetup()
         return binding.root
+    }
+
+    override fun invalidate() {
     }
 
     /**
@@ -49,7 +59,7 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseScopedFragment() {
      * Launch the collection of the given Flow
      * on the coroutine scope of this component
      */
-    fun Flow<*>.launchInScope(): Job = launchIn(this@BaseBindingFragment)
+    fun Flow<*>.launchInScope(): Job = launchIn(lifecycleScope)
 
     /**
      * Launch the collection of the given Flow,

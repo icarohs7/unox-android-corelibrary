@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.updateLayoutParams
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -12,6 +13,7 @@ import arrow.core.Try
 import arrow.core.getOrElse
 import base.corelibrary.R
 import base.corelibrary.databinding.ActivityBaseMainBinding
+import base.corelibrary.domain.extensions.coroutines.launch
 import base.corelibrary.domain.toplevel.navigate
 import base.corelibrary.presentation._baseclasses.BaseBindingActivity
 import com.github.icarohs7.unoxandroidarch.state.addOnLoadingListener
@@ -28,7 +30,7 @@ abstract class BaseMainActivity(
 
     override fun onBindingCreated(savedInstanceState: Bundle?) {
         super.onBindingCreated(savedInstanceState)
-        addOnLoadingListener { isLoading -> toggleLoading(isLoading) }
+        lifecycleScope.addOnLoadingListener { isLoading -> toggleLoading(isLoading) }
         setupNavigation()
         title = navController.currentDestination?.label
         if (!enableToolbarScroll) {

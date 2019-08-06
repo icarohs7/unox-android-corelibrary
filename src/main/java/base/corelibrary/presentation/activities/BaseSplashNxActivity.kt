@@ -3,6 +3,7 @@ package base.corelibrary.presentation.activities
 import android.os.Bundle
 import androidx.annotation.CallSuper
 import androidx.core.view.isInvisible
+import androidx.lifecycle.lifecycleScope
 import com.github.icarohs7.unoxandroidarch.R
 import com.github.icarohs7.unoxandroidarch.databinding.ActivityBaseNxSplashBinding
 import com.github.icarohs7.unoxandroidarch.extensions.animateFadeIn
@@ -17,7 +18,7 @@ abstract class BaseSplashNxActivity(
     @CallSuper
     override fun onBindingCreated(savedInstanceState: Bundle?) {
         super.onBindingCreated(savedInstanceState)
-        addOnLoadingListener { toggleLoading(it) }
+        lifecycleScope.addOnLoadingListener { toggleLoading(it) }
         binding.txtVersion.text = version
         binding.imgLogo.alpha = 0f
         binding.imgLogo.animateFadeIn((timeout).toLong())
