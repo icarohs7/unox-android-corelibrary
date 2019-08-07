@@ -10,9 +10,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.lifecycleScope
 import com.airbnb.mvrx.BaseMvRxFragment
+import com.github.icarohs7.unoxcore.extensions.coroutines.job
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancelChildren
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -69,6 +71,15 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseMvRxFragment() {
      */
     fun <T> Flow<T>.launchCollect(action: suspend (T) -> Unit): Job {
         return onEach(action).launchInScope()
+    }
+
+    /**
+     * Cancel all children coroutines in the
+     * onStop event
+     */
+    override fun onStop() {
+        super.onStop()
+        lifecycleScope.job.cancelChildren()
     }
 
     /**
