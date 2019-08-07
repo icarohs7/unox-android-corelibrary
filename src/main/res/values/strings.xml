@@ -19,6 +19,7 @@
     <string name="a_receber">A Receber</string>
     <string name="aberta">Aberta</string>
     <string name="abrir_caixa">Abrir caixa</string>
+    <string name="abrir_os">Abrir os</string>
     <string name="abrir_drawer">Abrir menu</string>
     <string name="aceitar_pedido">Aceitar\nPedido</string>
     <string name="adicionar">Adicionar</string>
@@ -251,6 +252,7 @@
     <string name="meu_carrinho">Meu Carrinho</string>
     <string name="minha_agenda">Minha Agenda</string>
     <string name="minhas_aulas">Minhas Aulas</string>
+    <string name="minhas_os">Minhas OS</string>
     <string name="minhas_entregas">Minhas Entregas</string>
     <string name="minuto">Minuto</string>
     <string name="motorista">Motorista</string>
