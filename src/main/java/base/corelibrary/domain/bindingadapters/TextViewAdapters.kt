@@ -4,56 +4,63 @@ import android.widget.TextView
 import androidx.core.view.isGone
 import androidx.databinding.BindingAdapter
 import com.github.icarohs7.unoxandroidarch.extensions.asBrDate
+import com.github.icarohs7.unoxandroidarch.extensions.asBrDateTime
 import com.github.icarohs7.unoxandroidarch.extensions.asDate
 import com.github.icarohs7.unoxandroidarch.extensions.asShortTime
 import com.github.icarohs7.unoxcore.extensions.asCurrency
+import khronos.toString
 import java.text.NumberFormat
 import java.util.Date
 
-@BindingAdapter("app:numberText")
-fun <T : Number> TextView.setNumberText(value: T?) {
+@BindingAdapter("android:text")
+fun <T : Number> TextView.setText(value: T?) {
     text = value?.toString() ?: return
 }
 
-@BindingAdapter("app:localizedNumberText")
-fun <T : Number> TextView.setLocalizedNumberText(value: T?) {
+@BindingAdapter("android:textLocaleNumber")
+fun <T : Number> TextView.setTextLocaleNumber(value: T?) {
     text = value?.let(NumberFormat.getInstance()::format) ?: return
 }
 
-@BindingAdapter("app:currencyText")
-fun TextView.setCurrencyText(value: Double?) {
+@BindingAdapter("android:textCurrency")
+fun TextView.setTextCurrency(value: Double?) {
     text = value?.asCurrency() ?: return
 }
 
-@BindingAdapter("app:brDateText")
-fun TextView.setBrDate(value: Date?) {
+@BindingAdapter("android:textBrDate")
+fun TextView.setTextBrDate(value: Date?) {
     text = value?.asBrDate ?: return
 }
 
-@BindingAdapter("app:brStringDateText")
-fun TextView.setBrDate(value: String?) {
+@BindingAdapter("android:textBrDate")
+fun TextView.setTextBrDate(value: String?) {
     text = value?.asDate()?.asBrDate ?: return
 }
 
-@BindingAdapter("app:shortTimeText")
-fun TextView.setShortTime(value: Date?) {
-    text = value?.asShortTime ?: return
-}
-
-@BindingAdapter("app:shortStringTimeText")
-fun TextView.setShortTime(value: String?) {
-    text = value?.asDate()?.asShortTime ?: return
-}
-
-@BindingAdapter("app:dateTextFromTimestamp")
-fun TextView.setBrDateTextFromTimestamp(timestamp: Long?) {
+@BindingAdapter("android:textBrDate")
+fun TextView.setTextBrDate(timestamp: Long?) {
     timestamp ?: return
     val time = Date(timestamp)
     text = time.asBrDate
 }
 
+@BindingAdapter("android:textBrDateShortTime")
+fun TextView.setTextBrDateShortTime(value: Date?) {
+    text = value?.toString("dd/MM/yyyy HH:mm")
+}
+
+@BindingAdapter("android:textShortTime")
+fun TextView.setTextShortTime(value: Date?) {
+    text = value?.asShortTime ?: return
+}
+
+@BindingAdapter("android:textShortTime")
+fun TextView.setTextShortTime(value: String?) {
+    text = value?.asDate()?.asShortTime ?: return
+}
+
 @BindingAdapter("app:textOrGone")
-fun TextView.setTextOrSetGone(value: String?) {
+fun TextView.setTextOrGone(value: String?) {
     text = value
     isGone = value.isNullOrBlank()
 }

@@ -18,8 +18,10 @@
     <string name="pagar">Pagar</string>
     <string name="a_receber">A Receber</string>
     <string name="aberta">Aberta</string>
+    <string name="abertura">Abertura</string>
+    <string name="abertura_colon">Abertura:</string>
     <string name="abrir_caixa">Abrir caixa</string>
-    <string name="abrir_os">Abrir os</string>
+    <string name="abrir_os">Abrir OS</string>
     <string name="abrir_drawer">Abrir menu</string>
     <string name="aceitar_pedido">Aceitar\nPedido</string>
     <string name="adicionar">Adicionar</string>
