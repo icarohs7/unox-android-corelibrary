@@ -1,5 +1,6 @@
 package base.corelibrary.domain.extensions.coroutines
 
+import com.github.icarohs7.unoxandroidarch.toplevel.whileLoading
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Job
@@ -23,4 +24,12 @@ fun CoroutineScope.launchAfterDelay(
         delay(delayMillis)
         block()
     }
+}
+
+fun CoroutineScope.launchLoading(
+        context: CoroutineContext = EmptyCoroutineContext,
+        start: CoroutineStart = CoroutineStart.DEFAULT,
+        block: suspend CoroutineScope.() -> Unit
+): Job = launch(context, start) {
+    whileLoading(fn = block)
 }
