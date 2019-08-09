@@ -22,6 +22,7 @@
     <string name="abrir_caixa">Abrir caixa</string>
     <string name="abrir_drawer">Abrir menu</string>
     <string name="abrir_os">Abrir OS</string>
+    <string name="aceita">Aceita</string>
     <string name="aceitar">Aceitar</string>
     <string name="aceitar_pedido">Aceitar\nPedido</string>
     <string name="adicionar">Adicionar</string>
@@ -36,6 +37,7 @@
     <string name="adicionar_receita">Adicionar Receita</string>
     <string name="adicionar_transacao">Adicionar Transação</string>
     <string name="almoco">Almoço</string>
+    <string name="alta">Alta</string>
     <string name="alterando_status_do_pedido">Alterando status do pedido</string>
     <string name="aluno_nao_registrado_title">Seja bem vindo ao aplicativo ViaPrime</string>
     <string name="ambos">Ambos</string>
@@ -202,6 +204,7 @@
     <string name="filtro">Filtro</string>
     <string name="finalizando_pedido">Finalizando pedido</string>
     <string name="finalizando_venda">Finalizando venda</string>
+    <string name="finalizada">Finalizada</string>
     <string name="finalizar">Finalizar</string>
     <string name="finalizar_pedido">Finalizar Pedido</string>
     <string name="finalizar_venda">Finalizar Venda</string>
@@ -327,6 +330,7 @@
     <string name="preco">Preço: </string>
     <string name="preenchimento_exclusivo">(Preenchimento Exclusivo)</string>
     <string name="privado">Privado</string>
+    <string name="criticidade_colon">Criticidade:</string>
     <string name="problema_encontrado_colon">Problema encontrado:</string>
     <string name="produto">Produto</string>
     <string name="produto_adicionado_sucesso">Produto adicionado com sucesso.</string>
@@ -475,4 +479,6 @@
     <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="voltar">Voltar</string>
     <string name="x">x</string>
+    <string name="deseja_aceitar_os_question">Deseja aceitar a OS?</string>
+    <string name="deseja_finalizar_os_question">Deseja finalizar a OS?</string>
 </resources>
