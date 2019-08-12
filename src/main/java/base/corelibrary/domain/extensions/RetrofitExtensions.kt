@@ -1,9 +1,9 @@
 package base.corelibrary.domain.extensions
 
+import com.chuckerteam.chucker.api.ChuckerCollector
+import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import com.readystatesoftware.chuck.api.ChuckCollector
-import com.readystatesoftware.chuck.api.ChuckInterceptor
 import kotlinx.serialization.json.Json
 import okhttp3.Interceptor
 import okhttp3.MediaType.Companion.toMediaType
@@ -97,6 +97,6 @@ object RetrofitExtensions {
     }
 
     private fun getHttpInspectorInterceptor(): Interceptor {
-        return ChuckInterceptor(appCtx, ChuckCollector(appCtx))
+        return ChuckerInterceptor(appCtx, ChuckerCollector(appCtx))
     }
 }

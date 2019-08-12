@@ -4,7 +4,6 @@ import android.widget.TextView
 import androidx.core.view.isGone
 import androidx.databinding.BindingAdapter
 import com.github.icarohs7.unoxandroidarch.extensions.asBrDate
-import com.github.icarohs7.unoxandroidarch.extensions.asBrDateTime
 import com.github.icarohs7.unoxandroidarch.extensions.asDate
 import com.github.icarohs7.unoxandroidarch.extensions.asShortTime
 import com.github.icarohs7.unoxcore.extensions.asCurrency
