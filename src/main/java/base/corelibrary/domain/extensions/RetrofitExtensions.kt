@@ -1,5 +1,6 @@
 package base.corelibrary.domain.extensions
 
+import base.corelibrary.domain.toplevel.kget
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.facebook.stetho.okhttp3.StethoInterceptor
@@ -97,6 +98,6 @@ object RetrofitExtensions {
     }
 
     private fun getHttpInspectorInterceptor(): Interceptor {
-        return ChuckerInterceptor(appCtx, ChuckerCollector(appCtx))
+        return ChuckerInterceptor(appCtx, kget())
     }
 }

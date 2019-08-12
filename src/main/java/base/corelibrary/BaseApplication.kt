@@ -5,6 +5,7 @@ import android.app.Application
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.annotation.CallSuper
+import com.chuckerteam.chucker.api.ChuckerCollector
 import com.facebook.stetho.Stetho
 import com.github.icarohs7.unoxandroidarch.UnoxAndroidArch
 import com.umutbey.stateviews.StateViewsBuilder
@@ -12,6 +13,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.core.module.Module
 import org.koin.dsl.module
+import splitties.init.appCtx
 import splitties.resources.drawable
 import splitties.resources.str
 import timber.log.Timber
@@ -25,24 +27,14 @@ abstract class BaseApplication : Application() {
         setupTimber()
         setupUnoxAndroidArch()
         lockOrientation()
-
-        val stateViewsBuilder = StateViewsBuilder.init().setState(
-                tag = EMPTY_ADAPTER_STATE_TAG,
-                title = str(R.string.nenhum_item_carregado),
-                description = "",
-                icon = drawable(R.drawable.ic_search_gray_24dp)
-        )
-                .setIconSize(120)
-        setupStateViews(stateViewsBuilder)
-    }
-
-    open fun setupStateViews(builder: StateViewsBuilder) {
+        setupStateViews(getStateViewsBuilder())
     }
 
     private fun setupKoin() {
         startKoin {
             androidContext(this@BaseApplication)
             modules(listOf(module {
+                single { ChuckerCollector(appCtx) }
             }) + onCreateKoinModules())
         }
     }
@@ -104,6 +96,19 @@ abstract class BaseApplication : Application() {
 
             }
         })
+    }
+
+    open fun setupStateViews(builder: StateViewsBuilder) {
+    }
+
+    private fun getStateViewsBuilder(): StateViewsBuilder {
+        return StateViewsBuilder.init().setState(
+                tag = EMPTY_ADAPTER_STATE_TAG,
+                title = str(R.string.nenhum_item_carregado),
+                description = "",
+                icon = drawable(R.drawable.ic_search_gray_24dp)
+        )
+                .setIconSize(120)
     }
 
     companion object {
