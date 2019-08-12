@@ -112,10 +112,12 @@
     <string name="criar_entrada">Criar Entrada</string>
     <string name="criar_gasto">Criar Gasto</string>
     <string name="criar_receita">Criar Receita</string>
+    <string name="criticidade_colon">Criticidade:</string>
     <string name="dados_adicionais">Dados adicionais</string>
     <string name="data">Data</string>
     <string name="data_colon">Data:</string>
     <string name="data_de_abertura_colon">Data de Abertura:</string>
+    <string name="data_de_fechamento">Data de Fechamento</string>
     <string name="data_de_fechamento_colon">Data de Fechamento:</string>
     <string name="data_de_pagamento">Data de Pagamento</string>
     <string name="data_de_vencimento">Data de Vencimento</string>
@@ -130,11 +132,13 @@
     <string name="desconto">Desconto</string>
     <string name="desconto_colon">Desconto:</string>
     <string name="descricao">Descrição</string>
+    <string name="deseja_aceitar_os_question">Deseja aceitar a OS?</string>
     <string name="deseja_confirmar_essa_venda">Deseja confirmar essa venda?</string>
     <string name="deseja_confirmar_essa_venda_no_crediario">Deseja confirmar essa venda no crediário?</string>
     <string name="deseja_fechar_o_caixa">Deseja fechar o caixa?</string>
     <string name="deseja_finalizar_essa_venda">Deseja finalizar essa venda?</string>
     <string name="deseja_finalizar_essa_venda_no_crediario">Deseja finalizar essa venda no crediário?</string>
+    <string name="deseja_finalizar_os_question">Deseja finalizar a OS?</string>
     <string name="deseja_remover_content_question">Deseja remover %s?</string>
     <string name="deseja_remover_o_registro_selecionado">Deseja remover o registro selecionado?</string>
     <string name="deseja_remover_transacao">Deseja remover essa transação?</string>
@@ -202,9 +206,9 @@
     <string name="feminino">Feminino</string>
     <string name="filtrar">Filtrar</string>
     <string name="filtro">Filtro</string>
+    <string name="finalizada">Finalizada</string>
     <string name="finalizando_pedido">Finalizando pedido</string>
     <string name="finalizando_venda">Finalizando venda</string>
-    <string name="finalizada">Finalizada</string>
     <string name="finalizar">Finalizar</string>
     <string name="finalizar_pedido">Finalizar Pedido</string>
     <string name="finalizar_venda">Finalizar Venda</string>
@@ -330,7 +334,6 @@
     <string name="preco">Preço: </string>
     <string name="preenchimento_exclusivo">(Preenchimento Exclusivo)</string>
     <string name="privado">Privado</string>
-    <string name="criticidade_colon">Criticidade:</string>
     <string name="problema_encontrado_colon">Problema encontrado:</string>
     <string name="produto">Produto</string>
     <string name="produto_adicionado_sucesso">Produto adicionado com sucesso.</string>
@@ -391,6 +394,7 @@
     <string name="selecionar_carteira">Selecionar Carteira</string>
     <string name="selecionar_categoria">Selecionar Categoria</string>
     <string name="selecionar_conta">Selecionar Conta</string>
+    <string name="selecionar_data_de_fechamento">Selecionar Data de Fechamento</string>
     <string name="selecionar_destino">Selecionar Destino</string>
     <string name="selecionar_endereco">Selecionar endereço</string>
     <string name="selecionar_origem">Selecionar Origem</string>
@@ -479,6 +483,4 @@
     <string name="verifique_sua_conexão_e_recarregue_a_lista_arrastando_para_baixo">Verifique sua conexão e recarregue a lista arrastando para baixo</string>
     <string name="voltar">Voltar</string>
     <string name="x">x</string>
-    <string name="deseja_aceitar_os_question">Deseja aceitar a OS?</string>
-    <string name="deseja_finalizar_os_question">Deseja finalizar a OS?</string>
 </resources>
