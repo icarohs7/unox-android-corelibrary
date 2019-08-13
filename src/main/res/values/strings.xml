@@ -59,6 +59,7 @@
     <string name="back">Voltar</string>
     <string name="bairro">Bairro</string>
     <string name="bairro_colon">Bairro:</string>
+    <string name="baixa">Baixa</string>
     <string name="bolso">Bolso</string>
     <string name="buscando_produto">Buscando Produto</string>
     <string name="buscar_dados">Buscar Dados</string>
@@ -77,6 +78,7 @@
     <string name="cidade">Cidade</string>
     <string name="cidade_colon">Cidade:</string>
     <string name="cliente">Cliente</string>
+    <string name="cliente_colon">Cliente:</string>
     <string name="codigo">Código</string>
     <string name="codigo_de_barra">Código de barra</string>
     <string name="codigo_upper">CÓDIGO</string>
@@ -297,6 +299,7 @@
     <string name="nome_da_nova_categoria">Nome da nova categoria</string>
     <string name="nome_da_nova_conta">Nome da nova conta</string>
     <string name="nome_de_quem_vai_receber_no_endereco">Nome de quem vai receber no endereço</string>
+    <string name="normal">Normal</string>
     <string name="notificacoes">Notificações</string>
     <string name="notificacoes_colon">Notificações:</string>
     <string name="novo_pagamento">Novo pagamento</string>
@@ -455,6 +458,7 @@
     <string name="ultima_sincronização_colon_content">Última Sincronização: %s</string>
     <string name="ultima_viagem_colon">Última Viagem:</string>
     <string name="ultimo_registro_colon">Último Registro:</string>
+    <string name="urgente">Alta</string>
     <string name="url_exemplo">Exemplo: suaempresa para suaempresa.sige.pro</string>
     <string name="url_hint">Informe o nome de sua empresa como consta na url de seu sistema</string>
     <string name="valor">Valor</string>
