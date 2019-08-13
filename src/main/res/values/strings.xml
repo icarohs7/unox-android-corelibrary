@@ -292,6 +292,7 @@
     <string name="nenhum_produto_encontrado">Nenhum produto encontrado</string>
     <string name="nenhuma_categoria_carregada">Nenhuma categoria carregada</string>
     <string name="nenhuma_impressora_conectada">Nenhuma Impressora Conectada</string>
+    <string name="nenhuma_os_em_andamento">Nenhuma OS em andamento</string>
     <string name="nfc">NFC</string>
     <string name="no">Nº</string>
     <string name="no_de_items_colon">Nº de Items:</string>
@@ -300,6 +301,7 @@
     <string name="nome_da_nova_categoria">Nome da nova categoria</string>
     <string name="nome_da_nova_conta">Nome da nova conta</string>
     <string name="nome_de_quem_vai_receber_no_endereco">Nome de quem vai receber no endereço</string>
+    <string name="nome_indefinido">Nome indefinido</string>
     <string name="normal">Normal</string>
     <string name="notificacoes">Notificações</string>
     <string name="notificacoes_colon">Notificações:</string>
