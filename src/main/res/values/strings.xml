@@ -179,6 +179,7 @@
     <string name="email">Email</string>
     <string name="empresa">Empresa</string>
     <string name="endereco">Endereço</string>
+    <string name="endereco_colon">Endereço:</string>
     <string name="endereco_para_entrega">Endereço para entrega:</string>
     <string name="endereco_para_entrega_colon">Endereço para entrega:</string>
     <string name="entrada">Entrada</string>
@@ -398,6 +399,7 @@
     <string name="selecionar">Selecionar</string>
     <string name="selecionar_carteira">Selecionar Carteira</string>
     <string name="selecionar_categoria">Selecionar Categoria</string>
+    <string name="selecionar_cliente">Selecionar Cliente</string>
     <string name="selecionar_conta">Selecionar Conta</string>
     <string name="selecionar_data_de_fechamento">Selecionar Data de Fechamento</string>
     <string name="selecionar_destino">Selecionar Destino</string>
