@@ -112,10 +112,12 @@
     <string name="criar_entrada">Criar Entrada</string>
     <string name="criar_gasto">Criar Gasto</string>
     <string name="criar_receita">Criar Receita</string>
+    <string name="criticidade">Criticidade:</string>
     <string name="criticidade_colon">Criticidade:</string>
     <string name="dados_adicionais">Dados adicionais</string>
     <string name="data">Data</string>
     <string name="data_colon">Data:</string>
+    <string name="data_de_abertura">Data de Abertura</string>
     <string name="data_de_abertura_colon">Data de Abertura:</string>
     <string name="data_de_fechamento">Data de Fechamento</string>
     <string name="data_de_fechamento_colon">Data de Fechamento:</string>
