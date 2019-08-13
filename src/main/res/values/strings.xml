@@ -287,6 +287,7 @@
     <string name="nao_sincronizado">Não Sincronizado</string>
     <string name="nenhum_dispositivo_conectado">Nenhum dispositivo conectado</string>
     <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
+    <string name="nenhum_endereco_selecionado">Nenhum endereço selecionado</string>
     <string name="nenhum_item_carregado">Nenhum Item Carregado</string>
     <string name="nenhum_pedido">Nenhum pedido</string>
     <string name="nenhum_produto_encontrado">Nenhum produto encontrado</string>
