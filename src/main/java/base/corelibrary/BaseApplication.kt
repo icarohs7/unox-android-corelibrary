@@ -5,6 +5,7 @@ import android.app.Application
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.annotation.CallSuper
+import base.corelibrary.domain.toplevel.kget
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.facebook.stetho.Stetho
 import com.github.icarohs7.unoxandroidarch.UnoxAndroidArch
@@ -24,11 +25,13 @@ abstract class BaseApplication : Application() {
         super.onCreate()
         Stetho.initializeWithDefaults(this)
         setupKoin()
+        installUncaughtExceptionHandler()
         setupTimber()
         setupUnoxAndroidArch()
         lockOrientation()
         setupStateViews(getStateViewsBuilder())
     }
+
 
     private fun setupKoin() {
         startKoin {
@@ -36,6 +39,18 @@ abstract class BaseApplication : Application() {
             modules(listOf(module {
                 single { ChuckerCollector(appCtx) }
             }) + onCreateKoinModules())
+        }
+    }
+
+    private fun installUncaughtExceptionHandler() {
+        val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()
+        Thread.setDefaultUncaughtExceptionHandler { thread, throwable ->
+            Timber.tag("UncaughtException").e("""
+                    Uncaught exception on thread ${thread.name}:
+                    $throwable
+                """.trimIndent())
+            kget<ChuckerCollector>().onError("UncaughtException", throwable)
+            defaultHandler?.uncaughtException(thread, throwable)
         }
     }
 

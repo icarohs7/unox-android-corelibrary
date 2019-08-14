@@ -176,6 +176,7 @@
     <string name="editar_pagamentos">Editar Pagamentos</string>
     <string name="editar_quantidade">Editar Quantidade</string>
     <string name="editar_receita">Editar Receita</string>
+    <string name="em_andamento">Em Andamento</string>
     <string name="email">Email</string>
     <string name="empresa">Empresa</string>
     <string name="endereco">Endereço</string>
