@@ -48,6 +48,7 @@ abstract class BaseApplication : Application() {
             Timber.tag("UncaughtException").e("""
                     Uncaught exception on thread ${thread.name}:
                     $throwable
+                    ${throwable.stackTrace.joinToString(separator = "\n")}
                 """.trimIndent())
             kget<ChuckerCollector>().onError("UncaughtException", throwable)
             defaultHandler?.uncaughtException(thread, throwable)
