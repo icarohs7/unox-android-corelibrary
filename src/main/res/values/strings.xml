@@ -288,6 +288,7 @@
     <string name="nao_informada">Não informado(a)</string>
     <string name="nao_se_esqueca_de_efetuar_o_registro">Não se esqueça de efetuar o registro</string>
     <string name="nao_sincronizado">Não Sincronizado</string>
+    <string name="nenhum_cliente_selecionado">Nenhum cliente selecionado</string>
     <string name="nenhum_dispositivo_conectado">Nenhum dispositivo conectado</string>
     <string name="nenhum_endereco_registrado">Nenhum endereço registrado</string>
     <string name="nenhum_endereco_selecionado">Nenhum endereço selecionado</string>
