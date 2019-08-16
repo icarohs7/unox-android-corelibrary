@@ -23,6 +23,7 @@
     <string name="abrir_drawer">Abrir menu</string>
     <string name="abrir_os">Abrir OS</string>
     <string name="aceita">Aceita</string>
+    <string name="aceita_em_colon">Aceita Em:</string>
     <string name="aceitar">Aceitar</string>
     <string name="aceitar_pedido">Aceitar\nPedido</string>
     <string name="adicionar">Adicionar</string>
@@ -213,6 +214,7 @@
     <string name="filtrar">Filtrar</string>
     <string name="filtro">Filtro</string>
     <string name="finalizada">Finalizada</string>
+    <string name="finalizada_colon">Finalizada:</string>
     <string name="finalizando_pedido">Finalizando pedido</string>
     <string name="finalizando_venda">Finalizando venda</string>
     <string name="finalizar">Finalizar</string>
