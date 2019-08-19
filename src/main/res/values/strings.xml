@@ -138,6 +138,7 @@
     <string name="desconto">Desconto</string>
     <string name="desconto_colon">Desconto:</string>
     <string name="descricao">Descrição</string>
+    <string name="descricao_colon">Descrição:</string>
     <string name="deseja_aceitar_os_question">Deseja aceitar a OS?</string>
     <string name="deseja_confirmar_essa_venda">Deseja confirmar essa venda?</string>
     <string name="deseja_confirmar_essa_venda_no_crediario">Deseja confirmar essa venda no crediário?</string>
