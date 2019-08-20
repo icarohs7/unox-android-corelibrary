@@ -54,6 +54,7 @@
     <string name="ative_a_localizacao_por_gps_para_utilizar_o_aplicativo">Ativa a localização por GPS para utilizar o aplicativo</string>
     <string name="atualizacao_disponivel">Atualização Disponível</string>
     <string name="atualizacao_disponivel_msg">Há uma atualização disponível para o aplicativo. Clique em atualizar para ir à loja ou continuar para proseguir sem atualizar (não recomendado).</string>
+    <string name="atualizando_status">Atualizando status</string>
     <string name="atualizar">Atualizar</string>
     <string name="atualizar_dados">Sincronizar Dados</string>
     <string name="atualizar_perfil">Sincronizar Perfil</string>
@@ -320,6 +321,7 @@
     <string name="obtendo_endereco">Obtendo endereço</string>
     <string name="obtendo_informacoes_do_local">Obtendo informações do local…</string>
     <string name="obtendo_localizacao">Obtendo localização…</string>
+    <string name="ocorreu_um_erro_ao_atualizar_o_status">Ocorreu um erro ao atualizar o status</string>
     <string name="ocorreu_um_erro_ao_finalizar_a_venda">Ocorreu um erro ao finalizar a venda</string>
     <string name="ocorreu_um_erro_ao_salvar_a_venda">Ocorreu um erro ao salvar a venda</string>
     <string name="origem">Origem</string>
