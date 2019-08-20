@@ -50,6 +50,7 @@
     <string name="apagar_registro">Apagar Registro</string>
     <string name="ativado">Ativado</string>
     <string name="ativar">Ativar</string>
+    <string name="ativar_sincronização">Ativar Sincronização</string>
     <string name="ative_a_localizacao_por_gps_para_utilizar_o_aplicativo">Ativa a localização por GPS para utilizar o aplicativo</string>
     <string name="atualizacao_disponivel">Atualização Disponível</string>
     <string name="atualizacao_disponivel_msg">Há uma atualização disponível para o aplicativo. Clique em atualizar para ir à loja ou continuar para proseguir sem atualizar (não recomendado).</string>
