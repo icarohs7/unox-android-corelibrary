@@ -11,7 +11,7 @@ import khronos.toString
 import java.text.NumberFormat
 import java.util.Date
 
-@BindingAdapter("android:text")
+@BindingAdapter("android:textNumber")
 fun <T : Number> TextView.setText(value: T?) {
     text = value?.toString() ?: return
 }
