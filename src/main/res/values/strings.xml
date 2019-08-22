@@ -362,6 +362,7 @@
     <string name="produto_nao_encontrado">Produto não encontrado</string>
     <string name="produto_removido_sucesso">Produto Removido com Sucesso</string>
     <string name="produtos">Produtos</string>
+    <string name="produtos_colon">Produtos:</string>
     <string name="quantidade">Quantidade </string>
     <string name="quantidade_alterada_sucesso">Quantidade Alterada com Sucesso</string>
     <string name="quantidade_colon">Quantidade:</string>
