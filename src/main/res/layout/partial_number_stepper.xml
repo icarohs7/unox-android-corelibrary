@@ -11,7 +11,7 @@
 
         <variable
             name="number"
-            type="androidx.lifecycle.LiveData&lt;String&gt;" />
+            type="Integer" />
 
         <variable
             name="addHandler"
@@ -35,11 +35,12 @@
             app:iconPadding="0dp" />
 
         <TextView
+            android:id="@+id/txt_number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="8dp"
-            android:text="@{ number }"
+            android:textNumber="@{ number }"
             tools:text="0" />
 
         <com.google.android.material.button.MaterialButton
