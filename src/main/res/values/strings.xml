@@ -486,6 +486,7 @@
     <string name="valor_a_ser_transferido">Valor a ser transferido</string>
     <string name="valor_colon">Valor: </string>
     <string name="valor_desconto_upper_colon">VALOR DESCONTO:</string>
+    <string name="valor_do_pedido">Valor seu pedido</string>
     <string name="valor_do_seu_pedido">Valor do seu pedido</string>
     <string name="valor_no_crediario_upper_colon">VALOR NO CREDIÁRIO:</string>
     <string name="valor_pago">Valor Pago</string>
