@@ -5,11 +5,7 @@ import base.corelibrary.databinding.PartialNumberStepperBinding
 fun PartialNumberStepperBinding.build(initialValue: Int = 0, onUpdate: (Int) -> Unit) {
     number = initialValue
     val getNumber = { txtNumber.text.toString().toInt() }
-    setRemoveHandler {
-        if (getNumber() > 0)
-            number = getNumber() - 1; onUpdate(getNumber())
-    }
-    setAddHandler {
-        number = getNumber() + 1; onUpdate(getNumber())
-    }
+    val updateNumber = { op: (Int) -> Int -> number = op(getNumber()); onUpdate(op(getNumber())) }
+    setRemoveHandler { if (getNumber() > 0) updateNumber(Int::dec) }
+    setAddHandler { updateNumber(Int::inc) }
 }
