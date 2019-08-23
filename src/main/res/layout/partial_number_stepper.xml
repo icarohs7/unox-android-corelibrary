@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="removeHandler"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="number"
+            type="androidx.lifecycle.LiveData&lt;String&gt;" />
+
+        <variable
+            name="addHandler"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_remove"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{ removeHandler::onClick }"
+            app:icon="@drawable/ic_remove_white_24dp"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="@{ number }"
+            tools:text="0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{ addHandler::onClick }"
+            app:icon="@drawable/ic_add_white_24dp"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconTint="@color/success_button_color" />
+
+    </LinearLayout>
+</layout>

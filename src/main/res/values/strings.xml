@@ -35,6 +35,7 @@
     <string name="adicionar_gasto">Adicionar Gasto</string>
     <string name="adicionar_pagamento">Adicionar Pagamento</string>
     <string name="adicionar_produto">Adicionar Produto</string>
+    <string name="adicionar_produtos">Adicionar Produtos</string>
     <string name="adicionar_receita">Adicionar Receita</string>
     <string name="adicionar_transacao">Adicionar Transação</string>
     <string name="almoco">Almoço</string>
