@@ -239,6 +239,7 @@
     <string name="horario_de_ponto">Horário de ponto</string>
     <string name="horarios_de_notificacoes_colon">Horários de Notificações:</string>
     <string name="horarios_de_ponto_colon">Horários de ponto:</string>
+    <string name="houve_um_erro_ao_conectar_se_aa_impressora">Houve um erro ao conectar-se à impressora</string>
     <string name="houve_um_erro_ao_enviar_o_relatorio">Houve um erro ao enviar o relatório</string>
     <string name="houve_um_erro_ao_fechar_o_caixa">Houve um erro ao fechar o caixa</string>
     <string name="houve_um_erro_ao_reportar_o_evento">Houve um erro ao reportar o evento</string>
