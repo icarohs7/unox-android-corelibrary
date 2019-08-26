@@ -65,6 +65,7 @@
     <string name="bairro_colon">Bairro:</string>
     <string name="baixa">Baixa</string>
     <string name="bolso">Bolso</string>
+    <string name="buscando_cliente">Buscando Cliente</string>
     <string name="buscando_produto">Buscando Produto</string>
     <string name="buscar_dados">Buscar Dados</string>
     <string name="buscar_endereco">Buscar endereço</string>
@@ -457,6 +458,7 @@
     <string name="tipo_da_viagem_colon">Tipo da viagem:</string>
     <string name="tipo_de_pagamento">Tipo de pagamento</string>
     <string name="tipo_de_uso_colon">Tipo de uso:</string>
+    <string name="tipo_do_documento">Tipo do documento</string>
     <string name="tipo_pressao_alta">Alta</string>
     <string name="tipo_pressao_baixa">Baixa</string>
     <string name="todas">Todas</string>
