@@ -1,8 +1,5 @@
 package base.corelibrary.presentation.fragments
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import base.corelibrary.R
@@ -16,8 +13,8 @@ import com.umutbey.stateviews.StateView
  * inside
  */
 abstract class BaseRecyclerFragment : BaseBindingFragment<FragmentBaseRecyclerBinding>() {
-    override fun onBindingCreated(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) {
-        super.onBindingCreated(inflater, container, savedInstanceState)
+    override fun onBindingCreated() {
+        super.onBindingCreated()
         binding.stateView.hideStates()
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
     }

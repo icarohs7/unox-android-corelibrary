@@ -1,7 +1,6 @@
 package base.corelibrary.presentation._baseclasses
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,16 +10,11 @@ import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.lifecycleScope
 import com.airbnb.mvrx.BaseMvRxFragment
 import com.github.icarohs7.unoxcore.extensions.coroutines.job
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelChildren
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.launch
-import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.EmptyCoroutineContext
 
 /**
  * Base fragment using databinding
@@ -37,24 +31,29 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseMvRxFragment() {
                 .inflate<B>(inflater, getLayout(), container, false)
                 .apply { lifecycleOwner = this@BaseBindingFragment }
 
-        onBindingCreated(inflater, container, savedInstanceState)
-        afterInitialSetup()
+        afterCreateView(inflater, container, savedInstanceState)
         return binding.root
+    }
+
+    /**
+     * Called just after the [binding] is defined,
+     * inside the onCreateView event
+     */
+    open fun afterCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) {
     }
 
     override fun invalidate() {
     }
 
-    /**
-     * Called after the databinding of the fragment is set
-     */
-    open fun onBindingCreated(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) {
+    override fun onStart() {
+        super.onStart()
+        onBindingCreated()
     }
 
     /**
-     * Called after [onBindingCreated]
+     * Called after the binding is created
      */
-    open fun afterInitialSetup() {
+    open fun onBindingCreated() {
     }
 
     /**
