@@ -496,6 +496,7 @@
     <string name="valor_no_crediario_upper_colon">VALOR NO CREDIÁRIO:</string>
     <string name="valor_pago">Valor Pago</string>
     <string name="valor_total">Valor Total</string>
+    <string name="valor_total_colon">Valor Total:</string>
     <string name="valor_total_do_pedido_colon">Valor Total do Pedido:</string>
     <string name="valor_total_upper_colon">VALOR TOTAL:</string>
     <string name="valor_unitario">Valor Unitário</string>
