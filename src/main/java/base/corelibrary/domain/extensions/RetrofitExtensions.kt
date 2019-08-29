@@ -98,6 +98,7 @@ object RetrofitExtensions {
     }
 
     private fun getHttpInspectorInterceptor(): Interceptor {
-        return ChuckerInterceptor(appCtx, kget())
+        val collector: ChuckerCollector = kget()
+        return ChuckerInterceptor(appCtx, collector)
     }
 }
