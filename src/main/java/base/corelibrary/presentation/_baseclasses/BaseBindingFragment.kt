@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.lifecycleScope
 import com.airbnb.mvrx.BaseMvRxFragment
-import com.github.icarohs7.unoxcore.extensions.coroutines.job
+import com.github.icarohs7.unoxandroidarch.extensions.asFlow
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancelChildren
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -31,8 +31,17 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseMvRxFragment() {
                 .inflate<B>(inflater, getLayout(), container, false)
                 .apply { lifecycleOwner = this@BaseBindingFragment }
 
+        onBindingCreated()
         afterCreateView(inflater, container, savedInstanceState)
         return binding.root
+    }
+
+    /**
+     * Called after the binding is created,
+     * inside the onCreateView lifecycle
+     * event
+     */
+    open fun onBindingCreated() {
     }
 
     /**
@@ -45,16 +54,12 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseMvRxFragment() {
     override fun invalidate() {
     }
 
-    override fun onStart() {
-        super.onStart()
-        onBindingCreated()
-    }
-
     /**
-     * Called after the binding is created
+     * Launch the collection of the given Flow
+     * on the coroutine scope of this component's
+     * view
      */
-    open fun onBindingCreated() {
-    }
+    fun Flow<*>.launchInViewScope(): Job = launchIn(viewLifecycleOwner.lifecycleScope)
 
     /**
      * Launch the collection of the given Flow
@@ -63,22 +68,12 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseMvRxFragment() {
     fun Flow<*>.launchInScope(): Job = launchIn(lifecycleScope)
 
     /**
-     * Launch the collection of the given Flow,
-     * executing the given action on each emission,
-     * using the scope of the current component to
-     * on the coroutine created
+     * Convert the given live data to flow,
+     * add an onEach operator to it with the
+     * given action and return the flow
      */
-    fun <T> Flow<T>.launchCollect(action: suspend (T) -> Unit): Job {
-        return onEach(action).launchInScope()
-    }
-
-    /**
-     * Cancel all children coroutines in the
-     * onStop event
-     */
-    override fun onStop() {
-        super.onStop()
-        lifecycleScope.job.cancelChildren()
+    fun <T> LiveData<T>.asFlowOnEach(emissionIfNull: T? = null, action: suspend (T) -> Unit): Flow<T> {
+        return asFlow(emissionIfNull).onEach(action)
     }
 
     /**

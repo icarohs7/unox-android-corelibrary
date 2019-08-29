@@ -22,7 +22,7 @@ abstract class BaseBindingActivity<B : ViewDataBinding> : BaseArchActivity() {
         binding = DataBindingUtil.setContentView(this, getLayout())
         binding.lifecycleOwner = this
         onBindingCreated(savedInstanceState)
-        afterInitialSetup()
+        afterInitialSetup(savedInstanceState)
     }
 
     /**
@@ -34,7 +34,7 @@ abstract class BaseBindingActivity<B : ViewDataBinding> : BaseArchActivity() {
     /**
      * Called after [onBindingCreated]
      */
-    open fun afterInitialSetup() {
+    open fun afterInitialSetup(savedInstanceState: Bundle?) {
     }
 
     /**
