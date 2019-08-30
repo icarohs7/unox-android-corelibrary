@@ -3,7 +3,6 @@ package base.corelibrary.domain.extensions
 import base.corelibrary.domain.toplevel.kget
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
-import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.Interceptor
@@ -84,7 +83,6 @@ object RetrofitExtensions {
                 .connectTimeout(60, TimeUnit.SECONDS)
                 .addInterceptor(getLoggingInterceptor())
                 .addInterceptor(getHttpInspectorInterceptor())
-                .addInterceptor(StethoInterceptor())
                 .apply(clientExtraConfig)
                 .build()
     }

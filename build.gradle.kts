@@ -49,7 +49,6 @@ dependencies {
     api(AndroidDeps.splittiesViews)
     api(AndroidDeps.stateViews)
     api(AndroidDeps.stetho)
-    api(AndroidDeps.stethoOkHttp)
     api(AndroidDeps.swipeRefreshLayout)
     api(AndroidDeps.timber)
     api(AndroidDeps.unoxAndroidArchCore)
