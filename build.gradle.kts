@@ -29,7 +29,6 @@ dependencies {
     api(AndroidDeps.flashbar)
     api(AndroidDeps.flexboxLayout)
     api(AndroidDeps.fragmentKtx)
-    api(AndroidDeps.googlePlayCore)
     api(AndroidDeps.koinAndroid)
     api(AndroidDeps.kotpref)
     api(AndroidDeps.kotprefInitializer)
