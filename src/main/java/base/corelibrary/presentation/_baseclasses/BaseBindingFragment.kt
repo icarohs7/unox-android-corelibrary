@@ -31,7 +31,7 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseMvRxFragment() {
                 .inflate<B>(inflater, getLayout(), container, false)
                 .apply { lifecycleOwner = this@BaseBindingFragment }
 
-        onBindingCreated()
+        onBindingCreated(inflater, container, savedInstanceState)
         afterCreateView(inflater, container, savedInstanceState)
         return binding.root
     }
@@ -41,7 +41,7 @@ abstract class BaseBindingFragment<B : ViewDataBinding> : BaseMvRxFragment() {
      * inside the onCreateView lifecycle
      * event
      */
-    open fun onBindingCreated() {
+    open fun onBindingCreated(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) {
     }
 
     /**

@@ -1,13 +1,16 @@
 package base.corelibrary.presentation.fragments
 
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import base.corelibrary.R
 import base.corelibrary.databinding.FragmentSwipeRecyclerBinding
 import base.corelibrary.presentation._baseclasses.BaseBindingFragment
 
 abstract class BaseSwipeRecyclerFragment : BaseBindingFragment<FragmentSwipeRecyclerBinding>() {
-    override fun onBindingCreated() {
-        super.onBindingCreated()
+    override fun onBindingCreated(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) {
+        super.onBindingCreated(inflater, container, savedInstanceState)
         binding.stateView.hideStates()
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
     }
