@@ -14,7 +14,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
 
-class BaseFragholderMainActivity : BaseArchActivity() {
+abstract class BaseFragholderMainActivity : BaseArchActivity() {
     private val progressBar by lazy { findViewById<ProgressBar>(R.id.progress_bar) }
     val navController: NavController by lazy { findNavController(R.id.nav_host_fragment) }
 
@@ -22,7 +22,7 @@ class BaseFragholderMainActivity : BaseArchActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragholder_main)
         lifecycleScope.addOnLoadingListener { isLoading -> progressBar.isVisible = isLoading }
-        
+
     }
 
     /**
