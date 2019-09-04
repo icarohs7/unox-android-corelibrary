@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/layout_outer_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:alignContent="center"
+            app:flexWrap="wrap"
+            app:justifyContent="center">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:src="@drawable/img_logo"
+                tools:src="@tools:sample/avatars" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/progress_bar"
+                style="@style/SpinKitView.Large.Pulse"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                app:SpinKit_Color="@color/colorAccent"
+                app:layout_wrapBefore="true" />
+
+            <TextView
+                android:id="@+id/txt_loading_feedback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                app:layout_flexGrow="1"
+                app:layout_wrapBefore="true"
+                tools:text="Loading something" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <TextView
+            android:id="@+id/txt_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_alignSelf="flex_end"
+            app:layout_wrapBefore="true"
+            tools:text="v1.32" />
+
+    </FrameLayout>
+
+</layout>

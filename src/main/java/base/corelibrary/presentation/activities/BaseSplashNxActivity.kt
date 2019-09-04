@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.annotation.CallSuper
 import androidx.core.view.isInvisible
 import androidx.lifecycle.lifecycleScope
-import com.github.icarohs7.unoxandroidarch.R
-import com.github.icarohs7.unoxandroidarch.databinding.ActivityBaseNxSplashBinding
+import base.corelibrary.R
+import base.corelibrary.databinding.ActivityBaseNxSplashBinding
 import com.github.icarohs7.unoxandroidarch.extensions.animateFadeIn
 import com.github.icarohs7.unoxandroidarch.state.addOnLoadingListener
 
