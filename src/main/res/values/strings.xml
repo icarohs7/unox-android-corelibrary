@@ -84,6 +84,7 @@
     <string name="cidade_colon">Cidade:</string>
     <string name="cliente">Cliente</string>
     <string name="cliente_colon">Cliente:</string>
+    <string name="cliente_nao_encontrado">Cliente não encontrado</string>
     <string name="codigo">Código</string>
     <string name="codigo_de_barra">Código de barra</string>
     <string name="codigo_upper">CÓDIGO</string>
