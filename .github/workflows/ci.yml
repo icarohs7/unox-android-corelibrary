@@ -17,4 +17,6 @@ jobs:
         run: |
           ./gradlew -Pcoverage clean build jacocoTestReport -x lint --stacktrace
       - name: Send coverage to codecov
-        run: bash <(curl -s https://codecov.io/bash)
+          uses: codecov/codecov-action@v1.0.2
+          with:
+            token: ${{secrets.CODECOV_TOKEN}}
