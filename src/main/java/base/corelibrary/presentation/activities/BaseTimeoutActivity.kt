@@ -14,8 +14,7 @@ import kotlinx.coroutines.launch
  * finished
  */
 abstract class BaseTimeoutActivity<DB : ViewDataBinding>(
-        val timeout: Int = 2000,
-        private val checkAppUpdate: Boolean = false
+        val timeout: Int = 2000
 ) : BaseBindingActivity<DB>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

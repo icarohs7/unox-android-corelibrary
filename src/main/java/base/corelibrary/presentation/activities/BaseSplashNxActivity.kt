@@ -11,9 +11,8 @@ import com.github.icarohs7.unoxandroidarch.state.addOnLoadingListener
 
 abstract class BaseSplashNxActivity(
         private val version: String,
-        timeout: Int = 0,
-        checkAppUpdate: Boolean = true
-) : BaseTimeoutActivity<ActivityBaseNxSplashBinding>(timeout, checkAppUpdate) {
+        timeout: Int = 0
+) : BaseTimeoutActivity<ActivityBaseNxSplashBinding>(timeout) {
 
     @CallSuper
     override fun onBindingCreated(savedInstanceState: Bundle?) {
