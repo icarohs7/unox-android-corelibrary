@@ -336,6 +336,7 @@
     <string name="origem">Origem</string>
     <string name="origem_colon">Origem:</string>
     <string name="os_finalizadas">OS Finalizadas</string>
+    <string name="ou">Ou</string>
     <string name="pagamento_colon">Pagamento:</string>
     <string name="pagamento_total">Pagamento Total</string>
     <string name="pagamentos">Pagamentos</string>
@@ -455,6 +456,7 @@
     <string name="tabela_de_preco">Tabela de Preço</string>
     <string name="telefone_colon">Telefone:</string>
     <string name="telefone_de_contato">Telefone de contato</string>
+    <string name="telefone_sem_ddd">Telefone (sem DDD)</string>
     <string name="tem_ou_teve_alguma_vez">(Tem ou Teve alguma vez?)</string>
     <string name="termos_da_pesquisa">Termos da pesquisa</string>
     <string name="tipo">Tipo</string>
