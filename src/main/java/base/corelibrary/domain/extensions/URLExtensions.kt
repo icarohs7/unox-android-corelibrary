@@ -2,12 +2,8 @@ package base.corelibrary.domain.extensions
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.util.Base64
-import android.util.Log
 import arrow.core.Try
-import com.chuckerteam.chucker.api.internal.support.IOUtils
 import com.github.icarohs7.unoxcore.tryBg
-import java.net.HttpURLConnection
 import java.net.URL
 
 /**
