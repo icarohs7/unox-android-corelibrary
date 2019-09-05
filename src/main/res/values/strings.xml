@@ -205,6 +205,7 @@
     <string name="enviar">Enviar</string>
     <string name="enviar_registros">Enviar registros</string>
     <string name="erro">Erro</string>
+    <string name="erro_ao_finalizar_o_pedido">Erro ao finalizar o pedido</string>
     <string name="erro_sem_permissao_camera_scan_barcode">É necessário ceder o acesso à camera ao aplicativo para utilizar o scanner de códigos de barra</string>
     <string name="estoque">Estoque: </string>
     <string name="estoque_colon">Estoque:</string>
