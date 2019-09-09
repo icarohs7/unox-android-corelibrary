@@ -8,10 +8,8 @@ plugins {
     defaults.`android-module`
 }
 
-unoxAndroid {
-    defaultConfig {
-        consumerProguardFiles("proguard-rules.pro", "./proguard")
-    }
+android.defaultConfig {
+    consumerProguardFiles("proguard-rules.pro", "./proguard")
 }
 
 dependencies {
