@@ -1,5 +1,10 @@
 # unox-android-corelibrary
 
+---
+### Deprecated
+- Features moved to [resmodules repository](https://github.com/icarohs7/unox-android-resmodules)
+---
+
 [![Actions Status](https://github.com/icarohs7/unox-android-corelibrary/workflows/ci/badge.svg)](
 https://github.com/icarohs7/unox-android-corelibrary/actions)
 [![GitHub top language](https://img.shields.io/github/languages/top/icarohs7/unox-android-corelibrary.svg)](
